@@ -3357,7 +3357,7 @@
 		D36DE0F4272FD92F000BC916 /* SwapSelectProviderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapSelectProviderService.swift; sourceTree = "<group>"; };
 		D36DE0F5272FD92F000BC916 /* SwapSelectProviderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapSelectProviderViewModel.swift; sourceTree = "<group>"; };
 		D38405CE218317DF007D50AD /* Unstoppable D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unstoppable D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D38406BE21831B3D007D50AD /* Unstoppable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unstoppable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38406BE21831B3D007D50AD /* P.CASH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P.CASH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38406C3218327B1007D50AD /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		D38406C821832968007D50AD /* AppIconDev.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIconDev.xcassets; sourceTree = "<group>"; };
 		D3B476A321D0D64E008B0C3E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -6410,7 +6410,7 @@
 			isa = PBXGroup;
 			children = (
 				D38405CE218317DF007D50AD /* Unstoppable D.app */,
-				D38406BE21831B3D007D50AD /* Unstoppable.app */,
+				D38406BE21831B3D007D50AD /* P.CASH.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -6553,7 +6553,7 @@
 				D3E1D00A2990D9BE00C68F00 /* Hodler */,
 			);
 			productName = Wallet;
-			productReference = D38406BE21831B3D007D50AD /* Unstoppable.app */;
+			productReference = D38406BE21831B3D007D50AD /* P.CASH.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -9067,7 +9067,7 @@
 				DEVELOPMENT_TEAM = HC4MCAXJ66;
 				PRODUCT_BUNDLE_IDENTIFIER = cash.p.terminal;
 				PRODUCT_MODULE_NAME = Unstoppable;
-				PRODUCT_NAME = Unstoppable;
+				PRODUCT_NAME = P.CASH;
 				PROVISIONING_PROFILE_SPECIFIER = "match Development io.horizontalsystems.bank-wallet";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -9083,7 +9083,7 @@
 				DEVELOPMENT_TEAM = HC4MCAXJ66;
 				PRODUCT_BUNDLE_IDENTIFIER = cash.p.terminal;
 				PRODUCT_MODULE_NAME = Unstoppable;
-				PRODUCT_NAME = Unstoppable;
+				PRODUCT_NAME = P.CASH;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.horizontalsystems.bank-wallet";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
