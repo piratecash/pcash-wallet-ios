@@ -88,9 +88,9 @@
 
 // Access Camera
 
-"access_camera.message" = "Unstoppable, QR kodunu okuyabilmek için kameranıza erişime ihtiyaç duyuyor.
+"access_camera.message" = "P.CASH, QR kodunu okuyabilmek için kameranıza erişime ihtiyaç duyuyor.
 
-Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
+Ayarlar - > P.CASH ekranına giderek kamera erişimine izin verin.";
 "access_camera.settings" = "Ayarlar";
 
 // Restore
@@ -110,7 +110,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 "restore.passphrase_description" = "Bu anımsatıcı ifadeyi oluştururken kullandığınız parolayı girin. Mevcut bir cüzdanı yeni bir parolayla geri yüklemek, yepyeni bir cüzdan oluşturur.";
 "restore.error.empty_passphrase" = "Şifre boş bırakılamaz";
 "restore.non_standard_import" = "Standart Olmayan Yükleme";
-"restore.non_standard_import.description" = "Bu sayfa, standart olmayan bir cüzdanı olan Unstoppable kullanıcıları için özel geri yükleme mekanizması sağlar. Genel olarak, bu tür cüzdanlar, İngilizce olmayan bir anımsatma kelimeleri listesi ve/veya cüzdan şifresinde özel bir karakter (yani aksan simgesi) kullanılarak Unstoppable 0.27 - 0.28 sürümünde oluşturulmuş olabilir.\n\n Bu durumdan etkilenen bir kullanıcıysanız, 0.29 sürümüne güncelledikten sonra cüzdan bakiyeniz 0 olarak görüntülenir. Bu sayfa, standart olmayan cüzdanınıza erişimi geri yüklemenizi sağlayacaktır. Geri yüklendikten sonra, yeni bir cüzdan oluşturmanız (standartlarla uyumlu) ve paranızı oraya taşımanız önerilir.";
+"restore.non_standard_import.description" = "Bu sayfa, standart olmayan bir cüzdanı olan P.CASH kullanıcıları için özel geri yükleme mekanizması sağlar. Genel olarak, bu tür cüzdanlar, İngilizce olmayan bir anımsatma kelimeleri listesi ve/veya cüzdan şifresinde özel bir karakter (yani aksan simgesi) kullanılarak P.CASH 0.27 - 0.28 sürümünde oluşturulmuş olabilir.\n\n Bu durumdan etkilenen bir kullanıcıysanız, 0.29 sürümüne güncelledikten sonra cüzdan bakiyeniz 0 olarak görüntülenir. Bu sayfa, standart olmayan cüzdanınıza erişimi geri yüklemenizi sağlayacaktır. Geri yüklendikten sonra, yeni bir cüzdan oluşturmanız (standartlarla uyumlu) ve paranızı oraya taşımanız önerilir.";
 "restore.warning.non_recommended.description" = "Bu cüzdan, gizli sözcükler listesinde ve/veya bir şifrede standart olmayan bir karakter kullanıyor gibi görünüyor. Bir bakiye veya işlem göremiyorsanız lütfen bilgi için aşağıya bakınız.\n\nDAHA FAZLA BİLGİ ALMAK İÇİN TIKLAYINIZ";
 "restore.error.non_standard.description" = "Bu standart olmayan bir cüzdandır. \n\nDAHA FAZLA BİLGİ ALMAK İÇİN TIKLAYIN";
 
@@ -142,7 +142,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 // Recovery Phrase
 
 "recovery_phrase.title" = "Kurtarma cümlesi";
-"recovery_phrase.warning" = "Kurtarma ifadenizi asla kimseyle paylaşmayın. Unstoppable ekip asla kurtarma ifadenizi istemez.";
+"recovery_phrase.warning" = "Kurtarma ifadenizi asla kimseyle paylaşmayın. P.CASH ekip asla kurtarma ifadenizi istemez.";
 "recovery_phrase.tap_to_show" = "Kurtarma ifadesini göstermek için dokunun";
 "recovery_phrase.passphrase" = "Parola";
 "recovery_phrase.copy_warning.title" = "Kurtarma Riski İfadesi kopyası";
@@ -201,7 +201,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 "error.send.self_transfer" = "Kendine gönderme desteklenmiyor";
 "error.send_binance.memo_required" = "Alıcı, transfer işleminde boş olmayan bir not gerektirmektedir";
 "error.send_binance.only_digits_allowed" = "Notun yalnızca rakam içermesini gerektirir";
-"error.send_z_cash.transparent_address" = "Unstoppable, bir transparan adrese yapılan ödemeleri desteklemez";
+"error.send_z_cash.transparent_address" = "P.CASH, bir transparan adrese yapılan ödemeleri desteklemez";
 
 // Balance
 
@@ -292,7 +292,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 "send.fee_info.content_average" = "Genellikle bu ücret, işlemin Bitcoin için dakikalar/saatler içinde ve Ethereum için dakikalar içinde işleme alınması için yeterli olacaktır.";
 "send.fee_info.header_fast" = "Hızlı";
 "send.fee_info.content_fast" = "Önceliğin önemli olduğu işlemler için yüksek ücret değeri kullanmanızı öneririz. Bir işlemin Bitcoin için 10 dakika, Ethereum için 1-2 dakika içerisinde tamamlanması için yeterli olacaktır.";
-"send.fee_info.content_conclusion" = "Unstoppable cüzdan, ağ etkinliğine dayalı olarak eğitimli bir tahmin yapar ve önerilen ücret değerlerinin her zaman beklenen davranışla sonuçlanacağını garanti edemez.";
+"send.fee_info.content_conclusion" = "P.CASH cüzdan, ağ etkinliğine dayalı olarak eğitimli bir tahmin yapar ve önerilen ücret değerlerinin her zaman beklenen davranışla sonuçlanacağını garanti edemez.";
 
 "send.confirmation.you_send" = "Gönderdiğiniz";
 "send.confirmation.to" = "Alan";
@@ -699,13 +699,13 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 
 // Pro Features
 
-"pro_features.authorize.wallet_passes.title" = "Unstoppable NFT";
-"pro_features.authorize.wallet_passes.subtitle" = "Get access to advanced wallet features\nby holding Unstoppable NFTs.";
+"pro_features.authorize.wallet_passes.title" = "P.CASH NFT";
+"pro_features.authorize.wallet_passes.subtitle" = "Get access to advanced wallet features\nby holding P.CASH NFTs.";
 
 "pro_features.lock_info.go_to_mint" = "Çok Yakında";
 
-"pro_features.lock_info.title" = "Unstoppable Pass";
-"pro_features.lock_info.coin_details.description" = "Bu verileri etkinleştirmek için bakiyenizde Unstoppable Pass NFT'si olması gerekir\n\nAyrıca aşağıdaki verilere de erişebilirsiniz:";
+"pro_features.lock_info.title" = "P.CASH Pass";
+"pro_features.lock_info.coin_details.description" = "Bu verileri etkinleştirmek için bakiyenizde P.CASH Pass NFT'si olması gerekir\n\nAyrıca aşağıdaki verilere de erişebilirsiniz:";
 "pro_features.lock_info.coin_details.volume" = "DEX Volume";
 "pro_features.lock_info.coin_details.liquidity" = "DEX Liquidity";
 "pro_features.lock_info.coin_details.active_addresses" = "Active Addresses";
@@ -812,7 +812,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 "settings.language" = "Dil";
 "settings.faq" = "FAQ";
 "settings.theme" = "Tema";
-"settings.info_title" = "UNSTOPPABLE";
+"settings.info_title" = "P.CASH";
 "settings.info_subtitle" = "decentralized uygulama";
 
 // Settings -> Base Currency
@@ -830,7 +830,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 "manage_wallets.search_placeholder" = "Ad, kod veya sözleşme adresi";
 "manage_wallets.not_supported" = "Desteklenmiyor";
 "manage_wallets.not_supported.description" = "Mevcut cüzdan türünüz %@, %@'yi desteklemiyor";
-"manage_wallets.not_supported.by_app.description" = "Unstoppable %@ destegi yok";
+"manage_wallets.not_supported.by_app.description" = "P.CASH %@ destegi yok";
 
 // Settings -> Experimental Features
 
@@ -843,7 +843,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 
 "settings.bitcoin_hodling.title" = "TimeLock";
 "settings.bitcoin_hodling.lock_time" = "Aktiveet";
-"settings.bitcoin_hodling.description" = "Belirtilen tarihe kadar harcanmamış Bitcoin'leri göndermenize olanak verir.\n\nBu tür bir işlemin alıcısı Unstoppable cüzdan kullanmalıdır.\n\nSadece Unstoppable cüzdan, Bitcoin ağındaki bu tür işlemleri doğru bir şekilde tanımlayabilir ve kilitleme süresi dolduktan sonra da alıcının bu Bitcoin'leri harcamasını sağlayabilir.\n\nEğer bir HODLer iseniz, kendinize böyle bir işlem göndererek, bu özelliği Bitcoin'lerinizi zarar etmeden uzun süre elinizde tutmaya zorlamak için kullanabilirsiniz.\n\nDeneysel bir özellik olduğundan, işlem başına maksimum tutar 0.5 BTC ile sınırlandırılmıştır.";
+"settings.bitcoin_hodling.description" = "Belirtilen tarihe kadar harcanmamış Bitcoin'leri göndermenize olanak verir.\n\nBu tür bir işlemin alıcısı P.CASH cüzdan kullanmalıdır.\n\nSadece P.CASH cüzdan, Bitcoin ağındaki bu tür işlemleri doğru bir şekilde tanımlayabilir ve kilitleme süresi dolduktan sonra da alıcının bu Bitcoin'leri harcamasını sağlayabilir.\n\nEğer bir HODLer iseniz, kendinize böyle bir işlem göndererek, bu özelliği Bitcoin'lerinizi zarar etmeden uzun süre elinizde tutmaya zorlamak için kullanabilirsiniz.\n\nDeneysel bir özellik olduğundan, işlem başına maksimum tutar 0.5 BTC ile sınırlandırılmıştır.";
 "settings.evm_testnet.title" = "Testnet";
 "settings.evm_testnet.enable" = "Aktiveet";
 "settings.evm_testnet.description" = "Bu seçenek, Ethereum'un Goerli test ağını yalnızca GoerliETH belirteci için etkinleştirir ve madeni para yöneticisine ekler.\n\nDiğer tüm EVM ve Ethereum belirteçleri ana ağ üzerinden çalışırken yalnızca GoerliETH belirtecini etkiler. Başka bir deyişle, yalnızca GoerliETH'deki işlemler Goerli testnet'ten geçerken, ETH dahil diğer tüm EVM token transferleri ana ağdan geçer.";
@@ -861,7 +861,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 
 // Settings -> Tell Friends
 
-"settings_tell_friends.text" = "Be Unstoppable";
+"settings_tell_friends.text" = "Be P.CASH";
 
 // Settings -> Blockchain Settings
 
@@ -892,11 +892,11 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 "btc_transaction_sort_mode.bip69.description" = "Lexicographical Dizinleme";
 
 "blockchain_settings.info.restore_source" = "Geri Yükleme Ayarları";
-"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like Unstoppable to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
+"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like P.CASH to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
 "blockchain_settings.info.transaction_inputs_outputs" = "İşlem Girdileri / Çıktıları";
-"blockchain_settings.info.transaction_inputs_outputs.content" = "Most Bitcoin transactions, as well as transactions in alike cryptocurrencies including Bitcoin Cash, Dash, and Litecoin, generate two outputs. One output is the amount that goes to the receiver and the other is the change output that is returned to the sender. The way most wallets construct transactions makes it easy for a third party to understand which of the outputs went to the receiving party and which one was the change amount returned to the sender. As the output returned to the sender is later used in future transactions, a connection between these two transactions becomes apparent.\n\nThe Unstoppable wallet implements measures to make it harder for someone to figure out which output goes where.\n\nThere are two options available to Unstoppable users:\n\n1. Shuffle: The order of transaction outputs is randomized on every transaction. Sometimes change can be the first output, sometimes it can be the second. If a user trusts the developer of the app, then consider this a recommended option.\n\n2. Deterministic: There is a commonly agreed standard for ordering transaction outputs (known as BIP69). In open-source wallets, that standard ensures wallet users do not need to trust how developers of the app implement the ordering of the outputs. As this standard is new, not many wallets have implemented it yet. As a result, it's somewhat possible to see on the blockchain whether a transaction was sent from a wallet that uses that standard or not.";
+"blockchain_settings.info.transaction_inputs_outputs.content" = "Most Bitcoin transactions, as well as transactions in alike cryptocurrencies including Bitcoin Cash, Dash, and Litecoin, generate two outputs. One output is the amount that goes to the receiver and the other is the change output that is returned to the sender. The way most wallets construct transactions makes it easy for a third party to understand which of the outputs went to the receiving party and which one was the change amount returned to the sender. As the output returned to the sender is later used in future transactions, a connection between these two transactions becomes apparent.\n\nThe P.CASH wallet implements measures to make it harder for someone to figure out which output goes where.\n\nThere are two options available to P.CASH users:\n\n1. Shuffle: The order of transaction outputs is randomized on every transaction. Sometimes change can be the first output, sometimes it can be the second. If a user trusts the developer of the app, then consider this a recommended option.\n\n2. Deterministic: There is a commonly agreed standard for ordering transaction outputs (known as BIP69). In open-source wallets, that standard ensures wallet users do not need to trust how developers of the app implement the ordering of the outputs. As this standard is new, not many wallets have implemented it yet. As a result, it's somewhat possible to see on the blockchain whether a transaction was sent from a wallet that uses that standard or not.";
 "blockchain_settings.info.rpc_source" = "RPC Kaynak";
-"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. Unstoppable pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
+"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. P.CASH pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
 
 // Manage Accounts
 
@@ -918,7 +918,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 // Settings -> About App
 
 "settings.about_app.title" = "Uygulama Hakkında";
-"settings.about_app.app_name" = "Unstoppable Cüzdan";
+"settings.about_app.app_name" = "P.CASH Cüzdan";
 "settings.about_app.description" = "Durdurulamaz cüzdan, kripto para birimlerine özel ve bağımsız bir şekilde yatırım yapmak ve depolamak isteyenler için tasarlanmıştır.\n\nBu, fonlar üzerinde yalnızca kullanıcının kontrolüne sahip olduğu, velayet gerektirmeyen, eşler arası bir cüzdandır. Herhangi bir veri toplamaz ve kullanıcının fonlarını belirli bir cüzdan uygulamasına kilitlemeyerek kullanıcıyı bağımsız tutar.\n\nDurdurulamaz cüzdan tamamen açık kaynaklıdır ve herkes uygulamanın tam olarak iddia ettiği gibi çalıştığını onaylayabilir.";
 "settings.about_app.whats_new" = "Yenilikler";
 "settings.about_app.website" = "Web sitesi";
@@ -928,7 +928,7 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 
 // Settings -> Privacy
 
-"settings.privacy.description" = "Unstoppable herhangi bir veri toplamaz veya kullanıcıları hakkında herhangi bir veriyi ifşa edebilecek analiz araçları kullanmaz. Unstoppable cüzdanı kullanıcıları için yüksek düzeyde gizlilik sağlamak üzere tasarlanmıştır.";
+"settings.privacy.description" = "P.CASH herhangi bir veri toplamaz veya kullanıcıları hakkında herhangi bir veriyi ifşa edebilecek analiz araçları kullanmaz. P.CASH cüzdanı kullanıcıları için yüksek düzeyde gizlilik sağlamak üzere tasarlanmıştır.";
 "settings.privacy.statement.user_data_storage" = "Kullanıcı verileri her zaman kullanıcının cihazında kalır.";
 "settings.privacy.statement.data_usage" = "Bu cüzdan, kullanıcılar hakkında herhangi bir veri toplamaz.";
 "settings.privacy.statement.data_privacy" = "Bu cüzdan, kullanıcılar hakkında herhangi bir veri paylaşmaz.";
@@ -1153,13 +1153,13 @@ Ayarlar - > Unstoppable ekranına giderek kamera erişimine izin verin.";
 
 "status_info.title" = "Durum";
 "status_info.pending.title" = "Devam ediyor";
-"status_info.pending.content" = "İşlem henüz blok zincirinde onaylanmadı. Tavsiye edilen veya daha yüksek ücret ayarı ile gönderilen işlemler genellikle birkaç dakika içerisinde işlenir. Düşük bir ücretle gönderilen işlemler birkaç saat, hatta günlerce beklemede kalabilir ve hatta reddedilebilir. Unstoppable cüzdan arayüzündeki bir işlemin durumunun genellikle kısa bir gecikmeyle güncellendiğini de unutmayın.";
+"status_info.pending.content" = "İşlem henüz blok zincirinde onaylanmadı. Tavsiye edilen veya daha yüksek ücret ayarı ile gönderilen işlemler genellikle birkaç dakika içerisinde işlenir. Düşük bir ücretle gönderilen işlemler birkaç saat, hatta günlerce beklemede kalabilir ve hatta reddedilebilir. P.CASH cüzdan arayüzündeki bir işlemin durumunun genellikle kısa bir gecikmeyle güncellendiğini de unutmayın.";
 "status_info.processing.title" = "İşleniyor";
 "status_info.processing.content" = "İşlem blok zincirine dahil edildi ama kalıcı bir sonuca ulaşmadı. Bu noktada, küçük ödemeler için işlemin tamamlandığını düşünebilirsiniz. Daha büyük ödemeler için ise, işlem durumu tamamlandı olarak değişene kadar beklemeniz önerilir.";
 "status_info.completed.title" = "Tamamlandı";
 "status_info.confirmed.content" = "İşlem tamamlandı ve bunun kalıcı ve tersine çevrilemez olduğu kabul edilir.";
 "status_info.failed.title" = "Başarısız";
-"status_info.failed.content" = "İşlem gerçekleşmedi ve herhangi bir değer transferi yapılmadı. Başarısız olma nedenine bağlı olarak, bazı başarısız işlemler, işlem ücreti tüketebilir. Başka bir işlemle değiştirilen veya iptal edilen işlemler, işlem ücretini tüketmez ve başarısız olarak görüntülenir. Unstoppable uygulaması başarısız işlemlerin nedenini gösteremez, ancak kullanıcılar bunu örneğin etherscan.io gibi herkese açık bir blok gezgininde kendileri arayabilirler.";
+"status_info.failed.content" = "İşlem gerçekleşmedi ve herhangi bir değer transferi yapılmadı. Başarısız olma nedenine bağlı olarak, bazı başarısız işlemler, işlem ücreti tüketebilir. Başka bir işlemle değiştirilen veya iptal edilen işlemler, işlem ücretini tüketmez ve başarısız olarak görüntülenir. P.CASH uygulaması başarısız işlemlerin nedenini gösteremez, ancak kullanıcılar bunu örneğin etherscan.io gibi herkese açık bir blok gezgininde kendileri arayabilirler.";
 
 // Onboarding
 

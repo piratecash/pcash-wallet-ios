@@ -1,6 +1,6 @@
-# Unstoppable Wallet Release
+# P.CASH Wallet Release
 
-This document describes the release process for `Unstoppable` app.
+This document describes the release process for `P.CASH` app.
 
 ### 1. Prepare dependent libraries
 

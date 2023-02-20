@@ -87,9 +87,9 @@
 
 // Access Camera
 
-"access_camera.message" = "A Unstoppable precisa acessar sua câmera para escanear o código QR.
+"access_camera.message" = "A P.CASH precisa acessar sua câmera para escanear o código QR.
 
-Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
+Vá para Configurações → \"P.CASH\" e permita o acesso à câmera.";
 "access_camera.settings" = "Configurações";
 
 // Restore
@@ -109,7 +109,7 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 "restore.passphrase_description" = "Digite a senha que você usou ao criar esta frase mnemônica.";
 "restore.error.empty_passphrase" = "O senha não pode estar em branco";
 "restore.non_standard_import" = "Restauração Não-Padrão";
-"restore.non_standard_import.description" = "Esta página fornece um mecanismo especial de recuperação de carteira para usuários da Unstoppable que possuem uma carteira Não Padrão.  Geralmente, essas carteiras podem ter sido criadas na versão Unstoppable 0.27 - 0.28 usando uma lista de palavras mnemônicas não inglesas e/ou um caractere especial na senha da carteira (ou seja, símbolo diacrítico).\n\nSe você for um usuário afetado, o saldo da sua carteira será mostrado como 0 após a atualização para a versão 0.29.  Esta página permitirá que você restaure o acesso à sua carteira não padrão.  Uma vez restaurado, é recomendável criar uma nova carteira (que será compatível com o padrão) e mover fundos para lá.";
+"restore.non_standard_import.description" = "Esta página fornece um mecanismo especial de recuperação de carteira para usuários da P.CASH que possuem uma carteira Não Padrão.  Geralmente, essas carteiras podem ter sido criadas na versão P.CASH 0.27 - 0.28 usando uma lista de palavras mnemônicas não inglesas e/ou um caractere especial na senha da carteira (ou seja, símbolo diacrítico).\n\nSe você for um usuário afetado, o saldo da sua carteira será mostrado como 0 após a atualização para a versão 0.29.  Esta página permitirá que você restaure o acesso à sua carteira não padrão.  Uma vez restaurado, é recomendável criar uma nova carteira (que será compatível com o padrão) e mover fundos para lá.";
 "restore.warning.non_recommended.description" = "Esta carteira parece usar um caractere não padrão em sua lista de palavras secretas e/ou uma frase secreta.  Se você não ver um saldo ou transações, leia abaixo para obter detalhes.\n\nCLIQUE PARA OBTER MAIS INFORMAÇÕES";
 "restore.error.non_standard.description" = "Esta é uma carteira não padrão. \n\nCLIQUE PARA OBTER MAIS INFORMAÇÕES";
 
@@ -141,7 +141,7 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 // Recovery Phrase
 
 "recovery_phrase.title" = "Frase de Recuperação";
-"recovery_phrase.warning" = "Nunca compartilhe sua frase de recuperação com ninguém. A equipe Unstoppable nunca pedirá a sua frase de recuperação.";
+"recovery_phrase.warning" = "Nunca compartilhe sua frase de recuperação com ninguém. A equipe P.CASH nunca pedirá a sua frase de recuperação.";
 "recovery_phrase.tap_to_show" = "Toque para mostrar a frase de recuperação";
 "recovery_phrase.passphrase" = "Senha";
 "recovery_phrase.copy_warning.title" = "Risco ao copiar a frase de recuperação";
@@ -200,7 +200,7 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 "error.send.self_transfer" = "Não é possível enviar para você mesmo";
 "error.send_binance.memo_required" = "O receptor requer uma nota não vazia na transação de transferência";
 "error.send_binance.only_digits_allowed" = "Requer que o memorando contenha apenas dígitos";
-"error.send_z_cash.transparent_address" = "A Unstoppable não é suporta pagamentos para um endereço vazio";
+"error.send_z_cash.transparent_address" = "A P.CASH não é suporta pagamentos para um endereço vazio";
 
 // Balance
 
@@ -291,7 +291,7 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 "send.fee_info.content_average" = "Normalmente, o valor de taxa recomendado deve ser suficiente para que uma transação seja processada em minutos ou uma hora para Bitcoin e em minutos para o Ethereum.";
 "send.fee_info.header_fast" = "Alta";
 "send.fee_info.content_fast" = "Para as operações em que a prioridade é importante, recomendamos a utilização do alto valor de taxa. É esperado que seja suficiente para concluir uma transação dentro de 10 minutos para o Bitcoin e dentro de 1 – 2 minutos para o Ethereum.";
-"send.fee_info.content_conclusion" = "A carteira Unstoppable faz uma estimativa estudada e baseada na atividade de rede e não pode garantir que os valores de taxas sugeridas sempre resultarão no comportamento esperado.";
+"send.fee_info.content_conclusion" = "A carteira P.CASH faz uma estimativa estudada e baseada na atividade de rede e não pode garantir que os valores de taxas sugeridas sempre resultarão no comportamento esperado.";
 
 "send.confirmation.you_send" = "Enviar";
 "send.confirmation.to" = "Para";
@@ -698,13 +698,13 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 
 // Pro Features
 
-"pro_features.authorize.wallet_passes.title" = "Unstoppable NFT";
-"pro_features.authorize.wallet_passes.subtitle" = "Obtenha acesso aos recursos avançados de carteira\nFazendo Holdin NFTs Unstoppable.";
+"pro_features.authorize.wallet_passes.title" = "P.CASH NFT";
+"pro_features.authorize.wallet_passes.subtitle" = "Obtenha acesso aos recursos avançados de carteira\nFazendo Holdin NFTs P.CASH.";
 
 "pro_features.lock_info.go_to_mint" = "Em Breve";
 
-"pro_features.lock_info.title" = "Senha Unstoppable";
-"pro_features.lock_info.coin_details.description" = "Para ativar estes dados, você deve ter o passe NFT da Unstoppable no seu saldo\n\nVocê também pode obter acesso aos dados abaixo:";
+"pro_features.lock_info.title" = "Senha P.CASH";
+"pro_features.lock_info.coin_details.description" = "Para ativar estes dados, você deve ter o passe NFT da P.CASH no seu saldo\n\nVocê também pode obter acesso aos dados abaixo:";
 "pro_features.lock_info.coin_details.volume" = "Volume DEX";
 "pro_features.lock_info.coin_details.liquidity" = "Liquidez DEX";
 "pro_features.lock_info.coin_details.active_addresses" = "Endereços ativos";
@@ -811,7 +811,7 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 "settings.language" = "Idioma";
 "settings.faq" = "FAQ";
 "settings.theme" = "Tema";
-"settings.info_title" = "Unstoppable NFT";
+"settings.info_title" = "P.CASH NFT";
 "settings.info_subtitle" = "aplicativo descentralizado";
 
 // Settings -> Base Currency
@@ -819,7 +819,7 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 "settings.base_currency.title" = "Moeda base";
 "settings.base_currency.other" = "Outros";
 "settings.base_currency.disclaimer" = "Aviso Legal";
-"settings.base_currency.disclaimer.description" = "Os dados da taxa de câmbio são fornecidos por um serviço de terceiros - Coingecko.com. \n\nO aplicativo de carteira Unstoppable não garante que esses valores sejam sempre corretos e que correspondam aos dados do mercado. A chance de inconsistência é maior se você selecionar qualquer moeda base que não seja %@.";
+"settings.base_currency.disclaimer.description" = "Os dados da taxa de câmbio são fornecidos por um serviço de terceiros - Coingecko.com. \n\nO aplicativo de carteira P.CASH não garante que esses valores sejam sempre corretos e que correspondam aos dados do mercado. A chance de inconsistência é maior se você selecionar qualquer moeda base que não seja %@.";
 "settings.base_currency.disclaimer.set" = "Definir";
 
 // Settings -> Manage Wallet
@@ -842,7 +842,7 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 
 "settings.bitcoin_hodling.title" = "TimeLock";
 "settings.bitcoin_hodling.lock_time" = "Ativar";
-"settings.bitcoin_hodling.description" = "Isso permite que você envie Bitcoins que não podem ser gastos até uma data especificada. \n\nO destinatário de tais transações deve usar o aplicativo de carteira Unstoppable versão 0.10 ou mais recente, com o formato de endereço BIP44 para Bitcoin. \n\nSomente a carteira Unstoppable pode identificar corretamente tais transações na rede Bitcoin, bem como permitir que o receptor gaste esses Bitcoins após o período de bloqueio expirar. \n\nSe você é um HOLDER, você pode usar este recurso para se forçar a manter seus Bitcoins enviando tais transações para si mesmo. \n\nSendo um recurso experimental, o valor máximo por transação é limitado a 0,5 BTC.";
+"settings.bitcoin_hodling.description" = "Isso permite que você envie Bitcoins que não podem ser gastos até uma data especificada. \n\nO destinatário de tais transações deve usar o aplicativo de carteira P.CASH versão 0.10 ou mais recente, com o formato de endereço BIP44 para Bitcoin. \n\nSomente a carteira P.CASH pode identificar corretamente tais transações na rede Bitcoin, bem como permitir que o receptor gaste esses Bitcoins após o período de bloqueio expirar. \n\nSe você é um HOLDER, você pode usar este recurso para se forçar a manter seus Bitcoins enviando tais transações para si mesmo. \n\nSendo um recurso experimental, o valor máximo por transação é limitado a 0,5 BTC.";
 "settings.evm_testnet.title" = "Testnet";
 "settings.evm_testnet.enable" = "Ativar";
 "settings.evm_testnet.description" = "Esta opção ativa a rede de testes Goerli da Ethereum apenas para o token GoerliETH e adiciona-a ao gerenciador de moedas.\n\nApenas afeta o token GoerliETH enquanto todos os outros tokens EVM e Ethereum operam sobre o mainnet. Em outras palavras, apenas as transações em GoerliETH passam pelo teste Goerli, enquanto todas as outras transferências token, incluindo ETH passam pelo mainnet.";
@@ -860,7 +860,7 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 
 // Settings -> Tell Friends
 
-"settings_tell_friends.text" = "Seja Unstoppable";
+"settings_tell_friends.text" = "Seja P.CASH";
 
 // Settings -> Blockchain Settings
 
@@ -891,11 +891,11 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 "btc_transaction_sort_mode.bip69.description" = "Indexação Lexicográfica";
 
 "blockchain_settings.info.restore_source" = "Restaurar Fonte";
-"blockchain_settings.info.restore_source.content" = "Esta configuração só é relevante ao restaurar uma carteira existente. É um processo de obtenção de histórico de transações para uma determinada criptomoeda, então o aplicativo de carteira é capaz de exibir transações anteriores e calcular o saldo do usuário. Isto precisa acontecer apenas uma vez quando o usuário restaura as carteiras previamente criadas.\n\nNeste ponto, existem duas possíveis maneiras de uma carteira móvel como o Unstoppable de fazer isso:\n\n1. do Servidor API: Há um servidor predefinido por terceiros que hospeda toda a blockchain e tem todos os dados processados e otimizados para fornecer esses dados de forma rápida. Este método é rápido, mas potencialmente (não necessariamente) menos privado. É também um método centralizado para restaurar uma carteira, pois depende da disponibilidade de um servidor de terceiros. Esta opção é recomendada devido à velocidade de obtenção de dados (5-10 minutos).\n\n2. da Blockchain: O aplicativo tenta restaurar diretamente de uma rede de nós da blockchain. Essa é uma maneira descentralizada de restaurar o saldo das carteiras e transações anteriores. O aplicativo pança muitos dos nós da rede e solicita dados deles sem abordar alguns nós especificamente. Esta opção é lenta e pode levar facilmente 2-3 horas, o aplicativo precisa estar aberto enquanto a restauração está acontecendo. Este método de restauração não depende de nenhuma entidade e deve funcionar em todas as condições.";
+"blockchain_settings.info.restore_source.content" = "Esta configuração só é relevante ao restaurar uma carteira existente. É um processo de obtenção de histórico de transações para uma determinada criptomoeda, então o aplicativo de carteira é capaz de exibir transações anteriores e calcular o saldo do usuário. Isto precisa acontecer apenas uma vez quando o usuário restaura as carteiras previamente criadas.\n\nNeste ponto, existem duas possíveis maneiras de uma carteira móvel como o P.CASH de fazer isso:\n\n1. do Servidor API: Há um servidor predefinido por terceiros que hospeda toda a blockchain e tem todos os dados processados e otimizados para fornecer esses dados de forma rápida. Este método é rápido, mas potencialmente (não necessariamente) menos privado. É também um método centralizado para restaurar uma carteira, pois depende da disponibilidade de um servidor de terceiros. Esta opção é recomendada devido à velocidade de obtenção de dados (5-10 minutos).\n\n2. da Blockchain: O aplicativo tenta restaurar diretamente de uma rede de nós da blockchain. Essa é uma maneira descentralizada de restaurar o saldo das carteiras e transações anteriores. O aplicativo pança muitos dos nós da rede e solicita dados deles sem abordar alguns nós especificamente. Esta opção é lenta e pode levar facilmente 2-3 horas, o aplicativo precisa estar aberto enquanto a restauração está acontecendo. Este método de restauração não depende de nenhuma entidade e deve funcionar em todas as condições.";
 "blockchain_settings.info.transaction_inputs_outputs" = "Entradas / Saídas de Transação";
-"blockchain_settings.info.transaction_inputs_outputs.content" = "A maioria das transações do Bitcoin, bem como as transações em criptomoedas, incluindo Bitcoin Cash, Dash, e Litecoin, geram duas saídas. Uma saída é a quantidade que vai para o destinatário e a outra é a mudança de saída que é retornada ao remetente. A maneira como a maioria das carteiras constrói as transações torna mais fácil para um terceiro entender qual das saídas foi para a parte receptora e qual foi a quantia alterada retornada ao remetente. Como a saída retornada ao remetente será usada mais tarde em transações futuras, uma conexão entre essas duas transações se torna evidente.\n\nA carteira Unstoppable implementa medidas para tornar mais difícil para alguém descobrir qual saída vai para onde.\n\nExistem duas opções disponíveis para usuários Unstoppable:\n\n1. Embaralhamento: A ordem de saídas da transação é randomizada em cada transação. Às vezes a mudança pode ser a primeira saída, às vezes pode ser a segunda. Se um usuário confia no desenvolvedor do aplicativo, considere esta opção recomendada.\n\n2. Determinístico: Há um padrão comumente acordado para encomendar saídas de transação (conhecido como BIP69). Nas carteiras de código aberto, que o padrão garante que os usuários de carteira não precisam confiar em como desenvolvedores do aplicativo implementam a ordenação das saídas. Como este padrão é novo, muitas carteiras ainda não o implementaram. Como resultado, é um pouco possível ver no blockchain se uma transação foi enviada de uma carteira que usa esse padrão ou não.";
+"blockchain_settings.info.transaction_inputs_outputs.content" = "A maioria das transações do Bitcoin, bem como as transações em criptomoedas, incluindo Bitcoin Cash, Dash, e Litecoin, geram duas saídas. Uma saída é a quantidade que vai para o destinatário e a outra é a mudança de saída que é retornada ao remetente. A maneira como a maioria das carteiras constrói as transações torna mais fácil para um terceiro entender qual das saídas foi para a parte receptora e qual foi a quantia alterada retornada ao remetente. Como a saída retornada ao remetente será usada mais tarde em transações futuras, uma conexão entre essas duas transações se torna evidente.\n\nA carteira P.CASH implementa medidas para tornar mais difícil para alguém descobrir qual saída vai para onde.\n\nExistem duas opções disponíveis para usuários P.CASH:\n\n1. Embaralhamento: A ordem de saídas da transação é randomizada em cada transação. Às vezes a mudança pode ser a primeira saída, às vezes pode ser a segunda. Se um usuário confia no desenvolvedor do aplicativo, considere esta opção recomendada.\n\n2. Determinístico: Há um padrão comumente acordado para encomendar saídas de transação (conhecido como BIP69). Nas carteiras de código aberto, que o padrão garante que os usuários de carteira não precisam confiar em como desenvolvedores do aplicativo implementam a ordenação das saídas. Como este padrão é novo, muitas carteiras ainda não o implementaram. Como resultado, é um pouco possível ver no blockchain se uma transação foi enviada de uma carteira que usa esse padrão ou não.";
 "blockchain_settings.info.rpc_source" = "Fonte RPC";
-"blockchain_settings.info.rpc_source.content" = "Esta configuração controla como este aplicativo interage com blockchains ao enviar ou receber transações.\n\nNo caso do Bitcoin, Bitcoin Cash, Litecoin e Dash, a comunicação com os nós da rede blockchain é totalmente peer-to-peer. Os pings Unstoppable são feitos em muitos nós e se comunicam com um deles. Cada vez que o aplicativo se conecta a um nó diferente.\n\nNo caso da Ethereum, da Binance Smart Chain e outras blockchains de EVM, não existem alternativas para as carteiras móveis para interagir com as respectivas blockchains que não sejam por provedores de serviços RPC de terceiros (ex. Infura.io) ou nós pessoais. Isso essencialmente significa que sua comunicação com essa blockchain não é descentralizada. Isso não afeta seus fundos de forma alguma, apenas a capacidade de se conectar à rede blockchain.\n\nFique tranquilo, vamos mantê-lo no radar e em breve tentaremos fornecer uma forma descentralizada para sincronizar. Paciência.";
+"blockchain_settings.info.rpc_source.content" = "Esta configuração controla como este aplicativo interage com blockchains ao enviar ou receber transações.\n\nNo caso do Bitcoin, Bitcoin Cash, Litecoin e Dash, a comunicação com os nós da rede blockchain é totalmente peer-to-peer. Os pings P.CASH são feitos em muitos nós e se comunicam com um deles. Cada vez que o aplicativo se conecta a um nó diferente.\n\nNo caso da Ethereum, da Binance Smart Chain e outras blockchains de EVM, não existem alternativas para as carteiras móveis para interagir com as respectivas blockchains que não sejam por provedores de serviços RPC de terceiros (ex. Infura.io) ou nós pessoais. Isso essencialmente significa que sua comunicação com essa blockchain não é descentralizada. Isso não afeta seus fundos de forma alguma, apenas a capacidade de se conectar à rede blockchain.\n\nFique tranquilo, vamos mantê-lo no radar e em breve tentaremos fornecer uma forma descentralizada para sincronizar. Paciência.";
 
 // Manage Accounts
 
@@ -917,8 +917,8 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 // Settings -> About App
 
 "settings.about_app.title" = "Sobre o App";
-"settings.about_app.app_name" = "Carteira Unstoppable";
-"settings.about_app.description" = "A carteira Unstoppable foi construída para aqueles que buscam investir e armazenar criptomoedas de forma privada e independente.\n\nÉ uma carteira não-custódia, peer-to-peer onde apenas o usuário tem controle sobre os fundos. Não coleta nenhum dado e mantém o usuário independente ao não bloquear os fundos do usuário para um aplicativo específico de carteira.\n\nA carteira Unstoppable é totalmente de código aberto e qualquer um pode confirmar que o aplicativo funciona exatamente como afirma.";
+"settings.about_app.app_name" = "Carteira P.CASH";
+"settings.about_app.description" = "A carteira P.CASH foi construída para aqueles que buscam investir e armazenar criptomoedas de forma privada e independente.\n\nÉ uma carteira não-custódia, peer-to-peer onde apenas o usuário tem controle sobre os fundos. Não coleta nenhum dado e mantém o usuário independente ao não bloquear os fundos do usuário para um aplicativo específico de carteira.\n\nA carteira P.CASH é totalmente de código aberto e qualquer um pode confirmar que o aplicativo funciona exatamente como afirma.";
 "settings.about_app.whats_new" = "O que há de novo";
 "settings.about_app.website" = "Site";
 "settings.about_app.contact" = "Contato";
@@ -927,7 +927,7 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 
 // Settings -> Privacy
 
-"settings.privacy.description" = "A Unstoppable não coleta dados nem usa ferramentas analíticas que possam expor dados sobre seus usuários. A carteira foi projetada para garantir um alto nível de privacidade para seus usuários.";
+"settings.privacy.description" = "A P.CASH não coleta dados nem usa ferramentas analíticas que possam expor dados sobre seus usuários. A carteira foi projetada para garantir um alto nível de privacidade para seus usuários.";
 "settings.privacy.statement.user_data_storage" = "Os dados do usuário sempre permanecem em seu dispositivo.";
 "settings.privacy.statement.data_usage" = "A carteira não coleta nenhum dado sobre os usuários.";
 "settings.privacy.statement.data_privacy" = "A carteira não coleta nenhum dado sobre os usuários.";
@@ -1152,13 +1152,13 @@ Vá para Configurações → \"Unstoppable\" e permita o acesso à câmera.";
 
 "status_info.title" = "Status";
 "status_info.pending.title" = "Pendente";
-"status_info.pending.content" = "A transação ainda não foi confirmada na blockchain. As transações enviadas com uma configuração de taxas recomendada ou maior são geralmente processadas dentro de alguns minutos. Transações enviadas com uma taxa baixa podem permanecer pendentes por algumas horas ou até mesmo dias, e podem até mesmo ser rejeitadas. Observe que o status de uma transação individual em interface da carteira Unstoppable normalmente é atualizado com um curto atraso.";
+"status_info.pending.content" = "A transação ainda não foi confirmada na blockchain. As transações enviadas com uma configuração de taxas recomendada ou maior são geralmente processadas dentro de alguns minutos. Transações enviadas com uma taxa baixa podem permanecer pendentes por algumas horas ou até mesmo dias, e podem até mesmo ser rejeitadas. Observe que o status de uma transação individual em interface da carteira P.CASH normalmente é atualizado com um curto atraso.";
 "status_info.processing.title" = "Processando";
 "status_info.processing.content" = "A transação já foi incluída na blockchain, mas ainda não atingiu a finalidade permanente. Neste ponto, é seguro considerar a transação como concluída para pagamentos menores. Para pagamentos maiores, é recomendado esperar até que o status da transação seja alterado.";
 "status_info.completed.title" = "Concluído";
 "status_info.confirmed.content" = "A transação está concluída e considerada permanente e irreversível.";
 "status_info.failed.title" = "Falhou";
-"status_info.failed.content" = "A transação não foi processada e nenhuma transferência de valor ocorreu. Dependendo do motivo, algumas transações com falha podem consumir taxas de transação. As transações que foram substituídas ou canceladas por outra transação não consomem taxas de transação e também aparecerão com falha. O aplicativo Unstoppable não consegue mostrar o motivo das transações com falha, mas os usuários podem procurá-lo em um explorador de blocos público, como o etherscan.io.";
+"status_info.failed.content" = "A transação não foi processada e nenhuma transferência de valor ocorreu. Dependendo do motivo, algumas transações com falha podem consumir taxas de transação. As transações que foram substituídas ou canceladas por outra transação não consomem taxas de transação e também aparecerão com falha. O aplicativo P.CASH não consegue mostrar o motivo das transações com falha, mas os usuários podem procurá-lo em um explorador de blocos público, como o etherscan.io.";
 
 // Onboarding
 
