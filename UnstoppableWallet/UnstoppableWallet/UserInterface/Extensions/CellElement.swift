@@ -18,6 +18,9 @@ extension CellBuilderNew.CellElement {  // prepared cell elements for most frequ
             if parameters.contains(.rightAlignment) {
                 component.textAlignment = .right
             }
+            if parameters.contains(.centerAlignment) {
+                component.textAlignment = .center
+            }
             if parameters.contains(.truncatingMiddle) {
                 component.lineBreakMode = .byTruncatingMiddle
             }
@@ -91,10 +94,10 @@ extension CellBuilderNew.CellElement {
     }
 
     struct Text {
+        static func body(_ text: String?, color: UIColor = .themeLeah) -> Self { Text(text: text, font: .body, textColor: color) }
+        static func subhead1(_ text: String?, color: UIColor = .themeLeah) -> Self { Text(text: text, font: .subhead1, textColor: color) }
+        static func subhead2(_ text: String?, color: UIColor = .themeGray) -> Self { Text(text: text, font: .subhead2, textColor: color) }
         static func custom(_ text: String?, _ font: UIFont, _ color: UIColor) -> Self { Text(text: text, font: font, textColor: color) }
-        static func body(_ text: String?, gray: Bool = false) -> Self { Text(text: text, font: .body, textColor: gray ? .themeGray: .themeLeah) }
-        static func subhead1(_ text: String?, gray: Bool = false) -> Self { Text(text: text, font: .subhead2, textColor: gray ? .themeGray: .themeLeah) }
-        static func subhead2(_ text: String?, gray: Bool = true) -> Self { Text(text: text, font: .subhead2, textColor: gray ? .themeGray: .themeLeah) }
 
         let text: String?
         let font: UIFont
@@ -111,6 +114,7 @@ extension CellBuilderNew.CellElement {
         static let highHugging = TextParameters(rawValue: 1 << 1)
         static let truncatingMiddle = TextParameters(rawValue: 1 << 2)
         static let rightAlignment = TextParameters(rawValue: 1 << 3)
+        static let centerAlignment = TextParameters(rawValue: 1 << 4)
     }
 
     class AccessoryType {

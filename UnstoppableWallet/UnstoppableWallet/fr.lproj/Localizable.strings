@@ -87,7 +87,7 @@
 
 // Access Camera
 
-"access_camera.message" = "Unstoppable a besoin d'accéder à votre caméra pour scanner le code QR.\n\nAllez dans Paramètres - > Unstoppable et autorisez l'accès à la caméra.";
+"access_camera.message" = "P.CASH a besoin d'accéder à votre caméra pour scanner le code QR.\n\nAllez dans Paramètres - > P.CASH et autorisez l'accès à la caméra.";
 "access_camera.settings" = "Paramètres";
 
 // Restore
@@ -107,7 +107,7 @@
 "restore.passphrase_description" = "Entrez la phrase d'authentification que vous avez utilisée pour créer cette phrase mnémonique.";
 "restore.error.empty_passphrase" = "La phrase d'authentification ne peut pas être une valeur vide";
 "restore.non_standard_import" = "Restauration non-standard";
-"restore.non_standard_import.description" = "Sur cette page, vous trouverez un mécanisme spécial de restauration de portefeuille pour les utilisateurs d'Unstoppable dont le portefeuille n'est pas standard. En général, de tels portefeuilles ont été créés dans la version 0.27 - 0.28 d'Unstoppable en utilisant une liste de mots mnémoniques non-anglais et/ou un caractère spécial dans la phrase de passe du portefeuille (c'est-à-dire un symbole diacritique).\n\nSi vous êtes un utilisateur concerné, le solde de votre portefeuille sera affiché à 0 après la restauration de ce portefeuille dans la version 0.29 ou supérieure. Grâce à cette page, vous pourrez restaurer l'accès à votre portefeuille non-standard. Une fois la restauration effectuée, il est conseillé de créer un nouveau portefeuille (qui sera conforme aux normes) et d'y transférer vos fonds.";
+"restore.non_standard_import.description" = "Sur cette page, vous trouverez un mécanisme spécial de restauration de portefeuille pour les utilisateurs d'P.CASH dont le portefeuille n'est pas standard. En général, de tels portefeuilles ont été créés dans la version 0.27 - 0.28 d'P.CASH en utilisant une liste de mots mnémoniques non-anglais et/ou un caractère spécial dans la phrase de passe du portefeuille (c'est-à-dire un symbole diacritique).\n\nSi vous êtes un utilisateur concerné, le solde de votre portefeuille sera affiché à 0 après la restauration de ce portefeuille dans la version 0.29 ou supérieure. Grâce à cette page, vous pourrez restaurer l'accès à votre portefeuille non-standard. Une fois la restauration effectuée, il est conseillé de créer un nouveau portefeuille (qui sera conforme aux normes) et d'y transférer vos fonds.";
 "restore.warning.non_recommended.description" = "Ce portefeuille semble utiliser un caractère non-standard dans sa liste de mots secrets et/ou dans une phrase de passe. Si vous ne voyez pas de solde ou de transactions, veuillez vous reporter aux informations ci-dessous. \n\nCLIQUEZ POUR OBTENIR PLUS D'INFOS";
 "restore.error.non_standard.description" = "Ce portefeuille n'est pas conforme aux normes.\n\nCLIQUEZ POUR OBTENIR PLUS D'INFOS";
 
@@ -198,7 +198,7 @@
 "error.send.self_transfer" = "L'envoi à soi-même n'est pas pris en charge";
 "error.send_binance.memo_required" = "Le destinataire a besoin d'une note non vide pour une opération de transfert";
 "error.send_binance.only_digits_allowed" = "Nécessite que le mémo ne contienne que des chiffres";
-"error.send_z_cash.transparent_address" = "Unstoppable ne prend pas en charge les paiements à une adresse transparente";
+"error.send_z_cash.transparent_address" = "P.CASH ne prend pas en charge les paiements à une adresse transparente";
 
 // Balance
 
@@ -289,7 +289,7 @@
 "send.fee_info.content_average" = "Généralement, cette fourchette de frais devrait être suffisante pour que la transaction soit traitée en quelques minutes/heure pour Bitcoin et en quelques minutes pour Ethereum.";
 "send.fee_info.header_fast" = "Rapide";
 "send.fee_info.content_fast" = "Pour les transactions où la priorité est importante, nous vous recommandons d'utiliser la valeur élevée des frais. Cela devrait suffire pour qu'une transaction soit effectuée dans les 10 minutes pour Bitcoin et dans les 1-2 minutes pour Ethereum.";
-"send.fee_info.content_conclusion" = "Le portefeuille Unstoppable fait une évaluation éclairée sur la base de l'activité du réseau et ne peut pas garantir que les frais suggérés se traduiront toujours par le comportement attendu.";
+"send.fee_info.content_conclusion" = "Le portefeuille P.CASH fait une évaluation éclairée sur la base de l'activité du réseau et ne peut pas garantir que les frais suggérés se traduiront toujours par le comportement attendu.";
 
 "send.confirmation.you_send" = "Vous envoyez";
 "send.confirmation.to" = "À";
@@ -696,13 +696,13 @@
 
 // Pro Features
 
-"pro_features.authorize.wallet_passes.title" = "Unstoppable NFT";
+"pro_features.authorize.wallet_passes.title" = "P.CASH NFT";
 "pro_features.authorize.wallet_passes.subtitle" = "Accédez aux fonctionnalités avancées du portefeuille\nen maintenant des NFT non stoppables.";
 
 "pro_features.lock_info.go_to_mint" = "Bientôt disponible";
 
-"pro_features.lock_info.title" = "Passe Unstoppable";
-"pro_features.lock_info.coin_details.description" = "Pour activer ces données, vous devez avoir le Passe Unstoppable NFT sur votre balance.\n\nVous aurez également accès aux données ci-dessous :";
+"pro_features.lock_info.title" = "Passe P.CASH";
+"pro_features.lock_info.coin_details.description" = "Pour activer ces données, vous devez avoir le Passe P.CASH NFT sur votre balance.\n\nVous aurez également accès aux données ci-dessous :";
 "pro_features.lock_info.coin_details.volume" = "Volume DEX";
 "pro_features.lock_info.coin_details.liquidity" = "Liquidité DEX";
 "pro_features.lock_info.coin_details.active_addresses" = "Adresses actives";
@@ -795,7 +795,7 @@
 "tx_info.you_paid" = "Vous avez payé";
 "tx_info.you_got" = "Vous avez reçu";
 "tx_info.price" = "Prix";
-"tx_info.options" = "Be Unstoppable";
+"tx_info.options" = "Be P.CASH";
 
 // Settings
 
@@ -809,7 +809,7 @@
 "settings.language" = "Langue";
 "settings.faq" = "FAQ";
 "settings.theme" = "Thème";
-"settings.info_title" = "UNSTOPPABLE";
+"settings.info_title" = "P.CASH";
 "settings.info_subtitle" = "decentralized app";
 
 // Settings -> Base Currency
@@ -817,7 +817,7 @@
 "settings.base_currency.title" = "Devise de Base";
 "settings.base_currency.other" = "Autre";
 "settings.base_currency.disclaimer" = "Avertissement";
-"settings.base_currency.disclaimer.description" = "Les données relatives aux taux de change fournies par un service tiers Coingecko.com\n\nUnstoppable wallet app ne garantit pas que ces valeurs sont toujours correctes et correspondent aux données du marché. Le risque de divergence est plus élevé si vous sélectionnez une devise de base autre que %@.";
+"settings.base_currency.disclaimer.description" = "Les données relatives aux taux de change fournies par un service tiers Coingecko.com\n\nP.CASH wallet app ne garantit pas que ces valeurs sont toujours correctes et correspondent aux données du marché. Le risque de divergence est plus élevé si vous sélectionnez une devise de base autre que %@.";
 "settings.base_currency.disclaimer.set" = "Appliquer";
 
 // Settings -> Manage Wallet
@@ -827,7 +827,7 @@
 "manage_wallets.search_placeholder" = "Nom, code ou adresse du contrat";
 "manage_wallets.not_supported" = "Non pris en charge";
 "manage_wallets.not_supported.description" = "Votre type de portefeuille actuel %@ ne prend pas en charge %@";
-"manage_wallets.not_supported.by_app.description" = "Unstoppable ne supporte pas %@";
+"manage_wallets.not_supported.by_app.description" = "P.CASH ne supporte pas %@";
 
 // Settings -> Experimental Features
 
@@ -840,7 +840,7 @@
 
 "settings.bitcoin_hodling.title" = "TimeLock";
 "settings.bitcoin_hodling.lock_time" = "Activer";
-"settings.bitcoin_hodling.description" = "Permet d'envoyer des Bitcoins qui ne peuvent pas être dépensées avant la date spécifiée.\n\nLe destinataire d'une telle transaction devrait utiliser un portefeuille Unstoppable.\n\nSeul un portefeuille Unstoppable peut identifier correctement de telles transactions sur le réseau Bitcoin ainsi que permettre au destinataire de dépenser ces Bitcoins après l'expiration de la période de verrouillage.\n\nSi vous êtes un HODLer, vous pouvez utiliser cette fonction pour vous obliger à garder vos Bitcoins en vous envoyant une telle transaction à vous-même.\n\nPuisqu'il s'agit d'une fonctionnalité expérimentale, le montant maximum par transaction est limité à 0,5 BTC.";
+"settings.bitcoin_hodling.description" = "Permet d'envoyer des Bitcoins qui ne peuvent pas être dépensées avant la date spécifiée.\n\nLe destinataire d'une telle transaction devrait utiliser un portefeuille P.CASH.\n\nSeul un portefeuille P.CASH peut identifier correctement de telles transactions sur le réseau Bitcoin ainsi que permettre au destinataire de dépenser ces Bitcoins après l'expiration de la période de verrouillage.\n\nSi vous êtes un HODLer, vous pouvez utiliser cette fonction pour vous obliger à garder vos Bitcoins en vous envoyant une telle transaction à vous-même.\n\nPuisqu'il s'agit d'une fonctionnalité expérimentale, le montant maximum par transaction est limité à 0,5 BTC.";
 "settings.evm_testnet.title" = "Testnet";
 "settings.evm_testnet.enable" = "Activer";
 "settings.evm_testnet.description" = "Cette option active le réseau de test Goerli d'Ethereum uniquement pour le jeton GoerliETH et l'ajoute au gestionnaire de pièces.\n\nCela n'affecte que le jeton GoerliETH alors que tous les autres jetons EVM et Ethereum fonctionnent sur le réseau principal. En d'autres termes, seules les transactions dans GoerliETH passent par Goerli testnet, tandis que tous les autres transferts de jetons EVM, y compris ETH, passent par le réseau principal.";
@@ -858,7 +858,7 @@
 
 // Settings -> Tell Friends
 
-"settings_tell_friends.text" = "Soyez Unstoppable";
+"settings_tell_friends.text" = "Soyez P.CASH";
 
 // Settings -> Blockchain Settings
 
@@ -889,11 +889,11 @@
 "btc_transaction_sort_mode.bip69.description" = "Indexation lexicographique";
 
 "blockchain_settings.info.restore_source" = "Restorer la source";
-"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like Unstoppable to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
+"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like P.CASH to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
 "blockchain_settings.info.transaction_inputs_outputs" = "Entrées / Sorties de transaction";
-"blockchain_settings.info.transaction_inputs_outputs.content" = "La plupart des transactions en Bitcoin, ainsi que les transactions en cryptomonnaies similaires comme Bitcoin Cash, Dash et Litecoin, génèrent deux sorties. Une sortie est le montant qui va au destinataire et l'autre est la sortie de la monnaie qui est retournée à l'expéditeur. La façon dont la plupart des portefeuilles construisent les transactions permet à une tierce partie de comprendre facilement laquelle des sorties est allée à la partie réceptrice et laquelle était le montant de la monnaie retournée à l'expéditeur. Comme le montant retourné à l'expéditeur est ensuite utilisé dans de futures transactions, un lien entre ces deux transactions devient apparent.\n\nLe portefeuille Unstoppable applique des mesures pour qu'il soit plus difficile pour quelqu'un de comprendre quel montant va à quel endroit.\n\nLes utilisateurs d'Unstoppable disposent de deux options:\n\n1. Mélange : l'ordre des sorties est aléatoire à chaque transaction. Parfois, la monnaie peut être la première à sortir, parfois, elle peut être la deuxième. Si un utilisateur fait confiance au développeur de l'application, alors considérez ce choix comme une option recommandée.\n\n2. Déterministe : il existe une norme communément acceptée pour classer les sorties de transaction (connue sous le nom de BIP69). Dans les portefeuilles à code source ouvert, cette norme assure que les utilisateurs de portefeuilles n'ont pas besoin de faire confiance à la façon dont les développeurs de l'application mettent en œuvre l'ordre des sorties. Comme cette norme est nouvelle, peu de portefeuilles l'ont encore implémentée. Par conséquent, il est en quelque sorte possible de voir sur la blockchain si une transaction a été envoyée depuis un portefeuille qui utilise cette norme ou non.";
+"blockchain_settings.info.transaction_inputs_outputs.content" = "La plupart des transactions en Bitcoin, ainsi que les transactions en cryptomonnaies similaires comme Bitcoin Cash, Dash et Litecoin, génèrent deux sorties. Une sortie est le montant qui va au destinataire et l'autre est la sortie de la monnaie qui est retournée à l'expéditeur. La façon dont la plupart des portefeuilles construisent les transactions permet à une tierce partie de comprendre facilement laquelle des sorties est allée à la partie réceptrice et laquelle était le montant de la monnaie retournée à l'expéditeur. Comme le montant retourné à l'expéditeur est ensuite utilisé dans de futures transactions, un lien entre ces deux transactions devient apparent.\n\nLe portefeuille P.CASH applique des mesures pour qu'il soit plus difficile pour quelqu'un de comprendre quel montant va à quel endroit.\n\nLes utilisateurs d'P.CASH disposent de deux options:\n\n1. Mélange : l'ordre des sorties est aléatoire à chaque transaction. Parfois, la monnaie peut être la première à sortir, parfois, elle peut être la deuxième. Si un utilisateur fait confiance au développeur de l'application, alors considérez ce choix comme une option recommandée.\n\n2. Déterministe : il existe une norme communément acceptée pour classer les sorties de transaction (connue sous le nom de BIP69). Dans les portefeuilles à code source ouvert, cette norme assure que les utilisateurs de portefeuilles n'ont pas besoin de faire confiance à la façon dont les développeurs de l'application mettent en œuvre l'ordre des sorties. Comme cette norme est nouvelle, peu de portefeuilles l'ont encore implémentée. Par conséquent, il est en quelque sorte possible de voir sur la blockchain si une transaction a été envoyée depuis un portefeuille qui utilise cette norme ou non.";
 "blockchain_settings.info.rpc_source" = "Source RPC";
-"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. Unstoppable pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
+"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. P.CASH pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
 
 // Manage Accounts
 
@@ -915,8 +915,8 @@
 // Settings -> About App
 
 "settings.about_app.title" = "À propos de l'application";
-"settings.about_app.app_name" = "Portefeuille Unstoppable";
-"settings.about_app.description" = "Le portefeuille Unstoppable est conçu pour ceux qui cherchent à investir et à stocker des cryptomonnaies de manière privée et indépendante.\n\nC'est un portefeuille non-dépositaire, peer-to-peer où seul l'utilisateur a le contrôle sur les fonds. Il ne collecte aucune donnée et garde l'utilisateur indépendant en ne verrouillant pas les fonds de l'utilisateur sur une application spécifique de portefeuille.\n\nLe portefeuille Unstoppable est entièrement open-source et tout le monde peut confirmer que l'application fonctionne exactement comme il le prétend.";
+"settings.about_app.app_name" = "Portefeuille P.CASH";
+"settings.about_app.description" = "Le portefeuille P.CASH est conçu pour ceux qui cherchent à investir et à stocker des cryptomonnaies de manière privée et indépendante.\n\nC'est un portefeuille non-dépositaire, peer-to-peer où seul l'utilisateur a le contrôle sur les fonds. Il ne collecte aucune donnée et garde l'utilisateur indépendant en ne verrouillant pas les fonds de l'utilisateur sur une application spécifique de portefeuille.\n\nLe portefeuille P.CASH est entièrement open-source et tout le monde peut confirmer que l'application fonctionne exactement comme il le prétend.";
 "settings.about_app.whats_new" = "Nouveautés";
 "settings.about_app.website" = "Site Web";
 "settings.about_app.contact" = "Contact";
@@ -925,7 +925,7 @@
 
 // Settings -> Privacy
 
-"settings.privacy.description" = "Unstoppable ne collecte aucune donnée et n'utilise aucun outil d'analyse susceptible d'exposer des données sur ses utilisateurs. Le portefeuille est conçu pour assurer un haut niveau de confidentialité à ses utilisateurs.";
+"settings.privacy.description" = "P.CASH ne collecte aucune donnée et n'utilise aucun outil d'analyse susceptible d'exposer des données sur ses utilisateurs. Le portefeuille est conçu pour assurer un haut niveau de confidentialité à ses utilisateurs.";
 "settings.privacy.statement.user_data_storage" = "Les données de l'utilisateur restent toujours sur l'appareil de l'utilisateur.";
 "settings.privacy.statement.data_usage" = "Le portefeuille ne collecte aucune donnée sur les utilisateurs.";
 "settings.privacy.statement.data_privacy" = "Le portefeuille ne partage aucune donnée sur les utilisateurs.";
@@ -1150,13 +1150,13 @@
 
 "status_info.title" = "Statut";
 "status_info.pending.title" = "En attente";
-"status_info.pending.content" = "La transaction n'a pas encore été confirmée sur la blockchain. Les transactions envoyées avec un montant de frais recommandé ou supérieur sont généralement traitées en quelques minutes. Les transactions envoyées avec des frais peu élevés risquent de rester en attente pendant quelques heures, voire quelques jours, et peuvent même être rejetées. Notez que le statut d'une transaction individuelle dans l'interface du portefeuille Unstoppable Wallet est généralement mis à jour avec un léger délai.";
+"status_info.pending.content" = "La transaction n'a pas encore été confirmée sur la blockchain. Les transactions envoyées avec un montant de frais recommandé ou supérieur sont généralement traitées en quelques minutes. Les transactions envoyées avec des frais peu élevés risquent de rester en attente pendant quelques heures, voire quelques jours, et peuvent même être rejetées. Notez que le statut d'une transaction individuelle dans l'interface du portefeuille P.CASH Wallet est généralement mis à jour avec un léger délai.";
 "status_info.processing.title" = "Traitement en cours";
 "status_info.processing.content" = "La transaction a déjà été incluse dans la blockchain mais n'a pas été finalisée. En ce qui concerne les petits paiements, il est prudent de considérer que la transaction est terminée. Pour les paiements plus importants, il est recommandé d'attendre que le statut de la transaction passe à terminé.";
 "status_info.completed.title" = "Terminé";
 "status_info.confirmed.content" = "La transaction est terminée et considérée comme permanente et irréversible.";
 "status_info.failed.title" = "Échec";
-"status_info.failed.content" = "La transaction n'a pas été traitée et aucun transfert de fonds n'a eu lieu. En fonction de la raison de l'échec, certaines transactions qui ont échoué peuvent entraîner des frais de transaction. Les transactions qui ont été remplacées ou annulées par une autre transaction ne génèrent pas de frais et apparaîtront également comme ayant échoué. L'application Unstoppable n'est pas en mesure d'indiquer la raison de l'échec des transactions, mais les utilisateurs peuvent en trouver eux-mêmes la raison sur un explorateur de blocs public, comme etherscan.io par exemple.";
+"status_info.failed.content" = "La transaction n'a pas été traitée et aucun transfert de fonds n'a eu lieu. En fonction de la raison de l'échec, certaines transactions qui ont échoué peuvent entraîner des frais de transaction. Les transactions qui ont été remplacées ou annulées par une autre transaction ne génèrent pas de frais et apparaîtront également comme ayant échoué. L'application P.CASH n'est pas en mesure d'indiquer la raison de l'échec des transactions, mais les utilisateurs peuvent en trouver eux-mêmes la raison sur un explorateur de blocs public, comme etherscan.io par exemple.";
 
 // Onboarding
 

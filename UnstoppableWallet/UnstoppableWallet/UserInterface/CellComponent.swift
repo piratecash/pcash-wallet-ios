@@ -39,7 +39,7 @@ struct CellComponent {
         )
     }
 
-    static func amountRow(tableView: SectionsTableView, rowInfo: RowInfo, iconUrl: String?, iconPlaceholderImageName: String, coinAmount: String, currencyAmount: String?, type: AmountType) -> RowProtocol {
+    static func amountRow(tableView: SectionsTableView, rowInfo: RowInfo, iconUrl: String?, iconPlaceholderImageName: String, coinAmount: String, currencyAmount: String?, type: AmountType, action: (() -> ())? = nil) -> RowProtocol {
         CellBuilderNew.row(
                 rootElement: .hStack([
                     .image32 { (component: ImageComponent) -> () in
@@ -63,9 +63,11 @@ struct CellComponent {
                 id: "amount-\(rowInfo.index)",
                 hash: "amount-\(coinAmount)-\(currencyAmount ?? "")",
                 height: .heightCell56,
+                autoDeselect: true,
                 bind: { cell in
                     cell.set(backgroundStyle: .lawrence, isFirst: rowInfo.isFirst, isLast: rowInfo.isLast)
-                }
+                },
+                action: action
         )
     }
 
@@ -73,7 +75,7 @@ struct CellComponent {
         CellBuilderNew.row(
                 rootElement: .hStack([
                     .image32 { component in
-                        component.setImage(urlString: iconUrl, placeholder: UIImage(named: iconPlaceholderImageName))
+                        component.imageView.kf.setImage(with: iconUrl.flatMap { URL(string: $0) }, placeholder: UIImage(named: iconPlaceholderImageName), options: [.onlyLoadFirstFrame, .transition(.fade(0.5))])
                         component.imageView.cornerRadius = .cornerRadius4
                         component.imageView.contentMode = .scaleAspectFill
                     },
@@ -203,7 +205,7 @@ struct CellComponent {
                 id: "value-\(rowInfo.index)",
                 image: iconName.flatMap { UIImage(named: $0)?.withTintColor(.themeGray) }.map { .local($0) },
                 title: .subhead2(title),
-                value: .custom(value, .subhead1, type.textColor),
+                value: .subhead1(value, color: type.textColor),
                 hash: value,
                 isFirst: rowInfo.isFirst,
                 isLast: rowInfo.isLast

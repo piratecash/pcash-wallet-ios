@@ -87,9 +87,9 @@
 
 // Access Camera
 
-"access_camera.message" = "Unstoppable needs access to your camera to scan the QR code.
+"access_camera.message" = "P.CASH needs access to your camera to scan the QR code.
 
-Go to Settings - > Unstoppable and allow access to the camera.";
+Go to Settings - > P.CASH and allow access to the camera.";
 "access_camera.settings" = "Settings";
 
 // Restore
@@ -106,23 +106,18 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "restore.checksum_error" = "Invalid checksum";
 "restore.passphrase" = "Passphrase";
 "restore.input.passphrase" = "Passphrase";
-"restore.passphrase_description" = "Enter the passphrase you used when creating this mnemonic phrase. Restoring an existing wallet with a new passphrase will generate a brand-new wallet.";
+"restore.passphrase_description" = "Enter the passphrase you used when creating this recovery phrase. Restoring an existing wallet with a new passphrase will generate a brand-new wallet.";
 "restore.error.empty_passphrase" = "The passphrase cannot be empty";
 "restore.non_standard_import" = "Non-Standard Import";
-"restore.non_standard_import.description" = "This page provides a special wallet import mechanism to Unstoppable users who have a non-standard wallet. Such wallets might have been created in Unstoppable version 0.27 - 0.28 using a non-English mnemonic word list and/or a special character in the wallet passphrase (i.e. diacritic symbol).\n\nIf you're an affected user then your wallet balance will be shown 0 after importing such wallet in version 0.29 or above. This page will enable you to restore access to your non-standard wallet. Once imported you're recommended to create a new wallet (which will be standard compliant) and move funds there.";
-"restore.warning.non_recommended.description" = "This wallet seems to use a non-standard character in its secret word list and/or a passphrase. If you do not see a balance or transactions please read below for details.  \n\nCLICK TO GET MORE INFO";
+"restore.non_standard_import.description" = "This page provides a special wallet import mechanism to P.CASH users who have a non-standard wallet. Such wallets might have been created in P.CASH version 0.27 - 0.28 using a non-English recovery phrase and/or a special character in the wallet passphrase (i.e. diacritic symbol).\n\nIf you're an affected user then your wallet balance will be shown 0 after importing such wallet in version 0.29 or above. This page will enable you to restore access to your non-standard wallet. Once imported you're recommended to create a new wallet (which will be standard compliant) and move funds there.";
+"restore.warning.non_recommended.description" = "This wallet seems to use a non-standard character in its recovery phrase and/or a passphrase. If you do not see a balance or transactions please read below for details.  \n\nCLICK TO GET MORE INFO";
 "restore.error.non_standard.description"  = "This is a non-standard wallet.\n\nCLICK TO GET MORE INFO";
 
 // Coin Settings
 
-"coin_settings.derivation.title.bip44" = "Old";
-"coin_settings.derivation.title.bip49" = "Good";
-"coin_settings.derivation.title.bip84" = "Best";
 "coin_settings.title" = "Blockchain Settings";
 "coin_settings.bitcoin_cash_coin_type.title.type0" = "Legacy";
-"coin_settings.bitcoin_cash_coin_type.title.type145" = "CashAddress (recommended)";
-"coin_settings.bitcoin_cash_coin_type.description.type0" = "Common before 2018";
-"coin_settings.bitcoin_cash_coin_type.description.type145" = "Common after 2018";
+"coin_settings.bitcoin_cash_coin_type.title.type145" = "CashAddress";
 "sync_mode.from_blockchain" = "From Blockchain";
 "blockchain_settings.description" = "Select the address format for receiving payments. A correct format should be chosen when restoring an existing wallet.";
 
@@ -141,7 +136,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 // Recovery Phrase
 
 "recovery_phrase.title" = "Recovery Phrase";
-"recovery_phrase.warning" = "Never share your recovery phrase with anyone. Unstoppable team will never ask for your recovery phrase.";
+"recovery_phrase.warning" = "Never share this key with anyone. P.CASH Wallet support team will never ask for it.";
 "recovery_phrase.tap_to_show" = "Tap to show recovery phrase";
 "recovery_phrase.passphrase" = "Passphrase";
 "recovery_phrase.copy_warning.title" = "Risk of Recovery Phrase copy";
@@ -150,7 +145,6 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 // EVM Private Key
 
 "evm_private_key.title" = "EVM Private Key";
-"evm_private_key.warning" = "This key is for all EVM-compatible blockchains. Do not share it with anyone.";
 "evm_private_key.tap_to_show" = "Tap to show private key";
 
 // Extended Key
@@ -200,7 +194,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "error.send.self_transfer" = "Sending to yourself is not supported";
 "error.send_binance.memo_required" = "The receiver requires a non-empty memo in the transfer transaction";
 "error.send_binance.only_digits_allowed" = "Requires the memo to contain only digits";
-"error.send_z_cash.transparent_address" = "Unstoppable doesn't support payments to a transparent address";
+"error.send_z_cash.transparent_address" = "P.CASH doesn't support payments to a transparent address";
 
 // Balance
 
@@ -282,7 +276,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "send.hodler_locktime_half_year" = "6 months";
 "send.hodler_locktime_year" = "1 year";
 "send.hodler_locktime_off" = "Off";
-"send.hodler_error.unsupported_address" = "Time locking works only with P2PKH addresses (starting with 1)";
+"send.hodler_error.unsupported_address" = "Time locking works only when sending to payment addresses starting with 1... (aka BIP44 addresses)";
 "send.fee_info.title" = "Transaction Speed";
 "send.fee_info.description" = "Blockchains require users to pay network fees when sending transactions. The fees are higher when a lot of transactions are taking place on the network and lower when the blockchain is less busy.";
 "send.fee_info.header_slow" = "Low";
@@ -291,7 +285,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "send.fee_info.content_average" = "Typically, the recommended fee value should be sufficient for a transaction to be processed within minutes or an hour for Bitcoin and within minutes for Ethereum.";
 "send.fee_info.header_fast" = "High";
 "send.fee_info.content_fast" = "For transactions where priority is important, we recommend using the high fee value. It's expected to be sufficient for a transaction to be completed within 10 minutes for Bitcoin and within 1-2 minutes for Ethereum.";
-"send.fee_info.content_conclusion" = "The Unstoppable wallet makes an educated guess based on the network activity and can't guarantee the suggested fee values will always result in expected behavior.";
+"send.fee_info.content_conclusion" = "The P.CASH wallet makes an educated guess based on the network activity and can't guarantee the suggested fee values will always result in expected behavior.";
 
 "send.confirmation.you_send" = "You Send";
 "send.confirmation.to" = "To";
@@ -315,7 +309,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "send.amount_error.minimum_amount" = "Minimum amount %@";
 "send.amount_error.min_required_balance" = "Min. required remainder %@";
 "send.amount_warning.coin_needed_for_fee" = "Consider leaving some %@ on balance to be able to pay for future transactions.";
-"send.token.insufficient_fee_alert" = "Transaction fees for %@ (%@) paid in %@. You need %@.";
+"send.token.insufficient_fee_alert" = "Transaction fees for transferring %@ (on %@) paid in %@. You need %@.";
 
 "send.fee_settings.amount_error.balance.title" = "Insufficient Balance";
 "send.fee_settings.amount_error.balance" = "The current %@ balance is below the amount required to process theis transaction, including transaction fee.";
@@ -639,7 +633,11 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 
 "coin_page.category" = "Category";
 
-"coin_page.contracts" = "Contracts";
+"coin_page.blockchains" = "Blockchains";
+"coin_page.bips" = "BIPs";
+"coin_page.coin_types" = "Coin Types";
+"coin_page.show_more" = "Show More";
+"coin_page.show_less" = "Show Less";
 "coin_page.links" = "Links";
 
 "coin_page.guide" = "Guide";
@@ -698,13 +696,13 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 
 // Pro Features
 
-"pro_features.authorize.wallet_passes.title" = "Unstoppable NFT";
-"pro_features.authorize.wallet_passes.subtitle" = "Get access to advanced wallet features\nby holding Unstoppable NFTs.";
+"pro_features.authorize.wallet_passes.title" = "P.CASH NFT";
+"pro_features.authorize.wallet_passes.subtitle" = "Get access to advanced wallet features\nby holding P.CASH NFTs.";
 
 "pro_features.lock_info.go_to_mint" = "Coming Soon";
 
-"pro_features.lock_info.title" = "Unstoppable Pass";
-"pro_features.lock_info.coin_details.description" = "To enable this data, you must have the Unstoppable Pass NFT on your balance\n\nAlso you get access to data below:";
+"pro_features.lock_info.title" = "P.CASH Pass";
+"pro_features.lock_info.coin_details.description" = "To enable this data, you must have the P.CASH Pass NFT on your balance\n\nAlso you get access to data below:";
 "pro_features.lock_info.coin_details.volume" = "DEX Volume";
 "pro_features.lock_info.coin_details.liquidity" = "DEX Liquidity";
 "pro_features.lock_info.coin_details.active_addresses" = "Active Addresses";
@@ -779,7 +777,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "tx_info.button_explorer" = "View on %@";
 "tx_info.rate" = "Historical Rate";
 "tx_info.options.speed_up" = "Speed Up";
-"tx_info.options.cancel" = "Cancel";
+"tx_info.options.cancel" = "Cancel Transaction";
 "tx_info.transaction.already_in_block" = "Transaction already in block";
 "tx_info.fee" = "Fee";
 "tx_info.fee.estimated" = "Fee (est.)";
@@ -797,7 +795,6 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "tx_info.you_paid" = "You Paid";
 "tx_info.you_got" = "You Got";
 "tx_info.price" = "Price";
-"tx_info.options" = "Options";
 
 // Settings
 
@@ -811,7 +808,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "settings.language" = "Language";
 "settings.faq" = "FAQ";
 "settings.theme" = "Theme";
-"settings.info_title" = "UNSTOPPABLE";
+"settings.info_title" = "P.CASH";
 "settings.info_subtitle" = "decentralized app";
 
 // Settings -> Base Currency
@@ -819,7 +816,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "settings.base_currency.title" = "Base Currency";
 "settings.base_currency.other" = "Other";
 "settings.base_currency.disclaimer" = "Disclaimer";
-"settings.base_currency.disclaimer.description" = "The exchange rate data is provided by a third party service - Coingecko.com. \n\nThe Unstoppable wallet app doesn't guarantee these values are always correct and matches market data. The chance for inconsistency is higher if you select any base currency other than %@.";
+"settings.base_currency.disclaimer.description" = "The exchange rate data is provided by a third party service - Coingecko.com. \n\nThe P.CASH wallet app doesn't guarantee these values are always correct and matches market data. The chance for inconsistency is higher if you select any base currency other than %@.";
 "settings.base_currency.disclaimer.set" = "Set";
 
 // Settings -> Manage Wallet
@@ -827,25 +824,18 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "manage_wallets.title" = "Coin Manager";
 "manage_wallets.not_found" = "No results found. Try to add token manually.";
 "manage_wallets.search_placeholder" = "Name, code or contract address";
-"manage_wallets.not_supported" = "Not supported";
-"manage_wallets.not_supported.description" = "Your current wallet type %@ does not support %@";
-"manage_wallets.not_supported.by_app.description" = "Unstoppable does not support %@";
 
 // Settings -> Experimental Features
 
 "settings.experimental_features.title" = "Experimental";
 "settings.experimental_features.description" = "The features below are experimental and should be used with caution. While we have thoroughly tested these features using our own crypto funds, we cannot guarantee they will work as expected in all possible cases.";
 "settings.experimental_features.bitcoin_hodling" = "TimeLock";
-"settings.experimental_features.evm_testnet" = "Testnet";
 
 // Settings -> Experimental Features -> Bitcoin HODLing
 
 "settings.bitcoin_hodling.title" = "TimeLock";
 "settings.bitcoin_hodling.lock_time" = "Activate";
-"settings.bitcoin_hodling.description" = "This enables you to send Bitcoins that cannot be spent until a specified date. \n\nThe receiver of such transactions should use the Unstoppable wallet app version 0.10 or newer, with the BIP44 address format for Bitcoin. \n\nOnly the Unstoppable wallet can correctly identify such transactions on the Bitcoin network, as well as enable the receiver to spend those Bitcoins after the lock period expires. \n\nIf you’re a HODLer, you may use this feature to force yourself into hodling your Bitcoins by sending such transactions to yourself. \n\nBeing an experimental feature, the maximum amount per transaction is limited to 0.5 BTC.";
-"settings.evm_testnet.title" = "Testnet";
-"settings.evm_testnet.enable" = "Activate";
-"settings.evm_testnet.description" = "This option activates Ethereum's Goerli testnet only for GoerliETH token and adds it to the coin manager. \n\nIt only affects GoerliETH token while all other EVM and Ethereum tokens operate over mainnet. In other words, only transactions in GoerliETH go through Goerli testnet, while all other EVM token transfers including ETH go through mainnet.";
+"settings.bitcoin_hodling.description" = "This enables you to send Bitcoins that cannot be spent until a specified date. \n\nThe receiver of such transactions should use the P.CASH wallet app version 0.10 or newer, with the BIP44 address format for Bitcoin. \n\nOnly the P.CASH wallet can correctly identify such transactions on the Bitcoin network, as well as enable the receiver to spend those Bitcoins after the lock period expires. \n\nIf you’re a HODLer, you may use this feature to force yourself into hodling your Bitcoins by sending such transactions to yourself.";
 
 // Settings -> Terms
 
@@ -860,7 +850,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 
 // Settings -> Tell Friends
 
-"settings_tell_friends.text" = "Be Unstoppable";
+"settings_tell_friends.text" = "Be P.CASH";
 
 // Settings -> Blockchain Settings
 
@@ -891,11 +881,11 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "btc_transaction_sort_mode.bip69.description" = "Lexicographical Indexing";
 
 "blockchain_settings.info.restore_source" = "Restore Source";
-"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like Unstoppable to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
+"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like P.CASH to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
 "blockchain_settings.info.transaction_inputs_outputs" = "Transaction Inputs / Outputs";
-"blockchain_settings.info.transaction_inputs_outputs.content" = "Most Bitcoin transactions, as well as transactions in alike cryptocurrencies including Bitcoin Cash, Dash, and Litecoin, generate two outputs. One output is the amount that goes to the receiver and the other is the change output that is returned to the sender. The way most wallets construct transactions makes it easy for a third party to understand which of the outputs went to the receiving party and which one was the change amount returned to the sender. As the output returned to the sender is later used in future transactions, a connection between these two transactions becomes apparent.\n\nThe Unstoppable wallet implements measures to make it harder for someone to figure out which output goes where.\n\nThere are two options available to Unstoppable users:\n\n1. Shuffle: The order of transaction outputs is randomized on every transaction. Sometimes change can be the first output, sometimes it can be the second. If a user trusts the developer of the app, then consider this a recommended option.\n\n2. Deterministic: There is a commonly agreed standard for ordering transaction outputs (known as BIP69). In open-source wallets, that standard ensures wallet users do not need to trust how developers of the app implement the ordering of the outputs. As this standard is new, not many wallets have implemented it yet. As a result, it's somewhat possible to see on the blockchain whether a transaction was sent from a wallet that uses that standard or not.";
+"blockchain_settings.info.transaction_inputs_outputs.content" = "Most Bitcoin transactions, as well as transactions in alike cryptocurrencies including Bitcoin Cash, Dash, and Litecoin, generate two outputs. One output is the amount that goes to the receiver and the other is the change output that is returned to the sender. The way most wallets construct transactions makes it easy for a third party to understand which of the outputs went to the receiving party and which one was the change amount returned to the sender. As the output returned to the sender is later used in future transactions, a connection between these two transactions becomes apparent.\n\nThe P.CASH wallet implements measures to make it harder for someone to figure out which output goes where.\n\nThere are two options available to P.CASH users:\n\n1. Shuffle: The order of transaction outputs is randomized on every transaction. Sometimes change can be the first output, sometimes it can be the second. If a user trusts the developer of the app, then consider this a recommended option.\n\n2. Deterministic: There is a commonly agreed standard for ordering transaction outputs (known as BIP69). In open-source wallets, that standard ensures wallet users do not need to trust how developers of the app implement the ordering of the outputs. As this standard is new, not many wallets have implemented it yet. As a result, it's somewhat possible to see on the blockchain whether a transaction was sent from a wallet that uses that standard or not.";
 "blockchain_settings.info.rpc_source" = "RPC Source";
-"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. Unstoppable pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
+"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. P.CASH pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
 
 // Manage Accounts
 
@@ -917,8 +907,8 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 // Settings -> About App
 
 "settings.about_app.title" = "About App";
-"settings.about_app.app_name" = "Unstoppable Wallet";
-"settings.about_app.description" =  "The Unstoppable wallet is built for those looking to invest and store cryptocurrencies in a private and independent manner.\n\nIt's a non-custodial, peer-to-peer wallet where only the user has control over the funds. It doesn't collect any data and keeps the user independent by not locking the user's funds to a specific wallet app.\n\nThe Unstoppable wallet is fully open-source and anyone can confirm the app works exactly as it claims to.";
+"settings.about_app.app_name" = "P.CASH Wallet";
+"settings.about_app.description" =  "The P.CASH wallet is built for those looking to invest and store cryptocurrencies in a private and independent manner.\n\nIt's a non-custodial, peer-to-peer wallet where only the user has control over the funds. It doesn't collect any data and keeps the user independent by not locking the user's funds to a specific wallet app.\n\nThe P.CASH wallet is fully open-source and anyone can confirm the app works exactly as it claims to.";
 "settings.about_app.whats_new" = "What's New";
 "settings.about_app.website" = "Website";
 "settings.about_app.contact" = "Contact";
@@ -927,7 +917,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 
 // Settings -> Privacy
 
-"settings.privacy.description" = "Unstoppable doesn't collect any data or use analytics tools that may expose any data about its users. The wallet is designed to ensure a high level of privacy for its users.";
+"settings.privacy.description" = "P.CASH doesn't collect any data or use analytics tools that may expose any data about its users. The wallet is designed to ensure a high level of privacy for its users.";
 "settings.privacy.statement.user_data_storage" = "User data always remains on the user's device.";
 "settings.privacy.statement.data_usage" = "The wallet doesn't collect any data about users.";
 "settings.privacy.statement.data_privacy" = "The wallet doesn't share any data about users.";
@@ -1019,14 +1009,14 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "create_wallet.advanced_setup" = "Advanced";
 "create_wallet.create" = "Create";
 "create_wallet.advanced" = "Advanced";
-"create_wallet.phrase_count" = "Mnemonic";
+"create_wallet.phrase_count" = "Recovery Phrase";
 "create_wallet.12_words" = "12 words (recommended)";
 "create_wallet.n_words" = "%@ words";
 "create_wallet.word_list" = "Word List";
 "create_wallet.passphrase" = "Passphrase";
 "create_wallet.input.passphrase" = "Passphrase";
 "create_wallet.input.confirm" = "Confirm";
-"create_wallet.passphrase_description" = "Passphrases add an additional security layer for wallets. To restore such a wallet a user required both mnemonic as well as a passphrase.\n\nPassphrases also make it easy for users to have many multi-coin wallets using a single mnemonic but different password.";
+"create_wallet.passphrase_description" = "Passphrases add an additional security layer for wallets. To restore such a wallet a user required both a recovery phrase as well as a passphrase.\n\nPassphrases also make it easy for users to have many multi-coin wallets using a single mnemonic but different password.";
 "create_wallet.error.empty_passphrase" = "Passphrase cannot be empty";
 "create_wallet.error.forbidden_symbols" = "Please use only supported symbols:A-Z a-z 0-9 ' \" ` & / ? ! : ; . , ~ * $ = + - [ ] ( ) { } < > \\ _ # @ | %";
 "create_wallet.error.invalid_confirmation" = "Passphrase confirmation does not match";
@@ -1152,13 +1142,13 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 
 "status_info.title" = "Status";
 "status_info.pending.title" = "Pending";
-"status_info.pending.content" = "The transaction has not been confirmed on the blockchain yet. Transactions sent with a recommended or higher fee setting are generally processed within a few minutes. Transactions sent with a low fee may remain pending for a few hours or even days, and can even be rejected. Note that status of an individual transaction in Unstoppable wallet interface typically updated with a short delay.";
+"status_info.pending.content" = "The transaction has not been confirmed on the blockchain yet. Transactions sent with a recommended or higher fee setting are generally processed within a few minutes. Transactions sent with a low fee may remain pending for a few hours or even days, and can even be rejected. Note that status of an individual transaction in P.CASH wallet interface typically updated with a short delay.";
 "status_info.processing.title" = "Processing";
 "status_info.processing.content" = "The transaction has been already included in the blockchain but has not reached permanent finality. At this point, it's safe to consider the transaction as completed for smaller payments. For larger payments, it's recommended to wait until the transaction status changes to completed.";
 "status_info.completed.title" = "Completed";
 "status_info.confirmed.content" = "Transaction is completed and considered permanent and irreversible.";
 "status_info.failed.title" = "Failed";
-"status_info.failed.content" = "The transaction did not get processed and no value transfer took place. Depending on the fail reason, some failed transactions may consume transaction fees. Transactions that were replaced or canceled by another transaction do not consume transaction fees and will also appear as failed. The Unstoppable app is unable to show the reason for failed transactions, but users are able to look it up themselves on a public block explorer i.e. etherscan.io.";
+"status_info.failed.content" = "The transaction did not get processed and no value transfer took place. Depending on the fail reason, some failed transactions may consume transaction fees. Transactions that were replaced or canceled by another transaction do not consume transaction fees and will also appear as failed. The P.CASH app is unable to show the reason for failed transactions, but users are able to look it up themselves on a public block explorer i.e. etherscan.io.";
 
 // Onboarding
 
@@ -1175,13 +1165,32 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 
 "manage_account.name" = "Name";
 "manage_account.recovery_phrase" = "Recovery Phrase";
-"manage_account.evm_private_key" = "EVM Private Key";
-"manage_account.bip32_root_key" = "BIP32 Root Key";
-"manage_account.account_extended_private_key" = "Account Extended Private Key";
-"manage_account.account_extended_public_key" = "Account Extended Public Key";
 "manage_account.public_keys" = "Public Keys";
+"manage_account.private_keys" = "Private Keys";
 "manage_account.backup_recovery_phrase" = "Backup Recovery Phrase";
 "manage_account.unlink" = "Unlink";
+
+// Manage Account -> Public Keys
+
+"public_keys.title" = "Public Keys";
+"public_keys.evm_address" = "EVM Address";
+"public_keys.evm_address.description" = "Allows read-only monitoring of wallets holding assets on Ethereum, Binance Smart Chain and other EVM based blockchains.";
+"public_keys.account_extended_public_key" = "Account Extended Public Key";
+"public_keys.account_extended_public_key.description" = "Allows read-only monitoring of wallets holding Bitcoin and other UTXO based crypto (i.e. Litecoin, Bitcoin Cash, Dash, etc.).";
+
+// Manage Account -> Private Keys
+
+"private_keys.title" = "Private Keys";
+"private_keys.evm_private_key" = "EVM Private Key";
+"private_keys.evm_private_key.description" = "Grants full control over EVM based crypto i.e. Ethereum, Binance Smart Chain etc within respective wallet.";
+"private_keys.bip32_root_key" = "BIP32 Root Key";
+"private_keys.bip32_root_key.description" = "Grants full control over the assets on the respective wallet.";
+"private_keys.account_extended_private_key" = "Account Extended Private Key";
+"private_keys.account_extended_private_key.description" = "Grants full control over Bitcoin and other UTXO based crypto i.e. Litecoin, Bitcoin Cash, Dash, etc. within respective wallet.";
+
+// Manage Account -> EVM Address
+
+"evm_address.title" = "EVM Address";
 
 // Birthday Height
 
@@ -1213,7 +1222,7 @@ Go to Settings - > Unstoppable and allow access to the camera.";
 "add_evm_sync_source.rpc_url" = "RPC URL";
 "add_evm_sync_source.basic_auth" = "Basic Auth (optional)";
 "add_evm_sync_source.warning.url_exists" = "RPC Source with this url already exists";
-"add_evm_sync_source.error.invalid_url" = "Entered url is invalid. Valid url must have one of the following schemes: http, https, ws, wss";
+"add_evm_sync_source.error.invalid_url" = "Entered url is invalid. Valid url must have one of the following schemes: https, wss";
 
 // Fee Settings
 

@@ -4,6 +4,7 @@ import RxRelay
 import RxCocoa
 import MarketKit
 import UIKit
+import ComponentKit
 
 class CoinOverviewViewModel {
     private let service: CoinOverviewService
@@ -13,6 +14,9 @@ class CoinOverviewViewModel {
     private let viewItemRelay = BehaviorRelay<ViewItem?>(value: nil)
     private let loadingRelay = BehaviorRelay<Bool>(value: false)
     private let syncErrorRelay = BehaviorRelay<Bool>(value: false)
+    private let hudRelay = PublishRelay<HudHelper.BannerType>()
+
+    private var typesShown = false
 
     init(service: CoinOverviewService) {
         self.service = service
@@ -29,7 +33,7 @@ class CoinOverviewViewModel {
             loadingRelay.accept(true)
             syncErrorRelay.accept(false)
         case .completed(let item):
-            viewItemRelay.accept(viewItemFactory.viewItem(item: item, currency: service.currency, fullCoin: service.fullCoin))
+            viewItemRelay.accept(viewItemFactory.viewItem(item: item, currency: service.currency, typesShown: typesShown))
             loadingRelay.accept(false)
             syncErrorRelay.accept(false)
         case .failed:
@@ -55,12 +59,37 @@ extension CoinOverviewViewModel {
         syncErrorRelay.asDriver()
     }
 
+    var hudSignal: Signal<HudHelper.BannerType> {
+        hudRelay.asSignal()
+    }
+
     func onLoad() {
         service.sync()
     }
 
     func onTapRetry() {
         service.sync()
+    }
+
+    func onTapAddToWallet(index: Int) {
+        do {
+            try service.addToWallet(index: index)
+            hudRelay.accept(.addedToWallet)
+        } catch {
+        }
+    }
+
+    func onTap(typesAction: TypesAction) {
+        guard case .completed(let item) = service.state else {
+            return
+        }
+
+        switch typesAction {
+        case .showMore: typesShown = true
+        case .showLess: typesShown = false
+        }
+
+        viewItemRelay.accept(viewItemFactory.viewItem(item: item, currency: service.currency, typesShown: typesShown))
     }
 
 }
@@ -88,17 +117,38 @@ extension CoinOverviewViewModel {
 
         let performance: [[PerformanceViewItem]]
         let categories: [String]?
-        let contracts: [ContractViewItem]?
+        let types: TypesViewItem?
         let description: String
         let guideUrl: URL?
         let links: [LinkViewItem]
     }
 
-    struct ContractViewItem {
-        let iconUrl: String
+    struct TypesViewItem {
         let title: String
-        let reference: String
+        let viewItems: [TypeViewItem]
+        let action: TypesAction?
+    }
+
+    enum TypesAction: String {
+        case showMore
+        case showLess
+
+        var title: String {
+            switch self {
+            case .showMore: return "coin_page.show_more".localized
+            case .showLess: return "coin_page.show_less".localized
+            }
+        }
+    }
+
+    struct TypeViewItem {
+        let iconUrl: String
+        let title: String?
+        let subtitle: String?
+        let reference: String?
         let explorerUrl: String?
+        let showAdd: Bool
+        let showAdded: Bool
     }
 
     enum PerformanceViewItem {

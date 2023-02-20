@@ -2,14 +2,11 @@ import MarketKit
 
 extension TokenQuery {
 
-    var protocolName: String? {
-        blockchainType.protocolName(tokenProtocol: tokenType.tokenProtocol)
-    }
-
     var customCoinUid: String {
         "custom-\(id)"
     }
 
+    // todo: remove this method
     var isSupported: Bool {
         switch (blockchainType, tokenType) {
         case (.bitcoin, .native): return true

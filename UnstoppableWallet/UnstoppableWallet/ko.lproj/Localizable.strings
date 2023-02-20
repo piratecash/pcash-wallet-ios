@@ -87,7 +87,7 @@
 
 // Access Camera
 
-"access_camera.message" = "Unstoppable이 QR코드를 스캔하기 위해선 카메라에 대한 접근이 필요합니다. \n\n설정 -> Unstoppable으로 가서 카메라 접근을 허용해 주세요.";
+"access_camera.message" = "P.CASH이 QR코드를 스캔하기 위해선 카메라에 대한 접근이 필요합니다. \n\n설정 -> P.CASH으로 가서 카메라 접근을 허용해 주세요.";
 "access_camera.settings" = "설정";
 
 // Restore
@@ -107,7 +107,7 @@
 "restore.passphrase_description" = "이 연상 부호를 만들 때 사용한 암호 문구 입력.";
 "restore.error.empty_passphrase" = "암호 문구는 필수 입력 사항입니다";
 "restore.non_standard_import" = "비표준 복원";
-"restore.non_standard_import.description" = "이 페이지는 비표준 지갑을 가지고 있는 Unstoppable 사용자를 위한 특별한 지갑 복원 메커니즘을 제공합니다. 일반적으로 이러한 지갑은 Unstoppable 버전 0.27 - 0.28에서 영어가 아닌 니모닉 단어 목록 및/또는 지갑 암호의 특수 문자(예: 분음 부호)를 사용하여 생성되었을 수 있습니다.\n\n영향을 받는 사용자인 경우 버전 0.29로 업데이트하면 지갑 잔액이 0으로 표시됩니다. 이 페이지에서는 비표준 지갑에 대한 액세스를 복원할 수 있습니다. 복원되면 새 지갑(표준 준수)을 만들고 그곳으로 자금을 옮기는 것이 좋습니다.";
+"restore.non_standard_import.description" = "이 페이지는 비표준 지갑을 가지고 있는 P.CASH 사용자를 위한 특별한 지갑 복원 메커니즘을 제공합니다. 일반적으로 이러한 지갑은 P.CASH 버전 0.27 - 0.28에서 영어가 아닌 니모닉 단어 목록 및/또는 지갑 암호의 특수 문자(예: 분음 부호)를 사용하여 생성되었을 수 있습니다.\n\n영향을 받는 사용자인 경우 버전 0.29로 업데이트하면 지갑 잔액이 0으로 표시됩니다. 이 페이지에서는 비표준 지갑에 대한 액세스를 복원할 수 있습니다. 복원되면 새 지갑(표준 준수)을 만들고 그곳으로 자금을 옮기는 것이 좋습니다.";
 "restore.warning.non_recommended.description" = "이 지갑은 비밀 단어 목록 및/또는 암호 문구에 비표준 문자를 사용하는 것 같습니다. 잔액이나 거래 내역이 보이지 않으면 아래에서 자세한 내용을 읽어보세요.\n\n더 많은 정보를 얻으려면 클릭하십시오";
 "restore.error.non_standard.description" = "비표준 호환 지갑입니다. 자세한 내용은 아래를 참조하십시오.\n\n더 많은 정보를 얻으려면 클릭하십시오";
 
@@ -139,7 +139,7 @@
 // Recovery Phrase
 
 "recovery_phrase.title" = "복구 문구";
-"recovery_phrase.warning" = "복구 문구를 누구와도 공유하지 마십시오. Unstoppable 팀은 복구 문구를 요구하지 않습니다.";
+"recovery_phrase.warning" = "복구 문구를 누구와도 공유하지 마십시오. P.CASH 팀은 복구 문구를 요구하지 않습니다.";
 "recovery_phrase.tap_to_show" = "탭하여 복구 문구 표시";
 "recovery_phrase.passphrase" = "암호문구";
 "recovery_phrase.copy_warning.title" = "복구 문구 복사 위험";
@@ -198,7 +198,7 @@
 "error.send.self_transfer" = "자체로 전송이 지원되지 않음";
 "error.send_binance.memo_required" = "수신자는 송금 내역에 메모 기록을 필요로 합니다";
 "error.send_binance.only_digits_allowed" = "메모에는 숫자만 포함하셔야 합니다";
-"error.send_z_cash.transparent_address" = "Unstoppable은 투명 주소에 대한 지불을 지원하지 않습니다";
+"error.send_z_cash.transparent_address" = "P.CASH은 투명 주소에 대한 지불을 지원하지 않습니다";
 
 // Balance
 
@@ -696,13 +696,13 @@
 
 // Pro Features
 
-"pro_features.authorize.wallet_passes.title" = "Unstoppable NFT";
-"pro_features.authorize.wallet_passes.subtitle" = "Get access to advanced wallet features\nby holding Unstoppable NFTs.";
+"pro_features.authorize.wallet_passes.title" = "P.CASH NFT";
+"pro_features.authorize.wallet_passes.subtitle" = "Get access to advanced wallet features\nby holding P.CASH NFTs.";
 
 "pro_features.lock_info.go_to_mint" = "추후 공개";
 
-"pro_features.lock_info.title" = "Unstoppable 패스";
-"pro_features.lock_info.coin_details.description" = "이 데이터를 활성화하려면 잔액에 Unstoppable 패스 NFT가 있어야 합니다\n\n또한 아래 데이터에 액세스할 수 있습니다:";
+"pro_features.lock_info.title" = "P.CASH 패스";
+"pro_features.lock_info.coin_details.description" = "이 데이터를 활성화하려면 잔액에 P.CASH 패스 NFT가 있어야 합니다\n\n또한 아래 데이터에 액세스할 수 있습니다:";
 "pro_features.lock_info.coin_details.volume" = "DEX Volume";
 "pro_features.lock_info.coin_details.liquidity" = "DEX Liquidity";
 "pro_features.lock_info.coin_details.active_addresses" = "Active Addresses";
@@ -809,7 +809,7 @@
 "settings.language" = "언어";
 "settings.faq" = "FAQ";
 "settings.theme" = "테마";
-"settings.info_title" = "UNSTOPPABLE";
+"settings.info_title" = "P.CASH";
 "settings.info_subtitle" = "분산형 앱";
 
 // Settings -> Base Currency
@@ -817,7 +817,7 @@
 "settings.base_currency.title" = "기준 통화";
 "settings.base_currency.other" = "기타";
 "settings.base_currency.disclaimer" = "면책";
-"settings.base_currency.disclaimer.description" = "제3자 서비스 Coingecko.com\n\nUnstoppable 지갑 앱에서 제공하는 환율 데이터는 이러한 가치가 항상 올바르고 시장 데이터와 일치함을 보장하지는 않습니다. %@ 이외의 기준 통화를 선택할 경우 불일치가 발생할 가능성이 더 높습니다.";
+"settings.base_currency.disclaimer.description" = "제3자 서비스 Coingecko.com\n\nP.CASH 지갑 앱에서 제공하는 환율 데이터는 이러한 가치가 항상 올바르고 시장 데이터와 일치함을 보장하지는 않습니다. %@ 이외의 기준 통화를 선택할 경우 불일치가 발생할 가능성이 더 높습니다.";
 "settings.base_currency.disclaimer.set" = "확인";
 
 // Settings -> Manage Wallet
@@ -827,7 +827,7 @@
 "manage_wallets.search_placeholder" = "이름, 코드 또는 계약 주소";
 "manage_wallets.not_supported" = "지원 되지 않음";
 "manage_wallets.not_supported.description" = "현재 지갑 유형 %@은(는) %@을(를) 지원하지 않습니다.";
-"manage_wallets.not_supported.by_app.description" = "Unstoppable does not support %@";
+"manage_wallets.not_supported.by_app.description" = "P.CASH does not support %@";
 
 // Settings -> Experimental Features
 
@@ -858,7 +858,7 @@
 
 // Settings -> Tell Friends
 
-"settings_tell_friends.text" = "Be Unstoppable";
+"settings_tell_friends.text" = "Be P.CASH";
 
 // Settings -> Blockchain Settings
 
@@ -889,11 +889,11 @@
 "btc_transaction_sort_mode.bip69.description" = "사전 색인 작성";
 
 "blockchain_settings.info.restore_source" = "매개 변수 복원";
-"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like Unstoppable to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
+"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like P.CASH to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
 "blockchain_settings.info.transaction_inputs_outputs" = "트랜잭션 입력/출력";
-"blockchain_settings.info.transaction_inputs_outputs.content" = "대부분의 비트코인 ​​거래는 물론 비트코인 ​​캐시, 대시 및 라이트코인을 포함한 유사한 암호화폐의 거래는 두 가지 출력을 생성합니다. 하나의 출력은 수신자에게 가는 금액이고 다른 하나는 발신자에게 반환되는 변경 출력입니다. 대부분의 지갑이 트랜잭션을 구성하는 방식을 통해 제3자는 출력 중 어느 것이 수신 당사자에게 갔고 어느 것이 발신자에게 반환된 변경 금액인지 쉽게 이해할 수 있습니다. 발신자에게 반환된 출력은 나중에 미래의 거래에 사용되기 때문에 이 두 거래 사이의 연결이 분명해집니다.\n\nUnstoppable 지갑은 누군가가 어떤 출력이 어디로 가는지 알아내기 어렵게 하는 조치를 구현합니다.\n\n 멈출 수 없는 사용자가 사용할 수 있는 두 가지 옵션:\n\n1. 셔플: 트랜잭션 출력 순서는 모든 트랜잭션에서 무작위로 지정됩니다. 때로는 변화가 첫 번째 출력이 될 수도 있고 때로는 두 번째 출력이 될 수도 있습니다. 사용자가 앱 개발자를 신뢰한다면 이것을 권장 옵션으로 고려하십시오.\n\n2. 결정적: 트랜잭션 출력 주문에 대해 일반적으로 합의된 표준이 있습니다(BIP69로 알려짐). 오픈 소스 지갑에서 이 표준은 지갑 사용자가 앱 개발자가 출력 순서를 구현하는 방법을 신뢰할 필요가 없도록 합니다. 이 표준은 새롭기 때문에 아직 많은 지갑에서 구현하지 않았습니다. 결과적으로 해당 표준을 사용하는 지갑에서 트랜잭션이 전송되었는지 여부를 블록체인에서 확인할 수 있습니다.";
+"blockchain_settings.info.transaction_inputs_outputs.content" = "대부분의 비트코인 ​​거래는 물론 비트코인 ​​캐시, 대시 및 라이트코인을 포함한 유사한 암호화폐의 거래는 두 가지 출력을 생성합니다. 하나의 출력은 수신자에게 가는 금액이고 다른 하나는 발신자에게 반환되는 변경 출력입니다. 대부분의 지갑이 트랜잭션을 구성하는 방식을 통해 제3자는 출력 중 어느 것이 수신 당사자에게 갔고 어느 것이 발신자에게 반환된 변경 금액인지 쉽게 이해할 수 있습니다. 발신자에게 반환된 출력은 나중에 미래의 거래에 사용되기 때문에 이 두 거래 사이의 연결이 분명해집니다.\n\nP.CASH 지갑은 누군가가 어떤 출력이 어디로 가는지 알아내기 어렵게 하는 조치를 구현합니다.\n\n 멈출 수 없는 사용자가 사용할 수 있는 두 가지 옵션:\n\n1. 셔플: 트랜잭션 출력 순서는 모든 트랜잭션에서 무작위로 지정됩니다. 때로는 변화가 첫 번째 출력이 될 수도 있고 때로는 두 번째 출력이 될 수도 있습니다. 사용자가 앱 개발자를 신뢰한다면 이것을 권장 옵션으로 고려하십시오.\n\n2. 결정적: 트랜잭션 출력 주문에 대해 일반적으로 합의된 표준이 있습니다(BIP69로 알려짐). 오픈 소스 지갑에서 이 표준은 지갑 사용자가 앱 개발자가 출력 순서를 구현하는 방법을 신뢰할 필요가 없도록 합니다. 이 표준은 새롭기 때문에 아직 많은 지갑에서 구현하지 않았습니다. 결과적으로 해당 표준을 사용하는 지갑에서 트랜잭션이 전송되었는지 여부를 블록체인에서 확인할 수 있습니다.";
 "blockchain_settings.info.rpc_source" = "RPC Source";
-"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. Unstoppable pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
+"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. P.CASH pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
 
 // Manage Accounts
 
@@ -915,8 +915,8 @@
 // Settings -> About App
 
 "settings.about_app.title" = "앱 정보";
-"settings.about_app.app_name" = "Unstoppable Wallet";
-"settings.about_app.description" = "Unstoppable 지갑은 개인적이고 독립적인 방식으로 암호화폐를 투자하고 저장하려는 사람들을 위해 만들어졌습니다.\n\n사용자만 자금을 제어할 수 있는 비 보관 P2P 지갑입니다. 데이터를 수집하지 않으며 사용자의 자금을 특정 지갑 앱에 잠그지 않음으로써 사용자를 독립적으로 유지합니다.\n\n언스톱퍼블 지갑은 완전히 오픈 소스이며 누구나 앱이 주장하는 대로 정확하게 작동하는지 확인할 수 있습니다.";
+"settings.about_app.app_name" = "P.CASH Wallet";
+"settings.about_app.description" = "P.CASH 지갑은 개인적이고 독립적인 방식으로 암호화폐를 투자하고 저장하려는 사람들을 위해 만들어졌습니다.\n\n사용자만 자금을 제어할 수 있는 비 보관 P2P 지갑입니다. 데이터를 수집하지 않으며 사용자의 자금을 특정 지갑 앱에 잠그지 않음으로써 사용자를 독립적으로 유지합니다.\n\n언스톱퍼블 지갑은 완전히 오픈 소스이며 누구나 앱이 주장하는 대로 정확하게 작동하는지 확인할 수 있습니다.";
 "settings.about_app.whats_new" = "새로운 기능";
 "settings.about_app.website" = "웹사이트";
 "settings.about_app.contact" = "연락처";
@@ -925,7 +925,7 @@
 
 // Settings -> Privacy
 
-"settings.privacy.description" = "Unstoppable은 사용자에 대한 데이터를 노출할 수 있는 데이터를 수집하거나 분석 도구를 사용하지 않습니다. 지갑은 사용자에게 높은 수준의 개인 정보를 보장하도록 설계되었습니다.";
+"settings.privacy.description" = "P.CASH은 사용자에 대한 데이터를 노출할 수 있는 데이터를 수집하거나 분석 도구를 사용하지 않습니다. 지갑은 사용자에게 높은 수준의 개인 정보를 보장하도록 설계되었습니다.";
 "settings.privacy.statement.user_data_storage" = "사용자 데이터는 항상 사용자의 장치에 남아 있습니다.";
 "settings.privacy.statement.data_usage" = "지갑은 사용자에 대한 데이터를 수집하지 않습니다.";
 "settings.privacy.statement.data_privacy" = "지갑은 사용자에 대한 데이터를 공유하지 않습니다.";
@@ -1150,13 +1150,13 @@
 
 "status_info.title" = "상태";
 "status_info.pending.title" = "보류 중";
-"status_info.pending.content" = "거래는 아직 블록체인에서 확인되지 않았습니다. 권장 또는 더 높은 수수료 설정으로 전송된 거래는 일반적으로 분 이내에 처리됩니다. 낮은 수수료로 전송된 거래는 몇 시간 또는 며칠 동안 보류 상태로 남아 있을 수 있으며 거부될 수도 있습니다. 또한 Unstoppable 지갑 인터페이스에 표시되는 개별 트랜잭션의 상태는 일반적으로 짧은 지연으로 업데이트됩니다.";
+"status_info.pending.content" = "거래는 아직 블록체인에서 확인되지 않았습니다. 권장 또는 더 높은 수수료 설정으로 전송된 거래는 일반적으로 분 이내에 처리됩니다. 낮은 수수료로 전송된 거래는 몇 시간 또는 며칠 동안 보류 상태로 남아 있을 수 있으며 거부될 수도 있습니다. 또한 P.CASH 지갑 인터페이스에 표시되는 개별 트랜잭션의 상태는 일반적으로 짧은 지연으로 업데이트됩니다.";
 "status_info.processing.title" = "처리 중";
 "status_info.processing.content" = "거래는 이미 블록체인에 포함되었지만 영구적인 완결성에 도달하지 않았습니다. 이 시점에서 소액 결제를 위해 완료된 거래로 간주하는 것이 안전합니다. 더 큰 지불의 경우 거래 상태가 완료로 변경될 때까지 기다리는 것이 좋습니다.";
 "status_info.completed.title" = "완료됨";
 "status_info.confirmed.content" = "거래가 완료되고 영구적이고 되돌릴 수 없는 것으로 간주됩니다.";
 "status_info.failed.title" = "실패";
-"status_info.failed.content" = "거래가 처리되지 않았으며 가치 이전이 발생하지 않았습니다. 실패 원인에 따라 일부 실패한 거래는 거래 수수료를 소모할 수 있습니다. 다른 거래로 대체되거나 취소된 거래는 거래 수수료를 소비하지 않으며 실패한 것으로 표시됩니다. Unstoppable 앱은 거래 실패의 원인을 표시할 수 없지만 사용자는 etherscan.io와 같은 공개 블록 탐색기에서 직접 찾을 수 있습니다.";
+"status_info.failed.content" = "거래가 처리되지 않았으며 가치 이전이 발생하지 않았습니다. 실패 원인에 따라 일부 실패한 거래는 거래 수수료를 소모할 수 있습니다. 다른 거래로 대체되거나 취소된 거래는 거래 수수료를 소비하지 않으며 실패한 것으로 표시됩니다. P.CASH 앱은 거래 실패의 원인을 표시할 수 없지만 사용자는 etherscan.io와 같은 공개 블록 탐색기에서 직접 찾을 수 있습니다.";
 
 // Onboarding
 

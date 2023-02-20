@@ -7,10 +7,7 @@ enum MnemonicDerivation: String, CaseIterable {
     case bip84
 
     var title: String {
-        switch self {
-        case .bip44: return self.rawValue.uppercased()
-        case .bip49, .bip84: return "\(self.rawValue.uppercased()) - \(addressType)"
-        }
+        rawValue.uppercased()
     }
 
     var addressType: String {
@@ -21,15 +18,19 @@ enum MnemonicDerivation: String, CaseIterable {
         }
     }
 
-    var description: String {
-        "coin_settings.derivation.title.\(self)".localized
-    }
-
     var purpose: Purpose {
         switch self {
         case .bip44: return .bip44
         case .bip49: return .bip49
         case .bip84: return .bip84
+        }
+    }
+
+    var order: Int {
+        switch self {
+        case .bip44: return 0
+        case .bip49: return 1
+        case .bip84: return 2
         }
     }
 

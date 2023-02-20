@@ -32,7 +32,7 @@ class ExtendedKeyViewController: ThemeViewController {
         title = viewModel.title
 
         navigationItem.largeTitleDisplayMode = .never
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "button.close".localized, style: .plain, target: self, action: #selector(onTapClose))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "circle_information_24"), style: .plain, target: self, action: #selector(onTapInfo))
 
         view.addSubview(tableView)
         tableView.snp.makeConstraints { maker in
@@ -71,8 +71,13 @@ class ExtendedKeyViewController: ThemeViewController {
         loaded = true
     }
 
-    @objc private func onTapClose() {
-        dismiss(animated: true)
+    @objc private func onTapInfo() {
+        guard let url = FaqUrlHelper.privateKeysUrl else {
+            return
+        }
+
+        let module = MarkdownModule.viewController(url: url, handleRelativeUrl: false)
+        present(ThemeNavigationController(rootViewController: module), animated: true)
     }
 
     @objc private func onTapCopy() {
@@ -143,7 +148,7 @@ extension ExtendedKeyViewController: SectionsDataSource {
         tableView.universalRow48(
                 id: item.id,
                 title: .body(item.title),
-                value: .subhead1(item.value, gray: true),
+                value: .subhead1(item.value, color: .themeGray),
                 accessoryType: item.action == nil ? .none : .dropdown,
                 autoDeselect: true,
                 isFirst: isFirst,
@@ -196,7 +201,23 @@ extension ExtendedKeyViewController: SectionsDataSource {
         let backgroundStyle: BaseThemeCell.BackgroundStyle = .bordered
         let textFont: UIFont = .subhead1
 
-        return [
+        var sections = [SectionProtocol]()
+
+        if viewItem.keyIsPrivate {
+            sections.append(
+                    Section(
+                            id: "warning",
+                            rows: [
+                                tableView.highlightedDescriptionRow(
+                                        id: "warning",
+                                        text: "recovery_phrase.warning".localized
+                                )
+                            ]
+                    )
+            )
+        }
+
+        sections.append(contentsOf: [
             Section(
                     id: "controls",
                     headerState: .margin(height: .margin12),
@@ -240,7 +261,9 @@ extension ExtendedKeyViewController: SectionsDataSource {
                         )
                     ]
             )
-        ]
+        ])
+
+        return sections
     }
 
 }

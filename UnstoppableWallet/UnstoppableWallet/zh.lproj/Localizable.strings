@@ -87,9 +87,9 @@
 
 // Access Camera
 
-"access_camera.message" = "Unstoppable需要使用相机扫描二维码。
+"access_camera.message" = "P.CASH需要使用相机扫描二维码。
 
-请前往”设置 -> Unstoppable”并授权对相机的访问。";
+请前往”设置 -> P.CASH”并授权对相机的访问。";
 "access_camera.settings" = "设置";
 
 // Restore
@@ -109,7 +109,7 @@
 "restore.passphrase_description" = "输入您在创建此助记词时使用的密码.";
 "restore.error.empty_passphrase" = "密码不能为空白";
 "restore.non_standard_import" = "非标准还原";
-"restore.non_standard_import.description" = "此页面为拥有非标准钱包的 Unstoppable 用户提供了一种特殊的钱包恢复机制。 通常，此类钱包可以在 Unstoppable 版本 0.27 - 0.28 中使用非英语助记词列表和/或钱包密码短语中的特殊字符（即变音符号）创建。\n\n如果您是受影响的用户，那么在 0.29 或更高版本中恢复此类钱包后，您的钱包余额将显示为 0。 此页面将使您能够恢复对非标准钱包的访问。 恢复后，建议您创建一个新钱包（符合标准）并将资金转移到那里。";
+"restore.non_standard_import.description" = "此页面为拥有非标准钱包的 P.CASH 用户提供了一种特殊的钱包恢复机制。 通常，此类钱包可以在 P.CASH 版本 0.27 - 0.28 中使用非英语助记词列表和/或钱包密码短语中的特殊字符（即变音符号）创建。\n\n如果您是受影响的用户，那么在 0.29 或更高版本中恢复此类钱包后，您的钱包余额将显示为 0。 此页面将使您能够恢复对非标准钱包的访问。 恢复后，建议您创建一个新钱包（符合标准）并将资金转移到那里。";
 "restore.warning.non_recommended.description" = "这个钱包似乎在其密码列表和/或密码短语中使用了非标准字符。 如果您没有看到余额或交易，请阅读下面的详细信息。\n\n点击获取更多信息";
 "restore.error.non_standard.description" = "这是一个不符合标准的钱包。 详情请阅读下文。\n\n点击获取更多信息";
 
@@ -200,7 +200,7 @@
 "error.send.self_transfer" = "不支持发送给自己";
 "error.send_binance.memo_required" = "收款人要求在转账交易中包含非空的备注";
 "error.send_binance.only_digits_allowed" = "要求备注仅包含数字";
-"error.send_z_cash.transparent_address" = "Unstoppable不支持对透明地址付款";
+"error.send_z_cash.transparent_address" = "P.CASH不支持对透明地址付款";
 
 // Balance
 
@@ -291,7 +291,7 @@
 "send.fee_info.content_average" = "通常，此费用范围应足以使比特币（Bitcoin）交易在数分钟/小时、以太币（Ethereum）在数分钟内得到处理。";
 "send.fee_info.header_fast" = "快";
 "send.fee_info.content_fast" = "对于优先级重要的交易，我们建议使用高收费值。 预计这将足以在10分钟内完成比特币交易，1-2分钟以内完成Etherefis。";
-"send.fee_info.content_conclusion" = "Unstoppable钱包以网络活动为基础作出有根据的猜测，但不能保证所建议费用值总能实现预期行为。";
+"send.fee_info.content_conclusion" = "P.CASH钱包以网络活动为基础作出有根据的猜测，但不能保证所建议费用值总能实现预期行为。";
 
 "send.confirmation.you_send" = "您发送";
 "send.confirmation.to" = "接收人";
@@ -698,13 +698,13 @@
 
 // Pro Features
 
-"pro_features.authorize.wallet_passes.title" = "Unstoppable NFT";
+"pro_features.authorize.wallet_passes.title" = "P.CASH NFT";
 "pro_features.authorize.wallet_passes.subtitle" = "通过持有不可阻挡的 NFT 获取高级钱包功能。";
 
 "pro_features.lock_info.go_to_mint" = "即将推出";
 
-"pro_features.lock_info.title" = "Unstoppable Pass";
-"pro_features.lock_info.coin_details.description" = "要启用此数据，您必须在您的余额上拥有Unstoppable Pass NFT\n\n同时您将能获得对以下数据的访问权：";
+"pro_features.lock_info.title" = "P.CASH Pass";
+"pro_features.lock_info.coin_details.description" = "要启用此数据，您必须在您的余额上拥有P.CASH Pass NFT\n\n同时您将能获得对以下数据的访问权：";
 "pro_features.lock_info.coin_details.volume" = "DEX交易量";
 "pro_features.lock_info.coin_details.liquidity" = "DEX流动性";
 "pro_features.lock_info.coin_details.active_addresses" = "活跃地址";
@@ -811,7 +811,7 @@
 "settings.language" = "语言";
 "settings.faq" = "常见问题";
 "settings.theme" = "主题";
-"settings.info_title" = "UNSTOPPABLE";
+"settings.info_title" = "P.CASH";
 "settings.info_subtitle" = "分布式应用程序";
 
 // Settings -> Base Currency
@@ -819,7 +819,7 @@
 "settings.base_currency.title" = "基本货币";
 "settings.base_currency.other" = "其他";
 "settings.base_currency.disclaimer" = "声明";
-"settings.base_currency.disclaimer.description" = "汇率数据由第三方服务Coingecko.com提供\n\nUnstoppable钱包应用不保证这是数值总是准确以及和市场数据匹配。如果您选择任何基础货币而不是%@，那么出现不一致的机会将较高。";
+"settings.base_currency.disclaimer.description" = "汇率数据由第三方服务Coingecko.com提供\n\nP.CASH钱包应用不保证这是数值总是准确以及和市场数据匹配。如果您选择任何基础货币而不是%@，那么出现不一致的机会将较高。";
 "settings.base_currency.disclaimer.set" = "设置";
 
 // Settings -> Manage Wallet
@@ -842,7 +842,7 @@
 
 "settings.bitcoin_hodling.title" = "TimeLock";
 "settings.bitcoin_hodling.lock_time" = "激活";
-"settings.bitcoin_hodling.description" = "让您汇出在指定日期前无法消费的比特币。\n\n此交易的收款人应使用Unstoppable钱包。\n\n只有Unstoppable钱包能够正确识别此类在比特币网络上的交易并让收款人在锁定期限结束后消费那些比特币。\n\n如果您是持有人，您可以使用此功能通过向自己发送此类交易的方式来强制自己持有比特币。\n\n作为实验性功能，每次交易的最大金额限制为0.5 BTC。";
+"settings.bitcoin_hodling.description" = "让您汇出在指定日期前无法消费的比特币。\n\n此交易的收款人应使用P.CASH钱包。\n\n只有P.CASH钱包能够正确识别此类在比特币网络上的交易并让收款人在锁定期限结束后消费那些比特币。\n\n如果您是持有人，您可以使用此功能通过向自己发送此类交易的方式来强制自己持有比特币。\n\n作为实验性功能，每次交易的最大金额限制为0.5 BTC。";
 "settings.evm_testnet.title" = "Testnet";
 "settings.evm_testnet.enable" = "激活";
 "settings.evm_testnet.description" = "此选项仅对 GoerliETH 令牌激活Etherum的 Goerli 测试网，并将其添加到硬币管理器。\n\n它只影响GoerliETH 令牌，而所有其他 EVM 和 Etherum 令牌都在主网上运行。 换言之，只有GoerliETH中的交易通过Goerli testnet，而所有其他EVM令牌转账，包括ETH，都通过主网。";
@@ -860,7 +860,7 @@
 
 // Settings -> Tell Friends
 
-"settings_tell_friends.text" = "Be Unstoppable";
+"settings_tell_friends.text" = "Be P.CASH";
 
 // Settings -> Blockchain Settings
 
@@ -891,11 +891,11 @@
 "btc_transaction_sort_mode.bip69.description" = "词典索引";
 
 "blockchain_settings.info.restore_source" = "恢复参数";
-"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like Unstoppable to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of the blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
+"blockchain_settings.info.restore_source.content" = "This setting is only relevant when restoring an existing wallet. It is a process of getting transaction history for a given cryptocurrency so the wallet app is able to display past transactions and calculate the user's balance. This needs to happen only once when the user restores previously created wallets.\n\nAt this point, there are two potential ways for a mobile wallet like P.CASH to do this:\n\n1. from the API Server: There is a third-party predefined server that hosts the entire blockchain and has all the data processed and optimized to provide that data in a fast manner. This method is fast but potentially (not necessarily) less private. It's also a centralized method to restore a wallet as it depends on the availability of a 3rd party server. This option is recommended due to its speed of getting data (5-10 minutes).\n\n2. from Blockchain: The app tries to restore directly from a network of the blockchain nodes. This is a decentralized way to restore wallet balance and past transactions. The app pings many of the network nodes and requests data from them without addressing some nodes specifically. This option is slow and can easily take 2-3 hours, the app needs to be open while restoring is happening. This restore method doesn't depend on any entity and should work in all conditions.";
 "blockchain_settings.info.transaction_inputs_outputs" = "交易输入 / 输出";
-"blockchain_settings.info.transaction_inputs_outputs.content" = "大多数比特币交易，以及比特币现金、Dash和莱特币等加密货币的交易，都会产生两种输出。一种输出是发送给接收者的数量，另一个是返回给发送者的找零输出。大多数钱包构造交易的方式使第三方很容易理解哪些输出发送给了接收方，哪些是返回给发送方的找零。当返回给发送方的输出稍后用于未来的交易时，这两个交易之间的连接就变得明显了。\n\nUnstoppable钱包实施了一些措施，让人们更难弄清楚哪些输出流向了哪里。\n\n对于Unstoppable用户有两种选项可用：\n\n1. 随机变换：每一交易的交易输出顺序均实现了随机化。有时候便令可能是第一个输出，有时可能是第二个。如果用户信任应用的开发者，那么可以考虑这一推荐选项。\n\n2. 确定性：有一个共同商定的交易输出顺序标准（称为BIP69）。在开源钱包中，该标准确保钱包用户不需要信任应用程序开发者如何实现输出顺序。由于这个标准非常新，还没有太多钱包对其进行了实现。因此，有可能可以看到在一个区块链上的一个交易是否是从使用或不使用该标准的钱包上发送。";
+"blockchain_settings.info.transaction_inputs_outputs.content" = "大多数比特币交易，以及比特币现金、Dash和莱特币等加密货币的交易，都会产生两种输出。一种输出是发送给接收者的数量，另一个是返回给发送者的找零输出。大多数钱包构造交易的方式使第三方很容易理解哪些输出发送给了接收方，哪些是返回给发送方的找零。当返回给发送方的输出稍后用于未来的交易时，这两个交易之间的连接就变得明显了。\n\nP.CASH钱包实施了一些措施，让人们更难弄清楚哪些输出流向了哪里。\n\n对于P.CASH用户有两种选项可用：\n\n1. 随机变换：每一交易的交易输出顺序均实现了随机化。有时候便令可能是第一个输出，有时可能是第二个。如果用户信任应用的开发者，那么可以考虑这一推荐选项。\n\n2. 确定性：有一个共同商定的交易输出顺序标准（称为BIP69）。在开源钱包中，该标准确保钱包用户不需要信任应用程序开发者如何实现输出顺序。由于这个标准非常新，还没有太多钱包对其进行了实现。因此，有可能可以看到在一个区块链上的一个交易是否是从使用或不使用该标准的钱包上发送。";
 "blockchain_settings.info.rpc_source" = "RPC 源";
-"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. Unstoppable pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
+"blockchain_settings.info.rpc_source.content" = "This setting controls how this app interacts with blockchains when sending or receiving transactions.\n\nIn the case of Bitcoin, Bitcoin Cash, Litecoin, and Dash, the communication with blockchain network nodes is fully peer-to-peer. P.CASH pings many nodes and communicates with one of them. Each time the app connects to a different node.\n\nIn the case of Ethereum, Binance Smart Chain, and other EVM blockchains, there are no alternatives for mobile wallets to interact with respective blockchains other than via third-party RPC service providers (i.e. Infura.io) or personal nodes. That essentially means your communication with that blockchain is not decentralized. This doesn't impact your funds in any way, only the ability to connect to the blockchain network.\n\nRest assured, we are keeping this on the radar and will soon try to provide a decentralized way to sync. Patience.";
 
 // Manage Accounts
 
@@ -917,7 +917,7 @@
 // Settings -> About App
 
 "settings.about_app.title" = "关于应用";
-"settings.about_app.app_name" = "Unstoppable钱包";
+"settings.about_app.app_name" = "P.CASH钱包";
 "settings.about_app.description" = "不可阻挡的钱包是为那些寻求投资和以私人和独立方式存储加密货币的人建造的。\n\n它是一个非保管的、对等的钱包，在那里只有用户能够控制资金。 它不收集任何数据，并且通过不将用户的资金锁定到特定的钱包应用程序来保持用户独立。\n\n不可阻挡的钱包是完全开源的，任何人都可以确认应用程序正像它所声称的那样工作。";
 "settings.about_app.whats_new" = "新增内容";
 "settings.about_app.website" = "网站";
@@ -1152,13 +1152,13 @@
 
 "status_info.title" = "状态";
 "status_info.pending.title" = "待处理";
-"status_info.pending.content" = "交易尚未在区块链上得到确认。带有推荐或更高费用设置发送的交易通常会在数分钟内得到处理。以低费用发送的交易将在数小时甚至数天内仍将处于待处理状态，并且可能会被拒绝。请注意，在Unstoppable钱包界面中的个别交易的状态通常将在较短延时内得到更新。";
+"status_info.pending.content" = "交易尚未在区块链上得到确认。带有推荐或更高费用设置发送的交易通常会在数分钟内得到处理。以低费用发送的交易将在数小时甚至数天内仍将处于待处理状态，并且可能会被拒绝。请注意，在P.CASH钱包界面中的个别交易的状态通常将在较短延时内得到更新。";
 "status_info.processing.title" = "正在处理";
 "status_info.processing.content" = "交易已包括在区块链中，但尚未达到永久终结状态。此时，可以安全地考虑以较小金额完成的交易。对于大额支付，建议等待直至交易状态变为已完成。";
 "status_info.completed.title" = "已完成";
 "status_info.confirmed.content" = "交易已完成并被视为永久和不可逆。";
 "status_info.failed.title" = "失败";
-"status_info.failed.content" = "交易没有得到处理，也没有进行价值转移。根据失败原因的不同，某些失败的交易可能会耗费交易费用。被另一笔交易替换或取消的交易不会耗费交易费用，并且也会出现失败。 Unstoppable应用无法显示交易失败的原因。 但用户可以在如etherscan.io等公共区块探索程序上查看 。";
+"status_info.failed.content" = "交易没有得到处理，也没有进行价值转移。根据失败原因的不同，某些失败的交易可能会耗费交易费用。被另一笔交易替换或取消的交易不会耗费交易费用，并且也会出现失败。 P.CASH应用无法显示交易失败的原因。 但用户可以在如etherscan.io等公共区块探索程序上查看 。";
 
 // Onboarding
 
