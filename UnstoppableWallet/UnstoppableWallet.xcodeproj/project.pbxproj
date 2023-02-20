@@ -9065,7 +9065,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = UnstoppableWallet/Configuration/Unstoppable.entitlements;
 				DEVELOPMENT_TEAM = HC4MCAXJ66;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.horizontalsystems.bank-wallet";
+				PRODUCT_BUNDLE_IDENTIFIER = cash.p.terminal;
 				PRODUCT_MODULE_NAME = Unstoppable;
 				PRODUCT_NAME = Unstoppable;
 				PROVISIONING_PROFILE_SPECIFIER = "match Development io.horizontalsystems.bank-wallet";
@@ -9081,7 +9081,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = UnstoppableWallet/Configuration/Unstoppable.entitlements;
 				DEVELOPMENT_TEAM = HC4MCAXJ66;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.horizontalsystems.bank-wallet";
+				PRODUCT_BUNDLE_IDENTIFIER = cash.p.terminal;
 				PRODUCT_MODULE_NAME = Unstoppable;
 				PRODUCT_NAME = Unstoppable;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore io.horizontalsystems.bank-wallet";
