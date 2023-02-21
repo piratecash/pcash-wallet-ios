@@ -39,8 +39,10 @@ class CreateAccountService {
             TokenQuery(blockchainType: .bitcoin, tokenType: .native),
             TokenQuery(blockchainType: .ethereum, tokenType: .native),
             TokenQuery(blockchainType: .binanceSmartChain, tokenType: .native),
-            TokenQuery(blockchainType: .ethereum, tokenType: .eip20(address: "0xdac17f958d2ee523a2206206994597c13d831ec7")), // USDT
-            TokenQuery(blockchainType: .binanceSmartChain, tokenType: .eip20(address: "0xe9e7cea3dedca5984780bafc599bd69add087d56")) // BUSD
+            //TokenQuery(blockchainType: .ethereum, tokenType: .eip20(address: "0xdac17f958d2ee523a2206206994597c13d831ec7")), // USDT
+            TokenQuery(blockchainType: .binanceSmartChain, tokenType: .eip20(address: "0xe9e7cea3dedca5984780bafc599bd69add087d56")), // BUSD
+            TokenQuery(blockchainType: .binanceSmartChain, tokenType: .eip20(address: "0x35f3ffffcb622bc9f64fa561d74e983fd488d90c")), // PirateCash
+            TokenQuery(blockchainType: .binanceSmartChain, tokenType: .eip20(address: "0x499954f9c977b74a48d4bb14ba9904bea6cb7b01")) // Cosanta
         ]
 
         var wallets = [Wallet]()
