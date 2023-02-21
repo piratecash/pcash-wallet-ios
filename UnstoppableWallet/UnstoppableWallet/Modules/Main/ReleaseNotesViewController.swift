@@ -109,15 +109,15 @@ class ReleaseNotesViewController: MarkdownViewController {
     }
 
     @objc private func onTwitterTap() {
-        urlManager.open(url: "https://twitter.com/unstoppablebyhs", from: nil)
+        urlManager.open(url: "https://twitter.com/PirateCash_NET", from: nil)
     }
 
     @objc private func onTelegramTap() {
-        urlManager.open(url: "https://t.me/unstoppable_announcements", from: nil)
+        urlManager.open(url: "https://t.me/pcash", from: nil)
     }
 
     @objc private func onRedditTap() {
-        urlManager.open(url: "https://www.reddit.com/r/UNSTOPPABLEWallet", from: nil)
+        urlManager.open(url: "https://www.reddit.com/r/PirateCash", from: nil)
     }
 
 }

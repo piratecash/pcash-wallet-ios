@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D38405D021831B3D007D50AD"
-               BuildableName = "Unstoppable.app"
+               BuildableName = "P.CASH.app"
                BlueprintName = "P.CASH"
                ReferencedContainer = "container:UnstoppableWallet.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D38405D021831B3D007D50AD"
-            BuildableName = "Unstoppable.app"
+            BuildableName = "P.CASH.app"
             BlueprintName = "P.CASH"
             ReferencedContainer = "container:UnstoppableWallet.xcodeproj">
          </BuildableReference>

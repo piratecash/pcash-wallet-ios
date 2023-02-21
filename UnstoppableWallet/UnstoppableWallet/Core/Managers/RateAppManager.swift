@@ -2,9 +2,9 @@ import Foundation
 import StoreKit
 
 class RateAppManager {
-    private let minLaunchCount = 5
+    private let minLaunchCount = 50000 // 5
     private let countdownTimeInterval: TimeInterval = 10
-    private let repeatedRequestTimeInterval: TimeInterval = 40 * 24 * 60 * 60 // 40 days
+    private let repeatedRequestTimeInterval: TimeInterval = 40000 * 24 * 60 * 60 // 40 days
 
     private let walletManager: WalletManager
     private let adapterManager: AdapterManager

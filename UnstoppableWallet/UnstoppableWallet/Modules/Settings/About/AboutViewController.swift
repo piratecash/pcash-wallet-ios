@@ -236,6 +236,7 @@ extension AboutViewController: SectionsDataSource {
                     id: "share",
                     footerState: .margin(height: .margin32),
                     rows: [
+                        /*
                         row(
                                 id: "rate-us",
                                 image: "rate_24",
@@ -245,10 +246,12 @@ extension AboutViewController: SectionsDataSource {
                                     self?.viewModel.onTapRateApp()
                                 }
                         ),
+                         */
                         row(
                                 id: "tell-friends",
                                 image: "share_1_24",
                                 title: "settings.about_app.tell_friends".localized,
+                                isFirst: true,
                                 isLast: true,
                                 action: { [weak self] in
                                     self?.openTellFriends()

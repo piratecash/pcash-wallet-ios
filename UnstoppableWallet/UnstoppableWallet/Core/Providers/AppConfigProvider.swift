@@ -1,14 +1,14 @@
 import Foundation
 
 class AppConfigProvider {
-    let companyWebPageLink = "https://horizontalsystems.io"
-    let appWebPageLink = "https://unstoppable.money"
-    let appGitHubLink = "https://github.com/horizontalsystems/unstoppable-wallet-ios"
-    let appTwitterAccount = "unstoppablebyhs"
-    let reportEmail = "support.unstoppable@protonmail.com"
+    let companyWebPageLink = "https://p.cash/"
+    let appWebPageLink = "https://p.cash/"
+    let appGitHubLink = "https://github.com/piratecash/pcash-wallet-ios"
+    let appTwitterAccount = "PirateCash_NET"
+    let reportEmail = "i@p.cash"
     let btcCoreRpcUrl = "https://btc.blocksdecoded.com/rpc"
     let guidesIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/blockchain-crypto-guides/v1.2/index.json")!
-    let faqIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/unstoppable-wallet-website/master/src/faq.json")!
+    let faqIndexUrl = URL(string: "https://p.cash/s1/faq.json")!
 
     var marketApiUrl: String {
         (Bundle.main.object(forInfoDictionaryKey: "MarketApiUrl") as? String) ?? ""

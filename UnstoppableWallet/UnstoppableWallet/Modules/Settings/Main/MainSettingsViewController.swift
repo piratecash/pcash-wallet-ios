@@ -340,7 +340,7 @@ extension MainSettingsViewController: SectionsDataSource {
             Section(id: "wallet_connect", headerState: .margin(height: .margin32), rows: walletConnectRows),
             Section(id: "appearance_settings", headerState: .margin(height: .margin32), rows: appearanceRows),
             Section(id: "experimental", headerState: .margin(height: .margin32), rows: experimentalRows),
-            Section(id: "knowledge", headerState: .margin(height: .margin32), rows: knowledgeRows),
+            //Section(id: "knowledge", headerState: .margin(height: .margin32), rows: knowledgeRows),
             Section(id: "about", headerState: .margin(height: .margin32), rows: aboutRows),
             Section(id: "footer", headerState: .margin(height: .margin32), footerState: .margin(height: .margin32), rows: footerRows)
         ]
