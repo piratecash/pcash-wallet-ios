@@ -31,7 +31,7 @@ class WalletViewController: ThemeViewController {
     private var sortBy: String?
     private var isLoaded = false
 
-    private let queue = DispatchQueue(label: "io.horizontalsystems.unstoppable.wallet_view_controller", qos: .userInitiated)
+    private let queue = DispatchQueue(label: "cash.p.terminal.wallet_view_controller", qos: .userInitiated)
 
     init(viewModel: WalletViewModel) {
         self.viewModel = viewModel

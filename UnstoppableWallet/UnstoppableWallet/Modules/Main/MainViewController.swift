@@ -86,6 +86,10 @@ class MainViewController: ThemeTabBarController {
         }
 
         var viewControllers = [UIViewController]()
+        viewControllers.append(contentsOf: [
+            balanceTabModule,
+            transactionsModule,
+            ])
         if viewModel.showMarket {
             let marketModule = marketModule ?? ThemeNavigationController(rootViewController: MarketModule.viewController())
             self.marketModule = marketModule
@@ -96,8 +100,6 @@ class MainViewController: ThemeTabBarController {
         }
 
         viewControllers.append(contentsOf: [
-            balanceTabModule,
-            transactionsModule,
             settingsModule
         ])
 
