@@ -158,7 +158,7 @@ extension BlockchainType {
     var allowedProviders: [SwapModule.Dex.Provider] {
         switch self {
         case .ethereum: return [.oneInch, .uniswap]
-        case .binanceSmartChain: return [.oneInch, .pancake]
+        case .binanceSmartChain: return [.pancake, .oneInch]
         case .polygon: return [.oneInch, .quickSwap]
         case .avalanche: return [.oneInch]
         case .optimism: return [.oneInch]
