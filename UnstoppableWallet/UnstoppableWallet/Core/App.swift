@@ -254,7 +254,7 @@ class App {
         let walletClientInfo = WalletConnectClientInfo(
                 projectId: appConfigProvider.walletConnectV2ProjectKey ?? "c4f79cc821944d9680842e34466bfb",
                 relayHost: "relay.walletconnect.com",
-                name: "Unstoppable",
+                name: "P.CASH",
                 description: "",
                 url: appConfigProvider.appWebPageLink,
                 icons: ["https://raw.githubusercontent.com/horizontalsystems/HS-Design/master/PressKit/UW-AppIcon-on-light.png"]
