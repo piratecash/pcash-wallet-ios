@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:unstoppable.money</string>
+		<string>applinks:p.cash</string>
 	</array>
 </dict>
 </plist>
