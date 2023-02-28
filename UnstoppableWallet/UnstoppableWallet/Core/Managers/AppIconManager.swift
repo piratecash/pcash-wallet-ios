@@ -8,12 +8,9 @@ class AppIconManager {
         .main,
         .alternate(name: "AppIconDark", title: "Dark"),
         .alternate(name: "AppIconMono", title: "Mono"),
-        .alternate(name: "AppIconLeo", title: "Leo"),
-        .alternate(name: "AppIconMustang", title: "Mustang"),
-        .alternate(name: "AppIconYak", title: "Yak"),
-        .alternate(name: "AppIconPunk", title: "Punk"),
-        .alternate(name: "AppIcon1874", title: "#1874"),
-        .alternate(name: "AppIcon8ball", title: "8ball")
+        .alternate(name: "AppIconMsg", title: "Corsa"),
+        .alternate(name: "AppIconWorld", title: "World"),
+        .alternate(name: "AppIconSafe", title: "Safe")
     ]
 
     private let appIconRelay = PublishRelay<AppIcon>()
