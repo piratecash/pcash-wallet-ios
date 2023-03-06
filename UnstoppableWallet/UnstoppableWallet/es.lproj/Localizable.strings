@@ -1052,8 +1052,8 @@
 
 // Intro
 
-"intro.unchain_assets.title" = "Desencadenar Activos";
-"intro.unchain_assets.description" = "No te encierres y no dejes que otros te hagan eso";
+"intro.unchain_assets.title" = "Mensajero";
+"intro.unchain_assets.description" = "Chatea libremente y sin restricciones (estará disponible en futuras actualizaciones)";
 "intro.go_borderless.title" = "Actúa sin Fronteras";
 "intro.go_borderless.description" = "Supere las barreras condicionales y acceda a los mercados a nivel mundial";
 "intro.stay_private.title" = "Manténgase en Privado";

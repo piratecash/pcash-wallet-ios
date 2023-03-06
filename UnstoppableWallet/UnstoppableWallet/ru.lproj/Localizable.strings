@@ -1056,8 +1056,8 @@
 
 // Intro
 
-"intro.unchain_assets.title" = "Освободите активы";
-"intro.unchain_assets.description" = "Распоряжайтесь активами свободно и без ограничений";
+"intro.unchain_assets.title" = "Мессенджер";
+"intro.unchain_assets.description" = "Общайтесь свободно и без ограничений (будет доступно в следующих обновлениях)";
 "intro.go_borderless.title" = "Избавьтесь от Границ";
 "intro.go_borderless.description" = "Преодолейте барьеры и получите доступ к рынкам";
 "intro.stay_private.title" = "Сохраняйте Конфиденциальность";

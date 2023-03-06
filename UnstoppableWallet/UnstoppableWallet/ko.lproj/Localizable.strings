@@ -1052,8 +1052,8 @@
 
 // Intro
 
-"intro.unchain_assets.title" = "풀린 자산";
-"intro.unchain_assets.description" = "자신을 잠금하지 말고 다른 사람들이 귀하에게 그렇게 하도록 두지 마십시오.";
+"intro.unchain_assets.title" = "전령";
+"intro.unchain_assets.description" = "제한 없이 자유롭게 채팅하세요(향후 업데이트에서 사용 가능).";
 "intro.go_borderless.title" = "무경계로";
 "intro.go_borderless.description" = "조건부 장벽을 우회하고 전 세계적으로 시장에 접근";
 "intro.stay_private.title" = "개인 정보 유지";

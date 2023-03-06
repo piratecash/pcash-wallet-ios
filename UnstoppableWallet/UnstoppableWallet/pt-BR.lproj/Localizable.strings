@@ -1034,8 +1034,8 @@ Vá para Configurações → \"P.CASH\" e permita o acesso à câmera.";
 // Intro
 
 "intro.start" = "Seja P.CASH";
-"intro.unchain_assets.title" = "Libere Recursos";
-"intro.unchain_assets.description" = "Não se prenda, e não deixe que te prendam";
+"intro.unchain_assets.title" = "Mensageiro";
+"intro.unchain_assets.description" = "Converse livremente e sem restrições (estará disponível em atualizações futuras)";
 "intro.go_borderless.title" = "Seja sem fronteiras";
 "intro.go_borderless.description" = "Ultrapasse barreiras e acesse mercados globais";
 "intro.stay_private.title" = "Mantenha sua Privacidade";

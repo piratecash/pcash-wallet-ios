@@ -1053,8 +1053,8 @@
 
 // Intro
 
-"intro.unchain_assets.title" = "Assets lösen";
-"intro.unchain_assets.description" = "Sperren Sie sich nicht ein und lassen Sie nicht zu, dass andere das mit Ihnen tun";
+"intro.unchain_assets.title" = "Bote";
+"intro.unchain_assets.description" = "Chatten Sie frei und ohne Einschränkungen (wird in zukünftigen Updates verfügbar sein)";
 "intro.go_borderless.title" = "Jetzt loslegen";
 "intro.go_borderless.description" = "Umgehung der bedingten Schranken und globaler Marktzugang";
 "intro.stay_private.title" = "Privat bleiben";

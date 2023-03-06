@@ -1062,8 +1062,8 @@ Go to Settings - > P.CASH and allow access to the camera.";
 
 // Intro
 
-"intro.unchain_assets.title" = "Unchain Assets";
-"intro.unchain_assets.description" = "Don't lock yourself in and don't let others do that to you";
+"intro.unchain_assets.title" = "DEX Messenger";
+"intro.unchain_assets.description" = "Chat freely and without restrictions (will be available in future updates)";
 "intro.go_borderless.title" = "Go Borderless";
 "intro.go_borderless.description" = "Bypass conditional barriers and access markets globally";
 "intro.stay_private.title" = "Stay Private";

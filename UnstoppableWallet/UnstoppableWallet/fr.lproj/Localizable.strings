@@ -1052,8 +1052,8 @@
 
 // Intro
 
-"intro.unchain_assets.title" = "Désenchaînez les actifs";
-"intro.unchain_assets.description" = "Ne vous enfermez pas et ne laissez pas les autres vous le faire";
+"intro.unchain_assets.title" = "Messager";
+"intro.unchain_assets.description" = "Discutez librement et sans restrictions (sera disponible dans les futures mises à jour)";
 "intro.go_borderless.title" = "Sans frontières";
 "intro.go_borderless.description" = "Contournement des barrières conditionnelles et accès aux marchés à l'échelle mondiale";
 "intro.stay_private.title" = "Maintenez la confidentialité";

@@ -1055,8 +1055,8 @@ Ayarlar - > P.CASH ekranına giderek kamera erişimine izin verin.";
 
 // Intro
 
-"intro.unchain_assets.title" = "Varlıkları Serbest Bırak";
-"intro.unchain_assets.description" = "Kendinizi kilitlemeyin ve başkalarının bunu sizin için yapmasına izin vermeyin";
+"intro.unchain_assets.title" = "Haberci";
+"intro.unchain_assets.description" = "Özgürce ve kısıtlama olmaksızın sohbet edin (gelecekteki güncellemelerde mevcut olacak)";
 "intro.go_borderless.title" = "Sınırları Kaldırın";
 "intro.go_borderless.description" = "Şartların getirdiği engelleri atlatın ve dünyanın her piyasasına erişim sağlayın";
 "intro.stay_private.title" = "Gizliliğinizi Koruyun";

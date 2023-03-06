@@ -1054,8 +1054,8 @@
 
 // Intro
 
-"intro.unchain_assets.title" = "解除资产";
-"intro.unchain_assets.description" = "请勿锁定您自己，也不要让别人对您这样做";
+"intro.unchain_assets.title" = "信使";
+"intro.unchain_assets.description" = "自由聊天，不受限制（將在未來的更新中提供";
 "intro.go_borderless.title" = "进入无国界";
 "intro.go_borderless.description" = "避开有条件障碍，进入全球市场";
 "intro.stay_private.title" = "保持私密";
