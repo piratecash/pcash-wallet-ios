@@ -285,6 +285,7 @@
 
 "send.confirmation.you_send" = "您发送";
 "send.confirmation.to" = "接收人";
+"send.confirmation.contact_name" = "Contact Name";
 "send.confirmation.domain" = "域名";
 "send.confirmation.address" = "地址";
 "send.confirmation.account" = "账户";
@@ -475,7 +476,6 @@
 "market_discovery.browse_categories" = "浏览类别";
 "market_discovery.top_coins" = "TOP 硬币";
 "market_discovery.not_found" = "未发现结果";
-"market_discovery.category.chart.title" = "总市值";
 
 "market_watchlist.empty.caption" = "您的观察列表为空。";
 
@@ -636,7 +636,8 @@
 "coin_analytics.holders.info2" = "Top 10 wallets holding the token on each blockchain.";
 "coin_analytics.holders.tracked_blockchains" = "Tracked blockchains: Ethereum, Binance Smart Chain, Optimism, Arbitrum, Celo, Cronos, Avalanche, Fantom, Polygon";
 "coin_analytics.holders.in_top_10_addresses" = "in top 10 addresses";
-"coin_analytics.holders.count" = "%@ holders";
+"coin_analytics.holders.count" = "Holders: %@";
+"coin_analytics.holders.see_all" = "查看全部";
 
 "coin_analytics.project_tvl" = "Project TVL";
 "coin_analytics.tvl_ratio" = "M.Cap / TVL Ratio";
@@ -658,18 +659,18 @@
 "coin_analytics.reports" = "报告";
 
 "coin_analytics.funding" = "Funding";
-"coin_analytics.funding.lead" = "Lead";
+"coin_analytics.funding.lead" = "领投";
 
 "coin_analytics.treasuries" = "国库券";
 "coin_analytics.treasuries.filters" = "过滤器";
 "coin_analytics.treasuries.filter.all" = "所有";
-"coin_analytics.treasuries.filter.public" = "Public";
-"coin_analytics.treasuries.filter.private" = "Private";
+"coin_analytics.treasuries.filter.public" = "公用";
+"coin_analytics.treasuries.filter.private" = "一对多";
 "coin_analytics.treasuries.filter.etf" = "ETF";
 
 "coin_analytics.audits" = "审计";
-"coin_analytics.audits.issues" = "Issues";
-"coin_analytics.audits.no_reports" = "No audit reports";
+"coin_analytics.audits.issues" = "问题";
+"coin_analytics.audits.no_reports" = "没有审计报告";
 
 "coin_analytics.last_30d" = "last 30d";
 "coin_analytics.current" = "current";
@@ -686,7 +687,7 @@
 "coin_tweets.reference_type.retweeted" = "Retweeted @%@";
 "coin_tweets.reference_type.quoted" = "Quoted @%@";
 "coin_tweets.reference_type.replied" = "Replied to @%@";
-"coin_tweets.no_tweets_yet" = "No tweets yet";
+"coin_tweets.no_tweets_yet" = "暂无推文";
 "coin_tweets.not_available" = "No twitter available";
 "coin_tweets.see_on_twitter" = "See on Twitter";
 
@@ -770,6 +771,7 @@
 "tx_info.transaction_id" = "交易ID";
 "tx_info.to_hash" = "接收人";
 "tx_info.spender" = "消费人";
+"tx_info.contact_name" = "Contact Name";
 "tx_info.button_explorer" = "查看于%@";
 "tx_info.rate" = "历史价格";
 "tx_info.options.speed_up" = "加速";
@@ -944,6 +946,7 @@
 "appearance.balance_value.fiat_value" = "纤维值";
 
 // Settings -> Contacts
+
 "contacts.title" = "Contacts";
 "contacts.list.search_placeholder" = "名称";
 "contacts.list.not_found" = "You do not have an added contact";
@@ -1008,7 +1011,6 @@
 
 // Key Types
 
-"chart.time_duration.today" = "今天";
 "chart.time_duration.day" = "24小时";
 "chart.time_duration.week" = "7天";
 "chart.time_duration.week2" = "2星期";

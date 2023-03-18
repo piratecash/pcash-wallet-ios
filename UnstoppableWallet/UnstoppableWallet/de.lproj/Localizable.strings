@@ -284,6 +284,7 @@
 
 "send.confirmation.you_send" = "Sie Senden";
 "send.confirmation.to" = "An";
+"send.confirmation.contact_name" = "Contact Name";
 "send.confirmation.domain" = "Domäne";
 "send.confirmation.address" = "Adresse";
 "send.confirmation.account" = "Account";
@@ -474,7 +475,6 @@
 "market_discovery.browse_categories" = "Browse Categories";
 "market_discovery.top_coins" = "TOP Coins";
 "market_discovery.not_found" = "No results found";
-"market_discovery.category.chart.title" = "Total Cap";
 
 "market_watchlist.empty.caption" = "Your watchlist is empty.";
 
@@ -635,7 +635,8 @@
 "coin_analytics.holders.info2" = "Top 10 wallets holding the token on each blockchain.";
 "coin_analytics.holders.tracked_blockchains" = "Tracked blockchains: Ethereum, Binance Smart Chain, Optimism, Arbitrum, Celo, Cronos, Avalanche, Fantom, Polygon";
 "coin_analytics.holders.in_top_10_addresses" = "in top 10 addresses";
-"coin_analytics.holders.count" = "%@ holders";
+"coin_analytics.holders.count" = "Holders: %@";
+"coin_analytics.holders.see_all" = "Alle anzeigen";
 
 "coin_analytics.project_tvl" = "Project TVL";
 "coin_analytics.tvl_ratio" = "M.Cap / TVL Ratio";
@@ -769,6 +770,7 @@
 "tx_info.transaction_id" = "Transaktion ID";
 "tx_info.to_hash" = "An";
 "tx_info.spender" = "Spender";
+"tx_info.contact_name" = "Contact Name";
 "tx_info.button_explorer" = "Auf %@ ansehen";
 "tx_info.rate" = "Historischer Rate";
 "tx_info.options.speed_up" = "Beschleunigen";
@@ -943,6 +945,7 @@
 "appearance.balance_value.fiat_value" = "Fiat Value";
 
 // Settings -> Contacts
+
 "contacts.title" = "Contacts";
 "contacts.list.search_placeholder" = "Name";
 "contacts.list.not_found" = "You do not have an added contact";
@@ -1007,7 +1010,6 @@
 
 // Key Types
 
-"chart.time_duration.today" = "Heute";
 "chart.time_duration.day" = "24Std";
 "chart.time_duration.week" = "7T";
 "chart.time_duration.week2" = "2W";
@@ -1179,8 +1181,7 @@
 
 "status_info.title" = "Status";
 "status_info.pending.title" = "In Bearbeitung";
-"status_info.pending.content" = "Die Transaktion wurde noch nicht in der Blockchain bestätigt. Transaktionen, die mit einer empfohlenen oder höheren Gebühreneinstellung gesendet werden, werden in der Regel innerhalb von  Minuten bearbeitet. Transaktionen, die mit einer niedrigen Gebühr gesendet werden, können einige Stunden oder sogar Tage ausstehend bleiben und können sogar abgelehnt werden. Beachten Sie auch, dass der Status einer einzelnen Transaktion, der in der Oberfläche von P.CASH
- Wallet angezeigt wird, normalerweise mit einer kurzen Verzögerung aktualisiert wird.";
+"status_info.pending.content" = "Die Transaktion wurde noch nicht in der Blockchain bestätigt. Transaktionen, die mit einer empfohlenen oder höheren Gebühreneinstellung gesendet werden, werden in der Regel innerhalb von  Minuten bearbeitet. Transaktionen, die mit einer niedrigen Gebühr gesendet werden, können einige Stunden oder sogar Tage ausstehend bleiben und können sogar abgelehnt werden. Beachten Sie auch, dass der Status einer einzelnen Transaktion, der in der Oberfläche von P.CASH Wallet angezeigt wird, normalerweise mit einer kurzen Verzögerung aktualisiert wird.";
 "status_info.processing.title" = "Verarbeite";
 "status_info.processing.content" = "Die Transaktion wurde bereits in die Blockchain aufgenommen, ist aber noch nicht endgültig abgeschlossen. Zu diesem Zeitpunkt kann die Transaktion für kleinere Zahlungen als abgeschlossen betrachtet werden. Bei größeren Zahlungen wird empfohlen, zu warten, bis der Transaktionsstatus auf abgeschlossen wechselt.";
 "status_info.completed.title" = "Abgeschlossen";
