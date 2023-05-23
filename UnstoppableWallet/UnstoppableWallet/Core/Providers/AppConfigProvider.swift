@@ -1,6 +1,8 @@
 import Foundation
 
 class AppConfigProvider {
+    static let reportEmail = "i@p.cash"
+
     let companyWebPageLink = "https://p.cash/"
     let appWebPageLink = "https://p.cash/"
     let analyticsLink = "https://portfolio.cash"
