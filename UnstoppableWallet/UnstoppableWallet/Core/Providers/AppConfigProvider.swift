@@ -3,6 +3,7 @@ import Foundation
 class AppConfigProvider {
     let companyWebPageLink = "https://p.cash/"
     let appWebPageLink = "https://p.cash/"
+    let analyticsLink = "https://portfolio.cash"
     let appGitHubLink = "https://github.com/piratecash/pcash-wallet-ios"
     let appTwitterAccount = "PirateCash_NET"
     let reportEmail = "i@p.cash"
