@@ -6,20 +6,16 @@
 	<string>development</string>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:unstoppable.money</string>
+		<string>applinks:p.cash</string>
 	</array>
 	<key>com.apple.developer.icloud-container-identifiers</key>
-	<array>
-		<string>iCloud.io.horizontalsystems.bank-wallet.dev</string>
-	</array>
+	<array/>
 	<key>com.apple.developer.icloud-services</key>
 	<array>
 		<string>CloudDocuments</string>
 	</array>
 	<key>com.apple.developer.ubiquity-container-identifiers</key>
-	<array>
-		<string>iCloud.io.horizontalsystems.bank-wallet.dev</string>
-	</array>
+	<array/>
 	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 </dict>
