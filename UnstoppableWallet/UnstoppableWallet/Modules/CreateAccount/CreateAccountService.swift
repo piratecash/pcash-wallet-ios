@@ -111,6 +111,7 @@ extension CreateAccountService {
         let account = accountFactory.account(
                 type: accountType,
                 origin: .created,
+                backedUp: false,
                 name: trimmedName.isEmpty ? defaultAccountName : trimmedName
         )
 
