@@ -10173,7 +10173,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = P.CASH;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				PRODUCT_BUNDLE_IDENTIFIER = cash.p.terminal;
-				MARKETING_VERSION = 0.33.1;
 				PRODUCT_MODULE_NAME = Unstoppable;
 				PRODUCT_NAME = P.CASH;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -10194,7 +10193,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = P.CASH;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				PRODUCT_BUNDLE_IDENTIFIER = cash.p.terminal;
-				MARKETING_VERSION = 0.33.1;
 				PRODUCT_MODULE_NAME = Unstoppable;
 				PRODUCT_NAME = P.CASH;
 				PROVISIONING_PROFILE_SPECIFIER = "";
