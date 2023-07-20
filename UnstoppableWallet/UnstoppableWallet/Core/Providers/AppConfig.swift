@@ -4,6 +4,7 @@ struct AppConfig {
     static let label = "cash.p.terminal"
     static let backupSalt = "pcash"
 
+    static let companyName = "PirateCash"
     static let reportEmail = "i@p.cash"
     static let companyWebPageLink = "https://p.cash/"
     static let appWebPageLink = "https://p.cash/"
