@@ -2,16 +2,24 @@ import Foundation
 
 struct AppConfig {
     static let label = "cash.p.terminal"
+    static let backupSalt = "pcash"
 
     static let reportEmail = "i@p.cash"
     static let companyWebPageLink = "https://p.cash/"
     static let appWebPageLink = "https://p.cash/"
     static let analyticsLink = "https://portfolio.cash"
-    static let appGitHubLink = "https://github.com/piratecash/pcash-wallet-ios"
+    static let appGitHubAccount = "piratecash"
+    static let appGitHubRepository = "pcash-wallet-ios"
     static let appTwitterAccount = "PirateCash_NET"
+    static let appTelegramAccount = "piratecash"
+    static let appRedditAccount = "PirateCash"
     static let btcCoreRpcUrl = "https://btc.blocksdecoded.com/rpc"
     static let guidesIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/blockchain-crypto-guides/v1.2/index.json")!
     static let faqIndexUrl = URL(string: "https://p.cash/s1/faq.json")!
+
+    static var appName: String {
+        (Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String) ?? ""
+    }
 
     static var marketApiUrl: String {
         (Bundle.main.object(forInfoDictionaryKey: "MarketApiUrl") as? String) ?? ""

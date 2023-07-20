@@ -3,7 +3,7 @@ import RxSwift
 import RxRelay
 
 class ReleaseNotesService {
-    static private let releaseUrl = "https://api.github.com/repos/piratecash/pcash-wallet-ios/releases/tags/"
+    static private let releaseUrl = "https://api.github.com/repos/\(AppConfig.appGitHubAccount)/\(AppConfig.appGitHubRepository)/releases/tags/"
 
     private let appVersionManager: AppVersionManager
 
