@@ -78,26 +78,14 @@ extension CoinAnalyticsService {
 
         state = .loading
 
-        if subscriptionManager.isAuthenticated {
-            Task { [weak self, subscriptionManager, marketKit, fullCoin, currency] in
-                try await subscriptionManager.fetch(
-                        request: {
-                            try await marketKit.analytics(coinUid: fullCoin.coin.uid, currencyCode: currency.code)
-                        },
-                        onSuccess: { [weak self] analytics in
-                            self?.state = .success(analytics: analytics)
-                        },
-                        onInvalidAuthToken: { [weak self] in
-                            self?.loadPreview()
-                        },
-                        onFailure: { [weak self] error in
-                            self?.state = .failed(error)
-                        }
-                )
-            }.store(in: &tasks)
-        } else {
-            loadPreview()
-        }
+        Task { [weak self, marketKit, fullCoin, currency] in
+            do {
+                let analytics = try await marketKit.analytics(coinUid: fullCoin.coin.uid, currencyCode: currency.code)
+                self?.state = .success(analytics: analytics)
+            } catch {
+                self?.state = .failed(error)
+            }
+        }.store(in: &tasks)
     }
 
 }
