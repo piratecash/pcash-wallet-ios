@@ -14,7 +14,7 @@ struct AppConfig {
     static let appTwitterAccount = "PirateCash_NET"
     static let appTelegramAccount = "piratecash"
     static let appRedditAccount = "PirateCash"
-    static let btcCoreRpcUrl = "https://btc.blocksdecoded.com/rpc"
+    static let mempoolSpaceUrl = "https://mempool.space"
     static let guidesIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/blockchain-crypto-guides/v1.2/index.json")!
     static let faqIndexUrl = URL(string: "https://p.cash/s1/faq.json")!
 
