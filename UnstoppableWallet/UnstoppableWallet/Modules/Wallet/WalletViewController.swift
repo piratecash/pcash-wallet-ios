@@ -510,8 +510,8 @@ class WalletViewController: ThemeViewController {
     }
 
     private func openSwap(wallet: Wallet) {
-        if let module = SwapModule.viewController(tokenFrom: wallet.token) {
-            present(module, animated: true)
+        if let viewController = SwapModule.viewController(tokenFrom: wallet.token) {
+            present(ThemeNavigationController(rootViewController: viewController), animated: true)
         }
     }
 
@@ -606,7 +606,16 @@ class WalletViewController: ThemeViewController {
         }
         // Decentralized actions
         cell.actions[.send] = { [weak self] in
-            let viewController = WalletModule.sendViewController()
+            guard let viewController = WalletModule.sendTokenListViewController() else {
+                return
+            }
+            self?.present(viewController, animated: true)
+        }
+
+        cell.actions[.swap] = { [weak self] in
+            guard let viewController = WalletModule.swapTokenListViewController() else {
+                return
+            }
             self?.present(viewController, animated: true)
         }
 
