@@ -191,7 +191,7 @@ class ZcashAdapter {
                 let shieldedVerified = await (try? synchronizer.getShieldedVerifiedBalance(accountIndex: 0).decimalValue.decimalValue) ?? 0
                 balanceSubject.onNext(BalanceData(
                         balance: shieldedVerified,
-                        balanceLocked: shielded - shieldedVerified
+                        locked: shielded - shieldedVerified
                 ))
 
                 finishPrepare()
@@ -477,7 +477,7 @@ class ZcashAdapter {
 
         return BalanceData(
                 balance: verifiedBalance.decimalValue.decimalValue,
-                balanceLocked: diff.decimalValue.decimalValue
+                locked: diff.decimalValue.decimalValue
         )
     }
 
