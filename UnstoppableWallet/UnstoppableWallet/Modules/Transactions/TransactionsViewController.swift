@@ -9,7 +9,7 @@ import RxSwift
 
 class TransactionsViewController: ThemeViewController {
     private let viewModel: TransactionsViewModel
-    private let dataSource: ISectionDataSource
+    private let dataSource: TransactionsTableViewDataSource
     private let disposeBag = DisposeBag()
 
     private let headerView: TransactionsHeaderView
@@ -17,7 +17,7 @@ class TransactionsViewController: ThemeViewController {
     private let typeFiltersView = FilterView(buttonStyle: .tab)
     private let syncSpinner = HUDActivityView.create(with: .medium24)
 
-    init(viewModel: TransactionsViewModel, dataSource: ISectionDataSource) {
+    init(viewModel: TransactionsViewModel, dataSource: TransactionsTableViewDataSource) {
         self.viewModel = viewModel
         self.dataSource = dataSource
         headerView = TransactionsHeaderView(viewModel: viewModel)
@@ -27,6 +27,8 @@ class TransactionsViewController: ThemeViewController {
         headerView.viewController = self
         tabBarItem = UITabBarItem(title: "transactions.tab_bar_item".localized, image: UIImage(named: "filled_transaction_2n_24"), tag: 0)
         navigationItem.largeTitleDisplayMode = .never
+
+        dataSource.viewController = self
     }
 
     required init?(coder aDecoder: NSCoder) {
