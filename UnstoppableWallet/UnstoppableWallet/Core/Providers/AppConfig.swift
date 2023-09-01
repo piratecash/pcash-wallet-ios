@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 struct AppConfig {
     static let label = "cash.p.terminal"
@@ -23,6 +24,18 @@ struct AppConfig {
         "ETH": "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
         "BNB": "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B"
     ]
+
+    static var appVersion: String {
+        Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
+    }
+
+    static var appBuild: String {
+        Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
+    }
+
+    static var appId: String? {
+        UIDevice.current.identifierForVendor?.uuidString
+    }
 
     static var appName: String {
         (Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String) ?? ""
