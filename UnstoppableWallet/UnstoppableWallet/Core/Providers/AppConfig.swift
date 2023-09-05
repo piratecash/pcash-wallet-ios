@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import MarketKit
 
 struct AppConfig {
     static let label = "cash.p.terminal"
@@ -19,10 +20,24 @@ struct AppConfig {
     static let guidesIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/blockchain-crypto-guides/v1.2/index.json")!
     static let faqIndexUrl = URL(string: "https://p.cash/s1/faq.json")!
     static let faqIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/unstoppable-wallet-website/master/src/faq.json")!
-    static let donationAddresses: [String: String] = [
-        "BTC": "3G5fwc9PP9Lcb1y3RAYGzoQZs5enJkmdxN",
-        "ETH": "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
-        "BNB": "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B"
+    static let donationAddresses: [BlockchainType: String] = [
+        .bitcoin: "3G5fwc9PP9Lcb1y3RAYGzoQZs5enJkmdxN",
+        .bitcoinCash: "bitcoincash:qr4f0pkvx86vv6cuae48nj83txqhwyt2fgadd9smxg\n",
+//        .ecash: "ecash:\n",
+        .litecoin: "MNbHsci3A8u6UiqjBMMckXzfPrLjeMxdRC\n",
+        .dash: "XcpUrR8LkohMNB9TfJaC97id6boUhRU3wk",
+        .zcash: "zs1eqk4jh84tas5xv3xydeknm3pvg6cn3l7d2twxh8npcpus6h2gg3dqd8gkxj5zpm98lsj67fkm4f",
+        .ethereum: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
+        .binanceSmartChain: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
+//        .binanceChain: "",
+        .polygon: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
+        .avalanche: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
+        .optimism: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
+        .arbitrumOne: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
+        .gnosis: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
+        .fantom: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
+        .tron: "TV4wYRcDun4iHb4oUgcse4Whptk9JKVui2"
+//        .solana: ""
     ]
 
     static var appVersion: String {
