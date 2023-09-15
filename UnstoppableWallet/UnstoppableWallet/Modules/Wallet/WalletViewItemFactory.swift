@@ -149,7 +149,8 @@ class WalletViewItemFactory {
         case .evmPrivateKey, .hdExtendedKey, .mnemonic:
             return [
                 .send: .enabled,
-                .receive: .enabled
+                .receive: .enabled,
+                .swap: .enabled
             ]
         case .evmAddress, .tronAddress: return [:]
         }
