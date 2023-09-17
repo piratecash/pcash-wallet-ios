@@ -19,7 +19,6 @@ struct AppConfig {
     static let mempoolSpaceUrl = "https://mempool.space"
     static let guidesIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/blockchain-crypto-guides/v1.2/index.json")!
     static let faqIndexUrl = URL(string: "https://p.cash/s1/faq.json")!
-    static let faqIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/unstoppable-wallet-website/master/src/faq.json")!
     static let donationAddresses: [BlockchainType: String] = [
         .bitcoin: "3G5fwc9PP9Lcb1y3RAYGzoQZs5enJkmdxN",
         .bitcoinCash: "bitcoincash:qr4f0pkvx86vv6cuae48nj83txqhwyt2fgadd9smxg\n",
