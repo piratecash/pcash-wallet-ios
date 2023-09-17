@@ -621,7 +621,6 @@ Go to Settings - > %@ and allow access to the camera.";
 "market_discovery.browse_categories" = "Browse Categories";
 "market_discovery.top_coins" = "TOP Coins";
 "market_discovery.not_found" = "No results found";
-"market_discovery.category.chart.title" = "Total Cap";
 
 "market_watchlist.empty.caption" = "Your watchlist is empty.";
 
@@ -1251,7 +1250,6 @@ Go to Settings - > %@ and allow access to the camera.";
 
 // Key Types
 
-"chart.time_duration.today" = "TDY";
 "chart.time_duration.day" = "24H";
 "chart.time_duration.week" = "7D";
 "chart.time_duration.week2" = "2W";
