@@ -99,30 +99,31 @@
 
 "access_camera.message" = "%@ benötigt Zugriff auf Ihre Kamera, um den QR-Code zu scannen.
 
-Gehe zu Einstellungen - > %@ und erlaube Zugriff auf die Kamera.";
-"access_camera.settings" = "Einstellungen";
+"access_camera.message" = "Yo, %@ wants a lil' peek with that camera to catch that flashy QR code.
+
+Swag your way to Settings -> %@ and let it shine!";
+"access_camera.settings" = "Settings";
 
 // Restore
 
-"restore.title" = "Wallet importieren";
-"restore.advanced" = "Erweitert";
-"restore.import_by" = "Importieren von";
-"restore.restore_type.mnemonic" = "Wiederherstellungsphrase";
-"restore.restore_type.private_key" = "Privater Schlüssel";
-"restore.mnemonic.placeholder" = "12, 15, 18, 21 oder 24 Wörter eingeben";
-"restore.private_key.placeholder" = "Geben Sie EVM privaten Schlüssel, BIP32 Root-Schlüssel oder  Account Extended Private Key ein";
-"restore.private_key.invalid_key" = "Ungültiger Schlüssel";
-"restore_error.mnemonic_word_count" = "Falsche Wortzahl. Sie muss zwischen 12 und 24 Wörtern liegen. Sie haben eingegeben: %@";
-"restore.checksum_error" = "Ungültige Prüfsumme";
-"restore.passphrase" = "Passwort";
-"restore.input.passphrase" = "Passwort";
-"restore.passphrase_description" = "Dieses Passwort wird verwendet, um die Sicherungsdatei Ihrer Wallet zu verschlüsseln. Es hat nichts mit Ihrem Apple iCloud-Passwort zu tun. Wenn Sie es vergessen oder verlieren, kann es nicht wiederhergestellt oder zurückgesetzt werden.";
-"restore.error.empty_passphrase" = "Die Passphrase darf nicht leer sein";
-"restore.non_standard_import" = "Nicht standardmäßige Wiederherstellung";
-"restore.non_standard_import.description" = "Diese Seite bietet einen speziellen Wallet-Importmechanismus für Benutzer von %@ die eine nicht standardmäßige Wallet haben. Solche Brieftaschen könnten in %@ Version 0 erstellt worden sein. 7 - 0.28 unter Verwendung einer nicht-englischen Wiederherstellungsphrase und/oder eines Sonderzeichens in der Brieftasche Passphrase (d.h. diakritisches Symbol).\n\nWenn Sie ein betroffener Benutzer sind, wird Ihr Wallet-Guthaben nach dem Import in Version 0.29 oder höher 0 angezeigt. Auf dieser Seite können Sie den Zugriff auf Ihre nicht standardmäßige Brieftasche wiederherstellen. Sobald Sie importiert haben, empfehlen wir Ihnen eine neue Wallet zu erstellen (die standardkonform ist) und Geld dorthin zu verschieben.";
-"restore.warning.non_recommended.description" = "Diese Brieftasche scheint ein nicht standardmäßiges Zeichen in ihrer geheimen Wortliste und/oder einer Passphrase zu verwenden. Wenn Sie kein Guthaben oder Transaktionen sehen, lesen Sie bitte unten für Details.\n\nKLICKEN, UM WEITERE INFORMATIONEN ZU ERHALTEN";
-"restore.error.non_standard.description" = "Dies ist eine nicht standardmäßige Wallet. \n\nKLICKEN SIE MEHR INFO";
-
+"restore.title" = "Import Wallet";
+"restore.advanced" = "Advanced";
+"restore.import_by" = "Import By";
+"restore.restore_type.mnemonic" = "Recovery Phrase";
+"restore.restore_type.private_key" = "Private Key";
+"restore.mnemonic.placeholder" = "Enter Recovery Phrase";
+"restore.private_key.placeholder" = "Enter EVM Private Key, BIP32 Root Key or Account Extended Private Key";
+"restore.private_key.invalid_key" = "Invalid Key";
+"restore_error.mnemonic_word_count" = "Hold up, fam! We need it between 12 and 24 words. You droppin' %@ on me? Let's keep it wavy";
+"restore.checksum_error" = "Invalid checksum";
+"restore.passphrase" = "Passphrase";
+"restore.input.passphrase" = "Passphrase";
+"restore.passphrase_description" = "This is the password that locks up your wallet backup, like a secret track. Ain't no iCloud vibes here. Lose it and it's gone, like old Kanye mixtapes.";
+"restore.error.empty_passphrase" = "The passphrase cannot be empty";
+"restore.non_standard_import" = "Non-Standard Import";
+"restore.non_standard_import.description" = "Yo, %@ fam, this page is for y'all with that unique Yeezy-style wallet. Maybe you were vibing in the %@ 0.27 - 0.28 era with some international lyrics or fancy symbols in your wallet. Seeing a big zero on that balance after the 0.29 drop? We got you. Dive in here to get back to the beat. And after? Consider rocking a brand-new, standard-compliant wallet and make those money moves.";
+"restore.warning.non_recommended.description" = "Hold up! Your wallet's got that avant-garde character style. Not seeing the cash or the flow? Dive deep for the deets below. 🎤\n\nTAP IN FOR THE SCOOP";
+"restore.error.non_standard.description" = "Yo, this wallet's got its own wave. It's non-standard. 🕶️\n\nTAP TO UNRAVEL THE MYSTERY";
 // Restore Type
 
 "restore_type.title" = "Wallet importieren";
@@ -137,19 +138,19 @@ Gehe zu Einstellungen - > %@ und erlaube Zugriff auf die Kamera.";
 
 // Restore Cloud
 
-"restore.cloud.title" = "Sicherung auswählen";
-"restore.cloud.description" = "Wählen Sie die Sicherungskopie der Wallet aus, die Sie wiederherstellen möchten.";
-"restore.cloud.empty" = "Keine Sicherungen gefunden.";
-"restore.cloud.imported" = "Importierte Wallet";
+"restore.cloud.title" = "Select Backup";
+"restore.cloud.description" = "Pick the mixtape (backup) of the wallet you wanna bring back to the spotlight.";
+"restore.cloud.empty" = "No backups found.";
+"restore.cloud.imported" = "Imported wallets";
 
-"restore.cloud.password.title" = "Passwort eingeben";
-"restore.cloud.password.placeholder" = "Passwort sichern";
-"restore.cloud.password.description" = "Geben Sie das Backup-Passwort ein, um Ihre Brieftasche aus iCloud zu importieren.";
+"restore.cloud.password.title" = "Enter Password";
+"restore.cloud.password.placeholder" = "Backup Password";
+"restore.cloud.password.description" = "Drop that secret beat (backup password) to get your wallet vibes from the iCloud stage.";
 
 // Restore Cex
 
-"restore.cex.title" = "CEX auswählen";
-"restore.cex.description" = "Wählen Sie den zentralen Austausch aus, zu dem Sie sich verbinden möchten.";
+"restore.cex.title" = "Select CEX";
+"restore.cex.description" = "Pick the main stage (centralized exchange) you wanna rock with.";
 
 // Restore Binance
 
@@ -166,9 +167,9 @@ Gehe zu Einstellungen - > %@ und erlaube Zugriff auf die Kamera.";
 
 "coin_settings.title" = "Blockchain Einstellungen";
 "coin_settings.bitcoin_cash_coin_type.title.type0" = "Legacy";
-"coin_settings.bitcoin_cash_coin_type.title.type145" = "CashAddress (empfohlen)";
-"sync_mode.from_blockchain" = "Von Blockchain";
-"blockchain_settings.description" = "Wählen Sie das Adressformat für den Empfang von Zahlungen. Ein korrektes Format sollte bei der Wiederherstellung einer bestehenden Brieftasche gewählt werden.";
+"coin_settings.bitcoin_cash_coin_type.title.type145" = "CashAddress";
+"sync_mode.from_blockchain" = "From Blockchain";
+"blockchain_settings.description" = "Pick your style (address format) for catching those payments. When bringing back an old mix (restoring a wallet), make sure the beats match.";
 
 // Coin Platforms
 
@@ -176,19 +177,19 @@ Gehe zu Einstellungen - > %@ und erlaube Zugriff auf die Kamera.";
 
 // Copy Warning
 
-"copy_warning.title" = "Kopierrisiko";
-"copy_warning.description" = "Als Sicherheitsmaßnahme empfehlen wir, die Kopierfunktion nicht für diesen Wert zu verwenden.";
-"copy_warning.dont_copy" = "Nicht kopieren";
-"copy_warning.i_will_risk_it" = "Ich werde es riskieren";
+"copy_warning.title" = "Risk of Copying";
+"copy_warning.description" = "For safety, like rocking shades indoors, skip that copy action for this value, fam.";
+"copy_warning.dont_copy" = "Don't Copy";
+"copy_warning.i_will_risk_it" = "I will risk it";
 
 // Recovery Phrase
 
-"recovery_phrase.title" = "Wiederherstellungsphrase";
-"recovery_phrase.warning" = "Teilen Sie diesen Schlüssel niemals mit niemandem. %@ Wallet-Support-Team wird ihn niemals anfragen.";
-"recovery_phrase.tap_to_show" = "Tippen, um Wiederherstellungsphrase anzuzeigen";
-"recovery_phrase.passphrase" = "Passwort";
-"recovery_phrase.copy_warning.title" = "Risiko der Wiederherstellungs-Phrase-Kopie";
-"recovery_phrase.copy_warning.description" = "Als Sicherheitsmaßnahme empfehlen wir, Kopiermaßnahmen nicht auf Wiederherstellungs-Phrase zu verwenden.";
+"recovery_phrase.title" = "Recovery Phrase";
+"recovery_phrase.warning" = "Hold onto this key like a rare Yeezy drop. The %@ Wallet crew? We won't ever slide into your DMs for it.";
+"recovery_phrase.tap_to_show" = "Tap to show recovery phrase";
+"recovery_phrase.passphrase" = "Passphrase";
+"recovery_phrase.copy_warning.title" = "Risk of Recovery Phrase copy";
+"recovery_phrase.copy_warning.description" = "As a security measure,we recommend not using copy action on recovery phrase.";
 
 // EVM Private Key
 
@@ -207,18 +208,18 @@ Gehe zu Einstellungen - > %@ und erlaube Zugriff auf die Kamera.";
 
 // Backup
 
-"backup.title" = "Wiederherstellungsphrase";
-"backup.description" = "Schreibe diese Wörter in die richtige Reihenfolge und halte sie an einem sicheren Ort";
-"backup.tap_to_show" = "Tippen, um Wiederherstellungsphrase anzuzeigen";
-"backup.passphrase" = "Passwort";
-"backup.verify" = "Prüfen";
-"backup.verified" = "Verifiziert";
+"backup.title" = "Recovery Phrase";
+"backup.description" = "Jot these words down, in flow, and stash them somewhere no haters can find.";
+"backup.tap_to_show" = "Tap to show recovery phrase";
+"backup.passphrase" = "Passphrase";
+"backup.verify" = "Verify";
+"backup.verified" = "Verified";
 
 // Backup Verify Words
 
-"backup_verify_words.title" = "Prüfen";
-"backup_verify_words.description" = "Wählen Sie zwei angeforderte Wörter aus Ihrer Wallet-Wiederherstellungsphrase";
-"backup_verify_words.incorrect_word" = "Falsches Wort";
+"backup_verify_words.title" = "Verify";
+"backup_verify_words.description" = "Pick out those two spotlight words from your wallet's lyrical recovery phrase.";
+"backup_verify_words.incorrect_word" = "Incorrect Word";
 
 // Backup Verify Passphrase
 
@@ -232,17 +233,18 @@ Gehe zu Einstellungen - > %@ und erlaube Zugriff auf die Kamera.";
 
 // Backup Prompt
 
-"backup_prompt.title" = "Manuelle Sicherung";
-"backup_prompt.warning" = "Erstellen Sie eine Sicherungskopie der Wiederherstellungsphrase und des zugehörigen Passworts, mit dem Sie Ihre Wallet wiederherstellen können, wenn Ihr Telefon verloren geht, gestohlen, kaputt, etc.";
-"backup_prompt.backup" = "Sicherung";
-"backup_prompt.backup_manual" = "Manuelle Sicherung";
-"backup_prompt.backup_cloud" = "Sicherung in iCloud";
-"backup_prompt.later" = "Später";
+"backup_prompt.title" = "Manual Backup";
+"backup_prompt.warning" = "Craft a backup mix of the recovery vibes and that secret code. It's your safety net if your phone goes MIA, gets jacked, or just breaks down.";
+"backup_prompt.backup" = "Backup";
+"backup_prompt.backup_manual" = "Manual Backup";
+"backup_prompt.backup_cloud" = "Backup to iCloud";
+"backup_prompt.later" = "Later";
 
 // Backup to iCloud
 
-"backup.cloud.title" = "Sicherung in iCloud";
-"backup.cloud.description" = "iCloud-Speicher ist ein von Apple bereitgestellter Cloud-Speicherdienst. Es ist wichtig zu wissen, dass Ihre Daten auf Apple-Servern gespeichert werden und nicht auf Ihren persönlichen Geräten. Das bedeutet, dass Sie Ihre Daten anvertrauen und die Sicherheit Ihrer Daten einem Drittanbieter überlassen.";
+"backup.cloud.title" = "Backup to iCloud";
+"backup.cloud.description" = "Heads up: iCloud is Apple's stage, not yours. Your beats (data) are on their mics (servers), not your personal studio. So, you're passing the mic and trust to them.";
+"backup.cloud.terms.item.1" = "I understand that losing access to my iCloud, will result in loosing access to the backup of a respective wallet.";
 
 "backup.cloud.terms.item.1" = "Ich verstehe, dass der Verlust des Zugriffs auf meine iCloud dazu führen wird, dass auch der Zugriff auf die Sicherung einer entsprechenden Brieftasche verloren geht.";
 
@@ -253,33 +255,31 @@ Gehe zu Einstellungen - > %@ und erlaube Zugriff auf die Kamera.";
 "backup.cloud.name.error.already_exist" = "Sicherungsname existiert bereits!";
 "backup.cloud.name.placeholder" = "Name";
 
-"backup.cloud.password.title" = "Passwort festlegen";
-"backup.cloud.password.description" = "Legen Sie ein Passwort fest, um das Entsperren zu ermöglichen. Das Passwort muss mindestens 8 Zeichen lang sein und einen Kleinbuchstaben, einen Großbuchstaben, eine Zahl und ein Sonderzeichen enthalten.";
-"backup.cloud.password.highlighted_description" = "Vergessen Sie dieses Passwort nicht! Es ist getrennt von Ihrem Apple iCloud-Passwort und kann nicht wiederhergestellt oder zurückgesetzt werden.";
-"backup.cloud.password.placeholder" = "Passwort";
-"backup.cloud.password.confirm.placeholder" = "Bestätigen";
-"backup.cloud.password.save" = "Speichern und sichern";
+"backup.cloud.password.title" = "Set Password";
+"backup.cloud.password.description" = "Craft a password that's as iconic as a Kanye track. Need 8 beats (symbols) with a mix of highs (uppercase), lows (lowercase), numbers, and some flair (special character).";
+"backup.cloud.password.highlighted_description" = "Don't forget this password! It is separate from your Apple iCloud password, and it cannot be recovered or reset.";
+"backup.cloud.password.placeholder" = "Password";
+"backup.cloud.password.confirm.placeholder" = "Confirm";
+"backup.cloud.password.save" = "Save and Backup";
 
-"backup.cloud.password.error.empty_passphrase" = "Passphrase darf nicht leer sein";
-"backup.cloud.password.error.forbidden_symbols" = "Bitte verwende nur unterstützte Symbole: <![CDATA[A-Z a-z 0-9 \' \" ` & / ? ! : ; . , ~ * $ = + - [ ](){} <> \\ _ # @ | % ]]>";
-"backup.cloud.password.error.minimum_requirement" = "Das Passwort muss mindestens 8 Zeichen enthalten, darunter ein Großbuchstabe, ein Kleinbuchstabe, eine Zahl und ein Symbol.";
-"backup.cloud.password.error.invalid_password" = "Falsches Passwort";
-"backup.cloud.password.error.invalid_backup" = "Backup ist beschädigt";
-"backup.cloud.password.confirm.error.doesnt_match" = "Passwort stimmt nicht überein";
-"backup.cloud.not_available" = "iCloud nicht verfügbar";
-"backup.cloud.cant_create_file" = "Die Datei kann nicht in iCloud gespeichert werden";
-"backup.cloud.cant_delete_file" = "Kann nicht von iCloud gelöscht werden";
-"backup.cloud.no_access.title" = "Zugriff auf iCloud";
-"backup.cloud.no_access.title" = "Zugriff auf iCloud";
-"backup.cloud.no_access.description" = "Um ein Backup zu erstellen, müssen Sie Zugriff auf iCloud-Speicher gewähren.";
-
+"backup.cloud.password.error.empty_passphrase" = "Passphrase cannot be empty";
+"backup.cloud.password.error.forbidden_symbols" = "Stick to the platinum hits: A-Z a-z 0-9 and these symbols:A-Z a-z 0-9 ' \" ` & / ? ! : ; . , ~ * $ = + - [ ] ( ) { } < > \\ _ # @ | %. No remixes, please.";
+"backup.cloud.password.error.minimum_requirement" = "Bring at least 8 characters to the stage, featuring a capital hit, a chill lowercase, a number, and some special effects.";
+"backup.cloud.password.error.invalid_password" = "Incorrect Password";
+"backup.cloud.password.error.invalid_backup" = "Backup is corrupted";
+"backup.cloud.password.confirm.error.doesnt_match" = "Password doesn’t match";
+"backup.cloud.not_available" = "iCloud not Available";
+"backup.cloud.cant_create_file" = "Can't save File to iCloud";
+"backup.cloud.cant_delete_file" = "Can't delete from iCloud";
+"backup.cloud.no_access.title" = "Access iCloud";
+"backup.cloud.no_access.description" = "Wanna drop a backup? Gotta pass the mic to iCloud storage first.";
 
 // Errors
 
-"error.send.self_transfer" = "Sich selbst zu senden wird nicht unterstützt";
-"error.send_binance.memo_required" = "Empfänger benötigt nicht-leeren Vermerk bei Transfer einer Transaktion";
-"error.send_binance.only_digits_allowed" = "Der Vermerk darf nur Zahlen enthalten";
-"error.send_z_cash.transparent_address" = "%@ unterstützt keine Zahlungen an eine transparente Adresse";
+"error.send.self_transfer" = "Sending to yourself is not supported";
+"error.send_binance.memo_required" = "Yo, the receiver's looking for a memo that's not silent. Drop some beats in that transfer note.";
+"error.send_binance.only_digits_allowed" = "The memo's gotta be numbers only, like chart-topping digits.";
+"error.send_z_cash.transparent_address" = "Hold up, %@ ain't vibing with payments to a see-through address.";
 
 // Balance
 
@@ -300,16 +300,16 @@ Gehe zu Einstellungen - > %@ und erlaube Zugriff auf die Kamera.";
 "balance.enhancing_transactions" = "Transaktionen verbessern";
 
 "balance.searching.count" = "%@ tx";
-"balance.syncing_percent" = "Synchronisieren... %@";
-"balance.synced_through" = "bis %@";
-"balance.add_coin" = "Coin hinzufügen";
-"balance.invalid_api_key" = "Ungültiger API-Schlüssel";
-"balance.empty.add_coins" = "Coins hinzufügen";
-"balance.empty.description" = "Sie haben keine Coins zu diesem Wallet hinzugefügt.";
-"balance.watch_empty.description" = "Diese Wallet-Adresse hat keinen Kontostand";
-"balance.sort_by" = "Sortieren nach";
-"balance.sort.header" = "Sortieren nach";
-"balance.sort.valueHighToLow" = "Guthaben";
+"balance.syncing_percent" = "Syncing... %@";
+"balance.synced_through" = "until %@";
+"balance.add_coin" = "Add Coin";
+"balance.invalid_api_key" = "Invalid API Key";
+"balance.empty.add_coins" = "Add Coins";
+"balance.empty.description" = "Looks like your wallet's still waiting for its debut album. No coins dropped in yet.";
+"balance.watch_empty.description" = "This wallet's address? Still waiting for its first hit single. No balance here.";
+"balance.sort_by" = "Sort By";
+"balance.sort.header" = "Sort by";
+"balance.sort.valueHighToLow" = "Balance";
 "balance.sort.az" = "Name";
 "balance.sort.price_change" = "Preisänderung";
 
@@ -321,10 +321,10 @@ Gehe zu Einstellungen - > %@ und erlaube Zugriff auf die Kamera.";
 // Token Balance Page
 "balance.token.locked" = "Locked";
 "balance.token.locked.info.title" = "TimeLock";
-"balance.token.locked.info.description" = "Der Sender hat dieses Guthaben mit einer Ausgabesperre versehen, die zu dem angezeigten Datum abläuft.\n\nKeine Sorge, die erhaltenen Bitcoin sind bereits Ihre. Die Bitcoins sind nur zeitweise gesperrt, so dass Sie sie erst nach Ablauf der Sperrzeit im Bitcoin-Netzwerk ausgeben können.";
-"balance.token.staked" = "Absteckung";
-"balance.token.staked.info.title" = "Absteckter Titel";
-"balance.token.staked.info.description" = "Absteckungstext";
+"balance.token.locked.info.description" = "The sender dropped these funds with a lil' hold - kinda like a track release date.\n\nChill, those Bitcoins are already in your studio, but you gotta wait for the drop before you can make it rain on the Bitcoin network.";
+"balance.token.staked" = "Staked";
+"balance.token.staked.info.title" = "Staked title";
+"balance.token.staked.info.description" = "Staked Description Text";
 "balance.token.frozen" = "Frozen";
 "balance.token.frozen.info.title" = "gefrorener Titel";
 "balance.token.frozen.info.description" = "gefrorener Beschreibungstext";
