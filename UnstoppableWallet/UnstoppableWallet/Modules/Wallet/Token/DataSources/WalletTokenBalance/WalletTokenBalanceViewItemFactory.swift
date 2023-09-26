@@ -66,6 +66,8 @@ class WalletTokenBalanceViewItemFactory {
         } else if case let .customSyncing(main, secondary, _) = item.state {
             let text = [main, secondary].compactMap { $0 }.joined(separator: " - ")
             return (text: text, dimmed: failedImageViewVisible(state: item.state))
+        } else if case .stopped = item.state {
+            return (text: "balance.stopped".localized, dimmed: failedImageViewVisible(state: item.state))
         } else {
             return secondaryValue(item: item, balanceHidden: balanceHidden)
         }
@@ -80,14 +82,8 @@ class WalletTokenBalanceViewItemFactory {
 
     private func syncSpinnerProgress(state: AdapterState) -> Int? {
         switch state {
-        case let .syncing(progress, _):
-            if let progress = progress {
-                return max(minimumProgress, progress)
-            } else {
-                return infiniteProgress
-            }
-        case .customSyncing:
-            return infiniteProgress
+        case let .syncing(progress, _), .customSyncing(_, _, let progress):
+            return progress.map { max(minimumProgress, $0) } ?? infiniteProgress
         default: return nil
         }
     }
