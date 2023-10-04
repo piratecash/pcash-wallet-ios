@@ -102,6 +102,7 @@ extension CreateAccountService {
                 type: accountType,
                 origin: .created,
                 backedUp: false,
+                fileBackedUp: false,
                 name: trimmedName.isEmpty ? defaultAccountName : trimmedName
         )
 
