@@ -1673,8 +1673,8 @@ Swag your way to Settings -> %@ and let it shine!";
 
 // Launch
 
-"launch.failed_to_launch" = "Anwendung konnte aufgrund eines internen Fehlers nicht gestartet werden. Bitte versuchen Sie die App neu zu starten oder melden Sie den Fehler an unser Support-Team.";
-"launch.failed_to_launch.report" = "Melden";
+"launch.failed_to_launch" = "Failed to launch application due to internal error. Please try restarting the app or report the error to our support team.";
+"launch.failed_to_launch.report" = "Report";
 
 // Tron
 
