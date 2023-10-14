@@ -363,6 +363,7 @@ class MainSettingsViewController: ThemeViewController {
 
     private var feedbackRows: [RowProtocol] {
         [
+            /*
             tableView.universalRow48(
                 id: "rate-us",
                 image: .local(UIImage(named: "rate_24")),
@@ -374,6 +375,7 @@ class MainSettingsViewController: ThemeViewController {
                     self?.viewModel.onTapRateApp()
                 }
             ),
+             */
             tableView.universalRow48(
                 id: "tell-friends",
                 image: .local(UIImage(named: "share_1_24")),
