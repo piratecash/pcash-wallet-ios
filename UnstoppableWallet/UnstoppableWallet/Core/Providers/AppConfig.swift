@@ -22,21 +22,21 @@ struct AppConfig {
     static let donationAddresses: [BlockchainType: String] = [
         .bitcoin: "3G5fwc9PP9Lcb1y3RAYGzoQZs5enJkmdxN",
         .bitcoinCash: "bitcoincash:qr4f0pkvx86vv6cuae48nj83txqhwyt2fgadd9smxg\n",
-//        .ecash: "ecash:\n",
+        .ecash: "ecash:qrzcal2fmm6vumxp3g2jndk0fepmt2racya9lc4yxy\n",
         .litecoin: "MNbHsci3A8u6UiqjBMMckXzfPrLjeMxdRC\n",
         .dash: "XcpUrR8LkohMNB9TfJaC97id6boUhRU3wk",
         .zcash: "zs1eqk4jh84tas5xv3xydeknm3pvg6cn3l7d2twxh8npcpus6h2gg3dqd8gkxj5zpm98lsj67fkm4f",
         .ethereum: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
         .binanceSmartChain: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
-//        .binanceChain: "",
+        .binanceChain: "bnb132w7sndlwn340jgqff2m9m4nsddx3hga55nx3l",
         .polygon: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
         .avalanche: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
         .optimism: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
         .arbitrumOne: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
         .gnosis: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
         .fantom: "0x696Ed8f9E2b3265Abc24a6A035d6c5094f61e61B",
-        .tron: "TV4wYRcDun4iHb4oUgcse4Whptk9JKVui2"
-//        .solana: ""
+        .tron: "TV4wYRcDun4iHb4oUgcse4Whptk9JKVui2",
+        .solana: "CefzHT5zCUncm3yhTLck9bCRYkbjHrKToT1GpPUyqCMa"
     ]
 
     static var appVersion: String {
