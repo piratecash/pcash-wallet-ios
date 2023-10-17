@@ -13,7 +13,7 @@ struct SwapConfirmationModule {
         guard let coinServiceFactory = EvmCoinServiceFactory(
                 blockchainType: dex.blockchainType,
                 marketKit: App.shared.marketKit,
-                currencyKit: App.shared.currencyKit,
+                currencyManager: App.shared.currencyManager,
                 coinManager: App.shared.coinManager
         ) else {
             return nil
@@ -48,7 +48,7 @@ struct SwapConfirmationModule {
         guard let coinServiceFactory = EvmCoinServiceFactory(
                 blockchainType: dex.blockchainType,
                 marketKit: App.shared.marketKit,
-                currencyKit: App.shared.currencyKit,
+                currencyManager: App.shared.currencyManager,
                 coinManager: App.shared.coinManager
         ) else {
             return nil
