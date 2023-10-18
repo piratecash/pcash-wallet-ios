@@ -11,6 +11,7 @@ class WalletTokenListService: IWalletTokenListService {
     private let cacheManager: EnabledWalletCacheManager
     private let reachabilityManager: IReachabilityManager
     private let balancePrimaryValueManager: BalancePrimaryValueManager
+    private let balanceHiddenManager: BalanceHiddenManager
     private let feeCoinProvider: FeeCoinProvider
     private let account: Account
 
@@ -51,14 +52,15 @@ class WalletTokenListService: IWalletTokenListService {
 
     init(elementService: IWalletElementService, coinPriceService: WalletCoinPriceService,
          cacheManager: EnabledWalletCacheManager, reachabilityManager: IReachabilityManager,
-         balancePrimaryValueManager: BalancePrimaryValueManager, appManager: IAppManager,
-         feeCoinProvider: FeeCoinProvider, account: Account
+         balancePrimaryValueManager: BalancePrimaryValueManager, balanceHiddenManager: BalanceHiddenManager,
+         appManager: IAppManager, feeCoinProvider: FeeCoinProvider, account: Account
     ) {
         self.elementService = elementService
         self.coinPriceService = coinPriceService
         self.cacheManager = cacheManager
         self.reachabilityManager = reachabilityManager
         self.balancePrimaryValueManager = balancePrimaryValueManager
+        self.balanceHiddenManager = balanceHiddenManager
         self.feeCoinProvider = feeCoinProvider
         self.account = account
 
@@ -141,6 +143,14 @@ class WalletTokenListService: IWalletTokenListService {
 
     var stateUpdatedPublisher: AnyPublisher<WalletTokenListService.State, Never> {
         stateUpdatedSubject.eraseToAnyPublisher()
+    }
+
+    var balanceHiddenObservable: Observable<Bool> {
+        balanceHiddenManager.balanceHiddenObservable
+    }
+
+    var balanceHidden: Bool {
+        balanceHiddenManager.balanceHidden
     }
 
     var balancePrimaryValueObservable: Observable<BalancePrimaryValue> {
