@@ -310,14 +310,6 @@ extension BaseTransactionsService {
         balanceHiddenManager.balanceHidden
     }
 
-    var balanceHiddenObservable: Observable<Bool> {
-        balanceHiddenManager.balanceHiddenObservable
-    }
-
-    var balanceHidden: Bool {
-        balanceHiddenManager.balanceHidden
-    }
-
     var itemData: ItemData {
         ItemData(items: items, allLoaded: lastRequestedCount > items.count)
     }
