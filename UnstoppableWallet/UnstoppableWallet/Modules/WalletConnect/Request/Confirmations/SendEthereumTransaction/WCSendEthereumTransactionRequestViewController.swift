@@ -11,7 +11,7 @@ class WCSendEthereumTransactionRequestViewController: SendEvmTransactionViewCont
     private let approveButton = PrimaryButton()
     private let rejectButton = PrimaryButton()
 
-    init(viewModel: WalletConnectSendEthereumTransactionRequestViewModel, transactionViewModel: SendEvmTransactionViewModel, settingsViewModel: EvmSendSettingsViewModel) {
+    init(viewModel: WCSendEthereumTransactionRequestViewModel, transactionViewModel: SendEvmTransactionViewModel, settingsViewModel: EvmSendSettingsViewModel) {
         self.viewModel = viewModel
 
         super.init(transactionViewModel: transactionViewModel, settingsViewModel: settingsViewModel)
