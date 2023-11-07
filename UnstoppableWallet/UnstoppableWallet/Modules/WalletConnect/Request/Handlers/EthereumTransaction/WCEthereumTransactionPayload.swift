@@ -4,6 +4,8 @@ import WalletConnectSign
 
 class WCEthereumTransactionPayload: WCRequestPayload {
     class var method: String { "" }
+    class var name: String { "" }
+
     override var method: String { Self.method }
 
     let transaction: WalletConnectTransaction
@@ -30,14 +32,16 @@ class WCEthereumTransactionPayload: WCRequestPayload {
 
 class WCSendEthereumTransactionPayload: WCEthereumTransactionPayload {
     override class var method: String { "eth_sendTransaction" }
+    override class var name: String { "Approve Transaction" }
     override class func module(request: WalletConnectRequest) -> UIViewController? {
-        WalletConnectSendEthereumTransactionRequestModule.viewController(request: request)
+        WCSendEthereumTransactionRequestModule.viewController(request: request)
     }
 }
 
 class WCSignEthereumTransactionPayload: WCEthereumTransactionPayload {
     override class var method: String { "eth_signTransaction" }
+    override class var name: String { "Sign Transaction" }
     override class func module(request: WalletConnectRequest) -> UIViewController? {
-        WalletConnectSignMessageRequestModule.viewController(request: request)
+        WCSignEthereumTransactionRequestModule.viewController(request: request)
     }
 }
