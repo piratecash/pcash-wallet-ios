@@ -2286,7 +2286,6 @@
 		ABC9A556361B2644555659D8 /* SendConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9AA7F2ECF212EF8B70470 /* SendConfirmationViewController.swift */; };
 		ABC9A55A98D2FB37A3351FF1 /* WalletTokenBalanceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A099EB5948C650A265EA /* WalletTokenBalanceDataSource.swift */; };
 		ABC9A55FD66CB6374F2D520D /* SendZcashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A8B3C65C9F0285483160 /* SendZcashViewController.swift */; };
-		ABC9A5791BC422EC1560139F /* ActionSheetControllerSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A7F8CF6A4F7EE62BB2CF /* ActionSheetControllerSwiftUI.swift */; };
 		ABC9A57DE6436FB8795F50E4 /* ContactBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A2D87362E00FD9FB5688 /* ContactBookViewController.swift */; };
 		ABC9A57EB423CAD56190F36B /* ChartIndicatorSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9ACE2CCBDF21572F5600C /* ChartIndicatorSettingsViewModel.swift */; };
 		ABC9A59B465A9C59F93DFB96 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A9F6635146BEBFB432D1 /* ChartCell.swift */; };
@@ -2581,7 +2580,6 @@
 		ABC9AF1729BA19223BB39E06 /* SendEip721ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A7C3BC5FC664BBF14C4F /* SendEip721ViewModel.swift */; };
 		ABC9AF231709386971D1A7AA /* WCSignMessageRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A0576B804ABA38EF9843 /* WCSignMessageRequestViewModel.swift */; };
 		ABC9AF2C595E6CC96FB8AF4A /* DismissPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9AA526C8BADA56269C4E0 /* DismissPanGestureRecognizer.swift */; };
-		ABC9AF2D644266893B21054D /* ActionSheetControllerSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A7F8CF6A4F7EE62BB2CF /* ActionSheetControllerSwiftUI.swift */; };
 		ABC9AF309AAE5C54D2020B23 /* RawFullBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A819E6708797C571CA0B /* RawFullBackup.swift */; };
 		ABC9AF371FBB4BEA654A78B6 /* MetadataMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9AA2491ADC4E5E089CD42 /* MetadataMonitor.swift */; };
 		ABC9AF4D82ACDFBFBDC2D23C /* MarketCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A37521CD6E2CC5BA4E68 /* MarketCardView.swift */; };
@@ -4210,7 +4208,6 @@
 		ABC9A7C3BC5FC664BBF14C4F /* SendEip721ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEip721ViewModel.swift; sourceTree = "<group>"; };
 		ABC9A7D665A025E95697C757 /* AccountRestoreWarningManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRestoreWarningManager.swift; sourceTree = "<group>"; };
 		ABC9A7D6C9D12C1F1F3A1218 /* SendBitcoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendBitcoinViewController.swift; sourceTree = "<group>"; };
-		ABC9A7F8CF6A4F7EE62BB2CF /* ActionSheetControllerSwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetControllerSwiftUI.swift; sourceTree = "<group>"; };
 		ABC9A7FA830E64B8DCA1A69A /* InputTextRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextRow.swift; sourceTree = "<group>"; };
 		ABC9A7FC41B9F98871246E0E /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		ABC9A80143F95E28346C81FE /* SendMemoInputService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMemoInputService.swift; sourceTree = "<group>"; };
@@ -7898,7 +7895,6 @@
 				ABC9ACC91C29905F8E7A2046 /* ActionSheetTapView.swift */,
 				ABC9ABC58788FAD9FC701881 /* ActionSheetConfiguration.swift */,
 				ABC9A6BBC41C034CB0DB3648 /* ActionSheetControllerNew.swift */,
-				ABC9A7F8CF6A4F7EE62BB2CF /* ActionSheetControllerSwiftUI.swift */,
 				ABC9A270E322D569DBA774B4 /* ActionSheetModifier.swift */,
 			);
 			path = ActionSheetNew;
@@ -10240,6 +10236,60 @@
 				11B351C9363D848E73AF742A /* ScamFilterModule.swift in Sources */,
 				11B35BCFF2CAA360EF2A9272 /* ScamFilterView.swift in Sources */,
 				11B35B34696958F957733B12 /* ScamFilterViewModel.swift in Sources */,
+				ABC9A5E5EFF9D46D036F52B9 /* ProposalChain.swift in Sources */,
+				ABC9A220C97C81DC578AA3C7 /* ProposalValidator.swift in Sources */,
+				ABC9A38390F78983E4DBD25D /* Eip155ProposalHandler.swift in Sources */,
+				ABC9A1DBAB7096605C181247 /* WalletConnectRequestChain.swift in Sources */,
+				ABC9ABBE120DB35A597FFE44 /* Encodable.swift in Sources */,
+				ABC9A8F14BF1F645F1DEB04A /* Eip155RequestFactory.swift in Sources */,
+				ABC9A13FE5AA68886E70CD2D /* WalletConnectRequestHandler.swift in Sources */,
+				ABC9AEAAB96049FCD4F4F67D /* WCEthereumTransactionHandler.swift in Sources */,
+				ABC9A2E2F6D884CC8444C029 /* WCSignMessageHandler.swift in Sources */,
+				ABC9A6424F39E24F7198B9DF /* WCSignMessagePayload.swift in Sources */,
+				ABC9A436F7B4A40DED7F9164 /* WCEthereumTransactionPayload.swift in Sources */,
+				ABC9A4F144A81832F29C1216 /* WCWalletPayload.swift in Sources */,
+				ABC9A60C112A25A070D40C1C /* WCWalletHandler.swift in Sources */,
+				ABC9A784C59999B2F7D2DEAF /* WalletConnectChain.swift in Sources */,
+				ABC9A48C20CE22D9BAF528F3 /* WalletConnectTransaction.swift in Sources */,
+				ABC9A6904E4DAE4C34EAEAE7 /* WCRequestPayload.swift in Sources */,
+				ABC9AF8BC668A989C34206BE /* AddressAppShowModule.swift in Sources */,
+				ABC9AA82FC637FD132FA3D36 /* WCSendEthereumTransactionRequestModule.swift in Sources */,
+				ABC9AF4E0120BFFB65D15A9B /* WCSendEthereumTransactionRequestService.swift in Sources */,
+				ABC9A192B0E531E1B2E4FF3F /* WCSendEthereumTransactionRequestViewModel.swift in Sources */,
+				ABC9AF231709386971D1A7AA /* WCSignMessageRequestViewModel.swift in Sources */,
+				ABC9A45C4CF0128410051774 /* WCSignMessageRequestModule.swift in Sources */,
+				ABC9A6C1F0B51698A7BC0B2A /* WCSignMessageRequestService.swift in Sources */,
+				ABC9AACB5CF2190A3D7C39AE /* WCSignMessageRequestViewController.swift in Sources */,
+				11B359EEA14A9DBB8B43BFEB /* WCSignEthereumTransactionRequestModule.swift in Sources */,
+				11B357408E3CCC0B93C42F67 /* WCSignEthereumTransactionRequestViewModel.swift in Sources */,
+				11B35076F57EA6103BBE3D63 /* WCSendEthereumTransactionRequestViewController.swift in Sources */,
+				11B35BD102629037A4348B3C /* WCSignEthereumTransactionRequestViewController.swift in Sources */,
+				11B353FF811AF49F4BC7BD43 /* CoinMarketsViewModel.swift in Sources */,
+				11B3507AB99A089727463C16 /* CoinMarketsView.swift in Sources */,
+				11B350473A42FF70E806AF96 /* ThemeList.swift in Sources */,
+				11B35CC16ABA93A94F46FD5B /* SelectorButtonStyle.swift in Sources */,
+				11B35EB231893AFDD3A1FF5C /* PlaceholderViewNew.swift in Sources */,
+				11B3502E567C29F297090D9B /* SyncErrorView.swift in Sources */,
+				ABC9A5361D9712C95F456376 /* Extensions.swift in Sources */,
+				ABC9A50D63AD21802AF5DE22 /* BaseAnimation.swift in Sources */,
+				ABC9A8F221BB603CA4EBFA1D /* AlphaDismissAnimation.swift in Sources */,
+				ABC9A724798E2748EAC06A36 /* AlphaPresentAnimation.swift in Sources */,
+				ABC9A1FD7594369D1F36C4EB /* MovingDismissAnimation.swift in Sources */,
+				ABC9A23D99D437A8A42C47E8 /* MovingPresentAnimation.swift in Sources */,
+				ABC9A32407A840A2100B3F76 /* TransitionDriver.swift in Sources */,
+				ABC9A400CF531FBE9FD0D7B1 /* ActionSheetAnimator.swift in Sources */,
+				ABC9A14731CC409C5EBC4978 /* DismissPanGestureRecognizer.swift in Sources */,
+				ABC9AA66E5F1C6C5EC8B6A1F /* InteractiveTransitionDelegate.swift in Sources */,
+				ABC9A231F63CDD5EC0BB71EF /* ActionSheetPresentationController.swift in Sources */,
+				ABC9AFEF087F222EE1251923 /* ActionStyleNew.swift in Sources */,
+				ABC9AB6FF4DCBE7EFB5B8B7B /* ActionSheetModule.swift in Sources */,
+				ABC9A14877872E0FC7C9D0D2 /* ActionSheetTapView.swift in Sources */,
+				ABC9AFFAC86660ECAD968B2C /* ActionSheetConfiguration.swift in Sources */,
+				ABC9A5EBD9EAC91EB97C199C /* ActionSheetControllerNew.swift in Sources */,
+				ABC9AD1A3EA8558E90F69397 /* ActionSheetModifier.swift in Sources */,
+				11B35BFCE745A340714F1DE7 /* BadgeViewNew.swift in Sources */,
+				11B3523804E0F4F1DA8A1D9E /* BaseCurrencySettingsViewModel.swift in Sources */,
+				11B35F18FEEEAA9EC6043CA6 /* BaseCurrencySettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -11586,6 +11636,60 @@
 				11B35E214D370A2455F465F7 /* ScamFilterModule.swift in Sources */,
 				11B35E14EE021601520E17E1 /* ScamFilterView.swift in Sources */,
 				11B35AC64FE8360BAD4B42C7 /* ScamFilterViewModel.swift in Sources */,
+				ABC9AB92AA6E6B239B147FA7 /* ProposalChain.swift in Sources */,
+				ABC9A9DFE387DE03A693A06A /* ProposalValidator.swift in Sources */,
+				ABC9A1A5A19D4CC70E868727 /* Eip155ProposalHandler.swift in Sources */,
+				ABC9A0EEAF28FD7E8855B68B /* WalletConnectRequestChain.swift in Sources */,
+				ABC9A2969ACF7FD0801043FE /* Encodable.swift in Sources */,
+				ABC9A932AD114A779BF4EC16 /* Eip155RequestFactory.swift in Sources */,
+				ABC9AC5C5D51D703D7867211 /* WalletConnectRequestHandler.swift in Sources */,
+				ABC9AD900F508E6A1FD96662 /* WCEthereumTransactionHandler.swift in Sources */,
+				ABC9A8CB0A676BEFF303E78B /* WCSignMessageHandler.swift in Sources */,
+				ABC9A449BE71D70D4A315333 /* WCSignMessagePayload.swift in Sources */,
+				ABC9AB27C7AA17FA3D38D912 /* WCEthereumTransactionPayload.swift in Sources */,
+				ABC9AC2A8C8117EBE76078DE /* WCWalletPayload.swift in Sources */,
+				ABC9A6F265D51BD94CB43209 /* WCWalletHandler.swift in Sources */,
+				ABC9A41B8484D568EEAD72AE /* WalletConnectChain.swift in Sources */,
+				ABC9A82C93C9E266D1AFD1C3 /* WalletConnectTransaction.swift in Sources */,
+				ABC9A43B0EDD9BB6291F2E46 /* WCRequestPayload.swift in Sources */,
+				ABC9A735B9F27756B046AF9F /* AddressAppShowModule.swift in Sources */,
+				ABC9A3345E4D8A354AEBB574 /* WCSendEthereumTransactionRequestModule.swift in Sources */,
+				ABC9AFFE5C166606FD561A21 /* WCSendEthereumTransactionRequestService.swift in Sources */,
+				ABC9A0F2D481BBE31568347F /* WCSendEthereumTransactionRequestViewModel.swift in Sources */,
+				ABC9A23C433DC06FB7791285 /* WCSignMessageRequestViewModel.swift in Sources */,
+				ABC9A769D84D08514D26FFBC /* WCSignMessageRequestModule.swift in Sources */,
+				ABC9A60B3523F167B23648E1 /* WCSignMessageRequestService.swift in Sources */,
+				ABC9A84D1417A540D100EEB4 /* WCSignMessageRequestViewController.swift in Sources */,
+				11B35B2B8B3093530144F877 /* WCSignEthereumTransactionRequestModule.swift in Sources */,
+				11B35E60B65A327311D8CAB1 /* WCSignEthereumTransactionRequestViewModel.swift in Sources */,
+				11B354B551E301C652D67319 /* WCSendEthereumTransactionRequestViewController.swift in Sources */,
+				11B35B99BA314135CB139D02 /* WCSignEthereumTransactionRequestViewController.swift in Sources */,
+				11B3530E911B6F8B121BF174 /* CoinMarketsViewModel.swift in Sources */,
+				11B359330CB6A60E5960CEC2 /* CoinMarketsView.swift in Sources */,
+				11B3545B6D4BA7CC76ACB9D2 /* ThemeList.swift in Sources */,
+				11B359CF6F464D59295B7B31 /* SelectorButtonStyle.swift in Sources */,
+				11B35DCCBE18D2F1F16C01C5 /* PlaceholderViewNew.swift in Sources */,
+				11B35ED9F3C0EA3CCC4C0FF4 /* SyncErrorView.swift in Sources */,
+				ABC9AE362775FBF83C15C231 /* Extensions.swift in Sources */,
+				ABC9A1109D59CD5F71FBC153 /* BaseAnimation.swift in Sources */,
+				ABC9A9A71EA9758D096AAA68 /* AlphaDismissAnimation.swift in Sources */,
+				ABC9AE59D5128137249B4C18 /* AlphaPresentAnimation.swift in Sources */,
+				ABC9AB83192CC09204F5D128 /* MovingDismissAnimation.swift in Sources */,
+				ABC9A2B772D1C72F1AFA18CD /* MovingPresentAnimation.swift in Sources */,
+				ABC9AE56D91FF5CF88605DC2 /* TransitionDriver.swift in Sources */,
+				ABC9A8C5CBD21B029D07652D /* ActionSheetAnimator.swift in Sources */,
+				ABC9AF2C595E6CC96FB8AF4A /* DismissPanGestureRecognizer.swift in Sources */,
+				ABC9A4B315CCA7262344784A /* InteractiveTransitionDelegate.swift in Sources */,
+				ABC9A674A859280DDD21FA57 /* ActionSheetPresentationController.swift in Sources */,
+				ABC9AD04E4D3706E01B72D8D /* ActionStyleNew.swift in Sources */,
+				ABC9AC786F40F51F2108048F /* ActionSheetModule.swift in Sources */,
+				ABC9A3103BC1D3CC7E9D80BD /* ActionSheetTapView.swift in Sources */,
+				ABC9A331A15BAB3C3B88D808 /* ActionSheetConfiguration.swift in Sources */,
+				ABC9AE558CE5912B5C15B6EB /* ActionSheetControllerNew.swift in Sources */,
+				ABC9A0E706D269375195A2F4 /* ActionSheetModifier.swift in Sources */,
+				11B3537EE13B3EFB2E979821 /* BadgeViewNew.swift in Sources */,
+				11B35955EE2F47EFAFCBCE9F /* BaseCurrencySettingsViewModel.swift in Sources */,
+				11B3565D4E4EAD663143ED9B /* BaseCurrencySettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
