@@ -1,8 +1,8 @@
-import Foundation
-import RxSwift
-import RxCocoa
-import MarketKit
 import ComponentKit
+import Foundation
+import MarketKit
+import RxCocoa
+import RxSwift
 
 class BaseTransactionsViewModel {
     private let service: BaseTransactionsService
@@ -14,7 +14,6 @@ class BaseTransactionsViewModel {
 
     private let viewDataRelay = BehaviorRelay<ViewData>(value: ViewData(sectionViewItems: [], allLoaded: true, updateInfo: nil))
     private var syncingRelay = BehaviorRelay<Bool>(value: false)
-    private var resetEnabledRelay = BehaviorRelay<Bool>(value: false)
 
     private var sectionViewItems = [SectionViewItem]()
 
@@ -29,20 +28,14 @@ class BaseTransactionsViewModel {
         subscribe(disposeBag, service.itemDataObservable) { [weak self] in self?.sync(itemData: $0) }
         subscribe(disposeBag, service.itemUpdatedObservable) { [weak self] in self?.syncUpdated(item: $0) }
         subscribe(disposeBag, service.syncingObservable) { [weak self] in self?.sync(syncing: $0) }
-        subscribe(disposeBag, service.canResetObservable) { [weak self] in self?.sync(canReset: $0) }
         subscribe(disposeBag, contactLabelService.stateObservable) { [weak self] _ in self?.reSyncViewItems() }
 
         _sync(itemData: service.itemData)
         _sync(syncing: service.syncing)
-        sync(canReset: service.canReset)
     }
 
     private func reSyncViewItems() {
         _sync(itemData: service.itemData)
-    }
-
-    private func sync(canReset: Bool) {
-        resetEnabledRelay.accept(canReset)
     }
 
     private func sync(typeFilter: TransactionTypeFilter) {
@@ -136,11 +129,9 @@ class BaseTransactionsViewModel {
             return DateHelper.instance.formatTransactionDate(from: date)
         }
     }
-
 }
 
 extension BaseTransactionsViewModel {
-
     var typeFilterIndexDriver: Driver<Int> {
         typeFilterIndexRelay.asDriver()
     }
@@ -151,10 +142,6 @@ extension BaseTransactionsViewModel {
 
     var syncingDriver: Driver<Bool> {
         syncingRelay.asDriver()
-    }
-
-    var resetEnabledDriver: Driver<Bool> {
-        resetEnabledRelay.asDriver()
     }
 
     var typeFilterViewItems: [FilterView.ViewItem] {
@@ -183,7 +170,7 @@ extension BaseTransactionsViewModel {
 
             var itemIndex = index
 
-            for i in 0..<sectionIndex {
+            for i in 0 ..< sectionIndex {
                 itemIndex += self.sectionViewItems[i].viewItems.count
             }
 
@@ -191,15 +178,9 @@ extension BaseTransactionsViewModel {
             self.service.fetchRate(index: itemIndex)
         }
     }
-
-    func onTapReset() {
-        service.reset()
-    }
-
 }
 
 extension BaseTransactionsViewModel {
-
     class SectionViewItem {
         let title: String
         var viewItems: [ViewItem]
@@ -259,5 +240,4 @@ extension BaseTransactionsViewModel {
         let sectionIndex: Int
         let index: Int
     }
-
 }

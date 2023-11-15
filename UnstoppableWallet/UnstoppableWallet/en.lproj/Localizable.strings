@@ -937,10 +937,6 @@
 
 "transactions.title" = "Transactions";
 "transactions.tab_bar_item" = "Transactions";
-"transactions.blockchain" = "Blockchain";
-"transactions.all_blockchains" = "All Blockchains";
-"transactions.all_coins" = "All Coins";
-"transactions.choose_coin" = "Choose Coin";
 "transactions.filter_all" = "All";
 "transactions.empty_text" = "You don't have any pending or past transactions yet";
 "transactions.pending" = "Pending";
@@ -1850,4 +1846,14 @@
 
 "no_passcode.info_text" = "This app requires that phone has the passcode (screen lock) enabled.\n\nYou may enable it in iOS settings.\n\nPlease note that when you disabled the PIN on the OS level the security measures in safe storage of your phonе made the previously stored data invalid. You will need to Restore your wallet keys to get back to your wallet.";
 "cannot_check_passcode.info_text" = "Unable to check the state of passcode (screen lock). Please restart the application.";
-"jailbreak.info_text" = "The Unstoppable team recommends running app only on non-rooted (not jailbroken) phones.\n\nPlease note when you use a rooted device the app can no longer guarantee the safety of your cryptocurrency from malicious software.";
+"jailbreak.info_text" = "The P.CASH team recommends running app only on non-rooted (not jailbroken) phones.\n\nPlease note when you use a rooted device the app can no longer guarantee the safety of your cryptocurrency from malicious software.";
+
+// Transaction Filter
+
+"transaction_filter.title" = "Filter";
+"transaction_filter.blockchain" = "Blockchain";
+"transaction_filter.all_blockchains" = "All Blockchains";
+"transaction_filter.coin" = "Coin";
+"transaction_filter.all_coins" = "All Coins";
+"transaction_filter.hide_suspicious_txs" = "Hide Suspicious Txs";
+"transaction_filter.hide_suspicious_txs.description" = "Hiding incoming transactions with the dust amount in stablecoins, this partially solves the  address poisoning attack problems.";

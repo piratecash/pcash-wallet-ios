@@ -1,16 +1,20 @@
+import Combine
 import Foundation
-import RxSwift
-import RxRelay
 import MarketKit
+import RxRelay
+import RxSwift
 
 class BaseTransactionsService {
     private static let pageLimit = 20
 
     private let rateService: HistoricalRateService
     private let nftMetadataService: NftMetadataService
+    private let balanceHiddenManager: BalanceHiddenManager
     private let poolGroupFactory = PoolGroupFactory()
 
-    let disposeBag = DisposeBag()
+    private var cancellables = Set<AnyCancellable>()
+
+    private let disposeBag = DisposeBag()
     private var poolGroupDisposeBag = DisposeBag()
 
     private var poolGroup = PoolGroup(pools: [])
@@ -35,43 +39,44 @@ class BaseTransactionsService {
         }
     }
 
-    private let canResetRelay = PublishRelay<Bool>()
-
     private var lastRequestedCount = BaseTransactionsService.pageLimit
     private var loading = false {
         didSet {
             _syncSyncing()
         }
     }
+
     private var poolGroupSyncing = false {
         didSet {
             _syncSyncing()
         }
     }
+
     private var loadMoreRequested = false
     private var poolUpdateRequested = false
 
     let queue = DispatchQueue(label: "\(AppConfig.label).base-transactions-service")
 
-    init(rateService: HistoricalRateService, nftMetadataService: NftMetadataService) {
+    init(rateService: HistoricalRateService, nftMetadataService: NftMetadataService, balanceHiddenManager: BalanceHiddenManager) {
         self.rateService = rateService
         self.nftMetadataService = nftMetadataService
+        self.balanceHiddenManager = balanceHiddenManager
 
         subscribe(disposeBag, rateService.ratesChangedObservable) { [weak self] in self?.handleRatesChanged() }
         subscribe(disposeBag, rateService.rateUpdatedObservable) { [weak self] in self?.handle(rate: $0) }
         subscribe(disposeBag, nftMetadataService.assetsBriefMetadataObservable) { [weak self] in self?.handle(assetsBriefMetadata: $0) }
     }
 
-    var _canReset: Bool {
-        typeFilter != .all
-    }
-
     var _poolGroupType: PoolGroupFactory.PoolGroupType {
         fatalError("Should be overridden in child service")
     }
 
+    var scamFilterEnabled: Bool {
+        true
+    }
+
     func _syncPoolGroup() {
-        poolGroup = poolGroupFactory.poolGroup(type: _poolGroupType, filter: typeFilter)
+        poolGroup = poolGroupFactory.poolGroup(type: _poolGroupType, filter: typeFilter, scamFilterEnabled: scamFilterEnabled)
         _initPoolGroup()
     }
 
@@ -91,25 +96,25 @@ class BaseTransactionsService {
         poolGroupSyncing = poolGroup.syncing
 
         poolGroup.invalidatedObservable
-                .observeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
-                .subscribe(onNext: { [weak self] in
-                    self?.onPoolGroupInvalidated()
-                })
-                .disposed(by: poolGroupDisposeBag)
+            .observeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
+            .subscribe(onNext: { [weak self] in
+                self?.onPoolGroupInvalidated()
+            })
+            .disposed(by: poolGroupDisposeBag)
 
         poolGroup.itemsUpdatedObservable
-                .observeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
-                .subscribe(onNext: { [weak self] transactionItems in
-                    self?.handleUpdated(transactionItems: transactionItems)
-                })
-                .disposed(by: poolGroupDisposeBag)
+            .observeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
+            .subscribe(onNext: { [weak self] transactionItems in
+                self?.handleUpdated(transactionItems: transactionItems)
+            })
+            .disposed(by: poolGroupDisposeBag)
 
         poolGroup.syncingObservable
-                .observeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
-                .subscribe(onNext: { [weak self] syncing in
-                    self?.handleUpdated(poolGroupSyncing: syncing)
-                })
-                .disposed(by: poolGroupDisposeBag)
+            .observeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
+            .subscribe(onNext: { [weak self] syncing in
+                self?.handleUpdated(poolGroupSyncing: syncing)
+            })
+            .disposed(by: poolGroupDisposeBag)
     }
 
     private func _load() {
@@ -127,13 +132,12 @@ class BaseTransactionsService {
         let loadingMore = loadMoreRequested
 
         poolGroup.itemsSingle(count: lastRequestedCount)
-                .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
-                .observeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
-                .subscribe(onSuccess: { [weak self] transactionItems in
-                    self?.handle(transactionItems: transactionItems, loadedMore: loadingMore)
-                })
-                .disposed(by: poolGroupDisposeBag)
-
+            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
+            .observeOn(ConcurrentDispatchQueueScheduler(qos: .utility))
+            .subscribe(onSuccess: { [weak self] transactionItems in
+                self?.handle(transactionItems: transactionItems, loadedMore: loadingMore)
+            })
+            .disposed(by: poolGroupDisposeBag)
     }
 
     private func nftMetadata(transactionRecord: TransactionRecord, allMetadata: [NftUid: NftAssetBriefMetadata]) -> [NftUid: NftAssetBriefMetadata] {
@@ -160,9 +164,9 @@ class BaseTransactionsService {
 
             self.items = transactionItems.map { transactionItem in
                 Item(
-                        transactionItem: transactionItem,
-                        nftMetadata: self.nftMetadata(transactionRecord: transactionItem.record, allMetadata: nftMetadata),
-                        currencyValue: self.currencyValue(record: transactionItem.record, rate: self.rate(record: transactionItem.record))
+                    transactionItem: transactionItem,
+                    nftMetadata: self.nftMetadata(transactionRecord: transactionItem.record, allMetadata: nftMetadata),
+                    currencyValue: self.currencyValue(record: transactionItem.record, rate: self.rate(record: transactionItem.record))
                 )
             }
             self._reportItemData()
@@ -256,10 +260,6 @@ class BaseTransactionsService {
         itemDataRelay.accept(itemData)
     }
 
-    func _syncCanReset() {
-        canResetRelay.accept(_canReset)
-    }
-
     private func _syncSyncing() {
         syncing = loading || poolGroupSyncing
     }
@@ -283,15 +283,9 @@ class BaseTransactionsService {
             }
         }
     }
-
-    func _resetFilters() {
-        typeFilter = .all
-    }
-
 }
 
 extension BaseTransactionsService {
-
     var typeFilterObservable: Observable<TransactionTypeFilter> {
         typeFilterRelay.asObservable()
     }
@@ -308,18 +302,16 @@ extension BaseTransactionsService {
         syncingRelay.asObservable()
     }
 
-    var canResetObservable: Observable<Bool> {
-        canResetRelay.asObservable()
+    var balanceHiddenObservable: Observable<Bool> {
+        balanceHiddenManager.balanceHiddenObservable
+    }
+
+    var balanceHidden: Bool {
+        balanceHiddenManager.balanceHidden
     }
 
     var itemData: ItemData {
         ItemData(items: items, allLoaded: lastRequestedCount > items.count)
-    }
-
-    var canReset: Bool {
-        queue.sync {
-            _canReset
-        }
     }
 
     func set(typeFilter: TransactionTypeFilter) {
@@ -330,23 +322,7 @@ extension BaseTransactionsService {
 
             self.typeFilter = typeFilter
 
-            self._syncCanReset()
-
             //            print("SYNC POOL GROUP: set type filter")
-            self._syncPoolGroup()
-        }
-    }
-
-    func reset() {
-        queue.async {
-            guard self._canReset else {
-                return
-            }
-
-            self._resetFilters()
-            self._syncCanReset()
-
-            //            print("SYNC POOL GROUP: reset")
             self._syncPoolGroup()
         }
     }
@@ -395,11 +371,9 @@ extension BaseTransactionsService {
             self._load()
         }
     }
-
 }
 
 extension BaseTransactionsService {
-
     struct ItemData {
         let items: [Item]
         let allLoaded: Bool
@@ -420,5 +394,4 @@ extension BaseTransactionsService {
             self.currencyValue = currencyValue
         }
     }
-
 }
