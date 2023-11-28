@@ -70,7 +70,7 @@ class MainViewController: ThemeTabBarController {
     }
 
     private func handleDoubleClick(index: Int) {
-        if let viewControllers = viewControllers, viewControllers.count > index, let navigationController = viewControllers[index] as? UINavigationController, navigationController.topViewController is WalletViewController {
+        if let viewControllers, viewControllers.count > index, let navigationController = viewControllers[index] as? UINavigationController, navigationController.topViewController is WalletViewController {
             present(SwitchAccountModule.viewController(), animated: true)
         }
     }
@@ -108,7 +108,7 @@ class MainViewController: ThemeTabBarController {
     }
 
     private func showReleaseNotes(url: URL?) {
-        guard let url = url else {
+        guard let url else {
             return
         }
 

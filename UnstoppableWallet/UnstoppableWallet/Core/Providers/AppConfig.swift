@@ -1,6 +1,6 @@
 import Foundation
-import UIKit
 import MarketKit
+import UIKit
 
 struct AppConfig {
     static let label = "cash.p.terminal"
@@ -160,5 +160,4 @@ struct AppConfig {
     static var blockchairApiKey: String {
         (Bundle.main.object(forInfoDictionaryKey: "BlockchairApiKey") as? String) ?? ""
     }
-
 }

@@ -1,8 +1,7 @@
-import UIKit
 import MarketKit
+import UIKit
 
 extension Coin {
-
     var imageUrl: String {
         switch uid{
         case "piratecash":
@@ -14,5 +13,4 @@ extension Coin {
             return "https://cdn.blocksdecoded.com/coin-icons/32px/\(uid)@\(scale)x.png"
         }
     }
-
 }

@@ -1,5 +1,5 @@
-import RxSwift
 import RxRelay
+import RxSwift
 import UIKit
 
 class AppIconManager {
@@ -23,11 +23,9 @@ class AppIconManager {
     init() {
         appIcon = Self.currentAppIcon
     }
-
 }
 
 extension AppIconManager {
-
     var appIconObservable: Observable<AppIcon> {
         appIconRelay.asObservable()
     }
@@ -39,5 +37,4 @@ extension AppIconManager {
             return .main
         }
     }
-
 }
