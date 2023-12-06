@@ -2,7 +2,7 @@ import Foundation
 import MarketKit
 import UIKit
 
-struct AppConfig {
+enum AppConfig {
     static let label = "cash.p.terminal"
     static let backupSalt = "pcash"
 
