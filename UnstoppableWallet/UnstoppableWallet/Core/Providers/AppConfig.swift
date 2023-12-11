@@ -35,6 +35,7 @@ enum AppConfig {
         .arbitrumOne: "0x52be29951B0D10d5eFa48D58363a25fE5Cc097e9",
         .gnosis: "0x52be29951B0D10d5eFa48D58363a25fE5Cc097e9",
         .fantom: "0x52be29951B0D10d5eFa48D58363a25fE5Cc097e9",
+        .ton: "UQCYTBH7n8OnQ6BgOfdkNRWF7socLJb9U-JMRcoz3UpL_0V6",
         .tron: "TV4wYRcDun4iHb4oUgcse4Whptk9JKVui2",
         .solana: "CefzHT5zCUncm3yhTLck9bCRYkbjHrKToT1GpPUyqCMa"
     ]
