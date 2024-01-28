@@ -4462,7 +4462,7 @@
 		D36DE0F3272FD92E000BC916 /* SwapSelectProviderModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapSelectProviderModule.swift; sourceTree = "<group>"; };
 		D36DE0F4272FD92F000BC916 /* SwapSelectProviderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapSelectProviderService.swift; sourceTree = "<group>"; };
 		D36DE0F5272FD92F000BC916 /* SwapSelectProviderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapSelectProviderViewModel.swift; sourceTree = "<group>"; };
-		D38405CE218317DF007D50AD /* Unstoppable D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unstoppable D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38405CE218317DF007D50AD /* Unstoppable D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Unstoppable D.app"; path = "P.CASH D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38406BE21831B3D007D50AD /* P.CASH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P.CASH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38406C3218327B1007D50AD /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		D38406C821832968007D50AD /* AppIconDev.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIconDev.xcassets; sourceTree = "<group>"; };
@@ -8464,8 +8464,12 @@
 		D3285F4320BD158E00644076 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D38405CE218317DF007D50AD /* Unstoppable D.app */,
+				D38405CE218317DF007D50AD /* P.CASH D.app */,
 				D38406BE21831B3D007D50AD /* P.CASH.app */,
+				D3948EF02ADA846400FAE566 /* WidgetExtension Dev.appex */,
+				D3948F192ADA88D800FAE566 /* IntentExtension Dev.appex */,
+				D3BA25912ADFAD7C002B13EA /* WidgetExtension Prod.appex */,
+				D3BA25A52ADFAF23002B13EA /* IntentExtension Prod.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
