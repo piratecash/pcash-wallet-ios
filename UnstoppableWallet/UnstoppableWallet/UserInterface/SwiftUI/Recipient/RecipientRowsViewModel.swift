@@ -4,7 +4,6 @@ import RxSwift
 
 class RecipientRowsViewModel: ObservableObject {
     let disposeBag = DisposeBag()
-    let evmLabelManager = App.shared.evmLabelManager
     let manager = App.shared.contactManager
 
     let address: String
@@ -21,10 +20,6 @@ class RecipientRowsViewModel: ObservableObject {
     }
 
     private func sync() {
-        if let evmLabel = evmLabelManager.addressLabel(address: address) {
-            name = evmLabel
-            return
-        }
         name = manager.all?.by(address: address, blockchainUid: blockchainType.uid)?.name
     }
 
