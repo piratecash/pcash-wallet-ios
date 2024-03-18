@@ -102,7 +102,7 @@ protocol ISendTonAdapter {
     var availableBalance: Decimal { get }
     func validate(address: String) throws
     func estimateFee() async throws -> Decimal
-    func send(recipient: String, amount: Decimal) async throws
+    func send(recipient: String, amount: Decimal, memo: String?) async throws
 }
 
 protocol IErc20Adapter {

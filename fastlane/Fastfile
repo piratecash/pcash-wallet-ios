@@ -255,19 +255,19 @@ platform :ios do
     match(
       type: "development",
       readonly: true,
-      app_identifier: ["io.horizontalsystems.bank-wallet", "io.horizontalsystems.bank-wallet.dev", "io.horizontalsystems.bank-wallet.widget", "io.horizontalsystems.bank-wallet.dev.widget", "io.horizontalsystems.bank-wallet.intent", "io.horizontalsystems.bank-wallet.dev.intent"]
+      app_identifier: ["cash.p.terminal", "cash.p.terminal.dev", "cash.p.terminal.widget", "cash.p.terminal.dev.widget", "cash.p.terminal.intent", "cash.p.terminal.dev.intent"]
     )
 
     match(
       type: "adhoc",
       readonly: true,
-      app_identifier: ["io.horizontalsystems.bank-wallet", "io.horizontalsystems.bank-wallet.dev", "io.horizontalsystems.bank-wallet.widget", "io.horizontalsystems.bank-wallet.dev.widget", "io.horizontalsystems.bank-wallet.intent", "io.horizontalsystems.bank-wallet.dev.intent"]
+      app_identifier: ["cash.p.terminal", "cash.p.terminal.dev", "cash.p.terminal.widget", "cash.p.terminal.dev.widget", "cash.p.terminal.intent", "cash.p.terminal.dev.intent"]
     )
 
     match(
       type: "appstore",
       readonly: true,
-      app_identifier: ["io.horizontalsystems.bank-wallet", "io.horizontalsystems.bank-wallet.widget", "io.horizontalsystems.bank-wallet.intent"]
+      app_identifier: ["cash.p.terminal", "cash.p.terminal.widget", "cash.p.terminal.intent"]
     )
   end
 
@@ -275,24 +275,24 @@ platform :ios do
     match(
       type: "development",
       username: options[:username],
-      team_id: "HC4MCAXJ66",
-      app_identifier: ["io.horizontalsystems.bank-wallet", "io.horizontalsystems.bank-wallet.dev", "io.horizontalsystems.bank-wallet.widget", "io.horizontalsystems.bank-wallet.dev.widget", "io.horizontalsystems.bank-wallet.intent", "io.horizontalsystems.bank-wallet.dev.intent"],
+      team_id: "TDSX52VT4K",
+      app_identifier: ["cash.p.terminal", "cash.p.terminal.dev", "cash.p.terminal.widget", "cash.p.terminal.dev.widget", "cash.p.terminal.intent", "cash.p.terminal.dev.intent"],
       force_for_new_devices: true
     )
 
     match(
       type: "adhoc",
       username: options[:username],
-      team_id: "HC4MCAXJ66",
-      app_identifier: ["io.horizontalsystems.bank-wallet", "io.horizontalsystems.bank-wallet.dev", "io.horizontalsystems.bank-wallet.widget", "io.horizontalsystems.bank-wallet.dev.widget", "io.horizontalsystems.bank-wallet.intent", "io.horizontalsystems.bank-wallet.dev.intent"],
+      team_id: "TDSX52VT4K",
+      app_identifier: ["cash.p.terminal", "cash.p.terminal.dev", "cash.p.terminal.widget", "cash.p.terminal.dev.widget", "cash.p.terminal.intent", "cash.p.terminal.dev.intent"],
       force_for_new_devices: true
     )
 
     match(
       type: "appstore",
       username: options[:username],
-      team_id: "HC4MCAXJ66",
-      app_identifier: ["io.horizontalsystems.bank-wallet", "io.horizontalsystems.bank-wallet.widget", "io.horizontalsystems.bank-wallet.intent"]
+      team_id: "TDSX52VT4K",
+      app_identifier: ["cash.p.terminal", "cash.p.terminal.widget", "cash.p.terminal.intent"]
     )
   end
 
