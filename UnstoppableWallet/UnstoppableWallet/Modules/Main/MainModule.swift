@@ -2,8 +2,8 @@ import ThemeKit
 import UIKit
 
 enum MainModule {
-    enum Tab: Int {
-        case market, balance, transactions, settings
+    enum Tab: String, CaseIterable {
+        case markets, balance, transactions, settings
     }
 
     static func instance(presetTab: Tab? = nil) -> UIViewController {
