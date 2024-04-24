@@ -547,6 +547,17 @@ extension MainSettingsViewController: SectionsDataSource {
                     footerState: .margin(height: .margin32),
                     rows: [
                         tableView.universalRow48(
+                            id: "new-market-tab-switcher",
+                            title: .body("New Market Tab"),
+                            accessoryType: .switch(
+                                isOn: App.shared.localStorage.newMarketTabEnabled,
+                                onSwitch: { enabled in
+                                    App.shared.localStorage.newMarketTabEnabled = enabled
+                                }
+                            ),
+                            isFirst: true
+                        ),
+                        tableView.universalRow48(
                             id: "test-net-switcher",
                             title: .body("TestNet Enabled"),
                             accessoryType: .switch(
@@ -555,7 +566,6 @@ extension MainSettingsViewController: SectionsDataSource {
                                     App.shared.testNetManager.set(testNetEnabled: enabled)
                                 }
                             ),
-                            isFirst: true,
                             isLast: true
                         ),
                     ]
