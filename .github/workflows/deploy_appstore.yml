@@ -41,6 +41,7 @@ jobs:
         with:
           lane: release
         env:
+          FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: 120
           BUILD_NUMBER: ${{ github.run_number }}
           APP_STORE_CONNECT_TEAM_ID: ${{ secrets.APP_STORE_CONNECT_TEAM_ID }}
           APP_ID: ${{ secrets.APP_ID }}
