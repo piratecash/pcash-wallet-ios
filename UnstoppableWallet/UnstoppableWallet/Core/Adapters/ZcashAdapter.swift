@@ -66,8 +66,8 @@ class ZcashAdapter {
     private(set) var syncing: Bool = true
 
     init(wallet: Wallet, restoreSettings: RestoreSettings) throws {
-        logger = App.shared.logger.scoped(with: "ZCashKit")
-//        logger = HsToolKit.Logger(minLogLevel: .debug)
+        logger = App.shared.logger.scoped(with: "ZCashKit") 
+        // HsToolKit.Logger(minLogLevel: .debug)
 
         guard let seed = wallet.account.type.mnemonicSeed else {
             throw AdapterError.unsupportedAccount
