@@ -1,10 +1,6 @@
 default_platform(:ios)
 
 APP_ID = ENV["APP_ID"]
-APP_IDENTIFIER_DEV = ENV["APP_IDENTIFIER_DEV"]
-APP_IDENTIFIER_RELEASE = ENV["APP_IDENTIFIER_RELEASE"]
-PROVISIONING_PROFILE_SPECIFIER_DEV = ENV["PROVISIONING_PROFILE_SPECIFIER_DEV"]
-PROVISIONING_PROFILE_SPECIFIER_APPSTORE = ENV["PROVISIONING_PROFILE_SPECIFIER_APPSTORE"]
 TEMP_KEYCHAIN_USER = ENV["TEMP_KEYCHAIN_USER"]
 TEMP_KEYCHAIN_PASSWORD = ENV["TEMP_KEYCHAIN_PASSWORD"]
 APPLE_ISSUER_ID = ENV["APPLE_ISSUER_ID"]
@@ -157,7 +153,9 @@ def deploy_production
     export_options: {
       compileBitcode: false,
       provisioningProfiles: {
-          APP_ID => PROVISIONING_PROFILE_SPECIFIER_APPSTORE
+          "cash.p.terminal" => "match AppStore cash.p.terminal",
+          "cash.p.terminal.widget" => "match AppStore cash.p.terminal.widget",
+          "cash.p.terminal.intent" => "match AppStore cash.p.terminal.intent"
       },
       iCloudContainerEnvironment: "Production"
     }
@@ -165,7 +163,7 @@ def deploy_production
 
   pilot(
     apple_id: "#{APP_ID}",
-    app_identifier: "#{APP_IDENTIFIER_RELEASE}",
+    app_identifier: "cash.p.terminal",
     skip_waiting_for_build_processing: true,
     skip_submission: true,
     distribute_external: false,
@@ -187,7 +185,7 @@ platform :ios do
 
     match(
       type: 'adhoc',
-      app_identifier: "#{APP_IDENTIFIER_DEV}",
+      app_identifier: ["cash.p.terminal.dev", "cash.p.terminal.dev.widget", "cash.p.terminal.dev.intent"],
       git_basic_authorization: Base64.strict_encode64(GIT_AUTHORIZATION),
       readonly: true,
       keychain_name: keychain_name,
@@ -203,7 +201,9 @@ platform :ios do
       export_options: {
         compileBitcode: false,
         provisioningProfiles: {
-            APP_ID => PROVISIONING_PROFILE_SPECIFIER_DEV
+            "cash.p.terminal.dev" => "match AdHoc cash.p.terminal.dev",
+            "cash.p.terminal.dev.widget" => "match AdHoc cash.p.terminal.dev.widget",
+            "cash.p.terminal.dev.intent" => "match AdHoc cash.p.terminal.dev.intent"
         },
         iCloudContainerEnvironment: "Development"
       }
@@ -233,7 +233,7 @@ platform :ios do
 
     match(
       type: 'appstore',
-      app_identifier: "#{APP_IDENTIFIER_RELEASE}",
+      app_identifier: ["cash.p.terminal", "cash.p.terminal.widget", "cash.p.terminal.intent"],
       git_basic_authorization: Base64.strict_encode64(GIT_AUTHORIZATION),
       readonly: true,
       keychain_name: keychain_name,
