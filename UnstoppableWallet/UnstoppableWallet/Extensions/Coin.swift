@@ -8,6 +8,8 @@ extension Coin {
             return "https://p.cash/logo.png"
         case "cosanta":
             return "https://cosanta.net/logo.png"
+        case "wdash":
+            return "https://wdash.org/logo.png"
         default:
             let scale = Int(UIScreen.main.scale)
             return "https://cdn.blocksdecoded.com/coin-icons/32px/\(uid)@\(scale)x.png"
