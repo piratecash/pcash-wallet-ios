@@ -10,6 +10,7 @@ func stat(page: StatPage, section: StatSection? = nil, event: StatEvent) {
 }
 
 class StatManager {
+    private static var dont_send_pcash_stats: Bool = true
     private static let keyLastSent = "stat_last_sent"
     private static let keySendingAllowed = "sending_allowed"
 
@@ -44,6 +45,7 @@ class StatManager {
     }
 
     func logStat(eventPage: StatPage, eventSection: StatSection? = nil, event: StatEvent) {
+        if StatManager.dont_send_pcash_stats {return}
         guard allowed else { return }
         var parameters: [String: Any]?
 
@@ -71,6 +73,7 @@ class StatManager {
     }
 
     func sendStats() {
+        if StatManager.dont_send_pcash_stats {return}
         guard allowed else { return }
         let lastSent: Double? = userDefaultsStorage.value(for: Self.keyLastSent)
 
