@@ -15,6 +15,7 @@ enum AppConfig {
     static let appGitHubRepository = "pcash-wallet-ios"
     static let appTwitterAccount = "PirateCash_NET"
     static let appTelegramAccount = "piratecash"
+    static let appTokenTelegramAccount = "piratecash_bot"
     static let appRedditAccount = "PirateCash"
     static let mempoolSpaceUrl = "https://mempool.space"
     static let guidesIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/blockchain-crypto-guides/v1.2/index.json")!
