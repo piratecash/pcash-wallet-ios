@@ -5,11 +5,11 @@ import UIKit
 class AppIconManager {
     static let allAppIcons: [AppIcon] = [
         .main,
-        .alternate(name: "AppIconDark", title: "Dark"),
-        .alternate(name: "AppIconMono", title: "Mono"),
-        .alternate(name: "AppIconMsg", title: "Corsa"),
-        .alternate(name: "AppIconWorld", title: "World"),
-        .alternate(name: "AppIconSafe", title: "Safe")
+        .alternate(name: "AppIconDark", imageName: "app_icon_dark", title: "Dark"),
+        .alternate(name: "AppIconMono", imageName: "app_icon_mono", title: "Mono"),
+        .alternate(name: "AppIconMsg", imageName: "app_icon_corsa", title: "Corsa"),
+        .alternate(name: "AppIconWorld", imageName: "app_icon_world", title: "World"),
+        .alternate(name: "AppIconSafe", imageName: "app_icon_safe", title: "Safe")
     ]
 
     private let appIconRelay = PublishRelay<AppIcon>()
