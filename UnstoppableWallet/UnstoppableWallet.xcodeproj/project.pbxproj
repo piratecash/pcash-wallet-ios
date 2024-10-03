@@ -12498,7 +12498,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A56433D5D39CCA995F97777 /* Development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_ENTITLEMENTS = UnstoppableWallet/Configuration/Development.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -12519,7 +12518,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A56433D5D39CCA995F97777 /* Development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_ENTITLEMENTS = UnstoppableWallet/Configuration/Development.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
